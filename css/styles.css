@@ -306,9 +306,9 @@ body
 }
 .back_hollow_filler
 {
-	height:52px;
-	max-height:52px;
-	min-height:52px;
+	height:80px;
+	max-height:80px;
+	min-height:75px;
 }
 .ov_back_button_1{
 	float:left;
