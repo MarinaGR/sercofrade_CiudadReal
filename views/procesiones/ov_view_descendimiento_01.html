@@ -1,0 +1,297 @@
+<!-- Volver -->
+<div  class="ov_back_button_container">
+	
+	<div class="ov_back_button_container_limited">
+		<div id="ov_back_button_3" class="ov_back_button_1">
+			<img src="./resources/general_images/atras.png" style="height:15px;display:inline"/> Volver
+		</div>
+		
+		<div id="ov_back_button_4" class="ov_back_button_2">
+			<img src="./resources/general_images/menu.png" style="height:15px;display:inline"/> Menú
+		</div>
+	</div>
+	
+</div>
+<div class="back_hollow_filler"> </div>
+<script>
+		$("#ov_back_button_3").click(function(e){
+			
+			onBackKeyDown();
+						
+		});
+		$("#ov_back_button_4").click(function(e){
+			
+			load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/general/ov_view_main_menu.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+		});		
+</script>
+<!-- Volver -->
+<div class="ov_zone_general">
+	
+	<div class="ov_zone_limited_2">
+		
+		<div style="padding:10px;background-color:#5E3656">
+			
+			<div style="font-family:'3';font-size:1.7em;color:#FFF;padding-bottom:10px;text-align:left;">
+				DESCENDIMIENTO
+			</div>
+			<div style="font-family:'4';font-size:1.2em;color:#FFF;padding-bottom:10px;text-align:left;">
+				3 de Abril - Viernes Santo
+			</div>
+			<div style="font-family:'4';font-size:1.2em;color:#FFF;padding-bottom:10px;text-align:left;">
+				Salida a las <b>20:30h</b> desde Parroquia de la Merced.
+			</div>
+			
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
+			Todas las imágenes son de talla completa, llevando el Señor potencias en metal sobredorado con pedrería. Sobre la Cruz, va un sudario bordado por ambos lados. La imagen de la Virgen, bajo la advocación de María Santísima en su Quinta Angustia lleva rosario de nácar y plata. La imagen de María Magdalena lleva un sudario a los pies de la cruz con puntilla de encaje de bolillos bordado en un extremo con hilo de seda dorado. El paso es de estilo neogótico dorado con pan de oro. Lleva faroles en metal sobredorado y faldones color negro con galón dorado alrededor.
+			<br><br>
+		</div>
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			ORGANIZA.
+		</div>
+		
+		<div id="ov_to_herman" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:20px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Humilde Y Fervorosa Hermandad Y Cofradía De Nazarenos Del Santísimo Cristo Del Amor En Su Santo Descendimiento.
+		</div>
+		<script>
+			$("#ov_to_herman").click(function(e){
+				
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/hermandades/hermandad_descendimiento.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+			});
+		</script>
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			TÚNICA.
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
+			De terciopelo negro con botonadura blanca, al igual que el capillo y el escapulario. Lleva en el capillo bordado el antiguo escudo de la hermandad. Cíngulo amarillo, zapato negro y guante blanco. Los hermanos portan faroles y cirios morados.
+			<img src="./resources/habitos/descendimiento.jpg" style="display:block"/>
+		</div>
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			PASOS.
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div style="margin:auto;width:80%;font-family:'2';font-size:1.1em;color:#FFF;padding:10px;text-align:left;background-color:#5E3656">
+			Misterio del Descendimiento del Cristo del Amor
+		</div>
+		
+		<div style="margin:auto;width:80%;font-family:'4';font-size:1.1em;color:#333;padding:10px 10px;text-align:justify;">
+			Autor: Luis Marco Pérez
+			<br>
+			Fecha: 1944
+			<br><br>
+			<img src="./resources/pasos/angustias.jpg" style="display:block;margin:auto;width:80%;max-width:300px"/>						
+		</div>
+	
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			MÚSICA.
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
+			Banda de Cornetas y Tambores Jesús Rescatado de Valdepeñas.
+		</div>
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			RECORRIDO.
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
+			Con salida y llegada de la Parroquia de la Merced.<br>
+			(El mapa no se mostrará sin una conexión a Internet activa)
+		</div>
+		
+		<div style="margin:auto;width:90%">
+		
+			<iframe id="route_map" style="background-color:#5E3656;border:none;width:100%;height:500px;background-image:url(./resources/general_images/loader.gif);background-repeat:no-repeat;background-position:center center;" src=""> 
+				
+			</iframe>
+			<script>
+				route_map_url="https://www.google.com/maps/embed?pb=!1m49!1m12!1m3!1d6202.410416330562!2d-3.929435876204982!3d38.98781271290137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m34!1i0!3e2!4m3!3m2!1d38.990414!2d-3.9291270999999997!4m3!3m2!1d38.9872985!2d-3.9296545!4m3!3m2!1d38.988118199999995!2d-3.9283915!4m3!3m2!1d38.985999!2d-3.9284388999999997!4m3!3m2!1d38.9849588!2d-3.9260051999999996!4m3!3m2!1d38.9885114!2d-3.9266075999999996!4m3!3m2!1d38.9925342!2d-3.9279786999999997!4m3!3m2!1d38.989671799999996!2d-3.928629!5e0!3m2!1ses!2ses!4v1424346016445";
+				setTimeout(function(){
+					$("#route_map").attr("src",route_map_url);
+				},2000);
+			</script>
+		
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div style="font-family:'2';font-size:1.2em;color:#FFF;padding:10px;text-align:left;background-color:#999">
+			ITINERARIO.
+		</div>
+		
+		<div style="font-family:'4';font-size:1.2em;color:#333;padding:20px 10px;text-align:justify;">
+			Pulsa sobre cualquier dirección para obtener una ruta desde tu posición actual.
+			(Necesitarás una conexión a Internet activa)
+		</div>
+		
+		<div id="geoloc_map_container" style="margin:auto;width:90%;display:none">
+		
+			<iframe id="geoloc_map" style="background-color:#5E3656;border:none;width:100%;height:400px;background-image:url(./resources/general_images/loader.gif);background-repeat:no-repeat;background-position:center center;" src=""> </iframe>
+			
+			<div id="geoloc_map_text" style="font-family:'4';font-size:1.2em;color:#333;padding:10px 10px;text-align:center;">
+				Espere, calculando ruta...
+			</div>
+			
+			<div class="ov_button_01" onclick="$('#geoloc_map_container').hide()">
+				Ocultar
+			</div>
+			
+			<div class="hollow_10px"> </div>
+			
+			<div class="ov_button_01" onclick="show_geoloc(destination);">
+				Actualizar
+			</div>			
+			
+		</div>
+		
+		<div id="ov_place_1" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle Cuenca
+		</div>
+		<script>
+			$("#ov_place_1").click(function(e){
+				show_geoloc("Calle Cuenca, Ciudad Real");
+			});
+		</script>
+		
+		<div id="ov_place_2" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle Estacion Via Crucis
+		</div>
+		<script>
+			$("#ov_place_2").click(function(e){
+				show_geoloc("Calle Estacion Via Crucis, Ciudad Real");
+			});
+		</script>
+		
+		<div id="ov_place_3" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle Caballeros
+		</div>
+		<script>
+			$("#ov_place_3").click(function(e){
+				show_geoloc("Calle Caballeros, Ciudad Real");
+			});
+		</script>
+		
+		<div id="ov_place_4" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Pasaje De La Merced
+		</div>
+		<script>
+			$("#ov_place_4").click(function(e){
+				show_geoloc("Pasaje De La Merced, Ciudad Real");
+			});
+		</script>
+		
+		<div id="ov_place_5" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle Toledo
+		</div>
+		<script>
+			$("#ov_place_5").click(function(e){
+				show_geoloc("Calle Toledo, Ciudad Real");
+			});
+		</script>
+		
+		<div id="ov_place_6" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle Feria
+		</div>
+		<script>
+			$("#ov_place_6").click(function(e){
+				show_geoloc("Calle Feria, Ciudad Real");
+			});
+		</script>
+		
+		<div id="ov_place_7" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Mercado Viejo
+		</div>
+		<script>
+			$("#ov_place_7").click(function(e){
+				show_geoloc("Mercado Viejo, Ciudad Real");
+			});
+		</script>
+		
+		<div id="ov_place_8" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Plaza Mayor
+		</div>
+		<script>
+			$("#ov_place_8").click(function(e){
+				show_geoloc("Plaza Mayor, Ciudad Real");
+			});
+		</script>
+		
+		<div id="ov_place_9" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle Cuchilleria
+		</div>
+		<script>
+			$("#ov_place_9").click(function(e){
+				show_geoloc("Calle Cuchilleria, Ciudad Real");
+			});
+		</script>
+		
+		<div id="ov_place_10" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle Lanza
+		</div>
+		<script>
+			$("#ov_place_10").click(function(e){
+				show_geoloc("Calle Lanza, Ciudad Real");
+			});
+		</script>
+		
+		<div id="ov_place_11" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle Cardenal Monescillo
+		</div>
+		<script>
+			$("#ov_place_11").click(function(e){
+				show_geoloc("Calle Cardenal Monescillo, Ciudad Real");
+			});
+		</script>
+		
+		<div id="ov_place_12" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle Luz
+		</div>
+		<script>
+			$("#ov_place_12").click(function(e){
+				show_geoloc("Calle Luz, Ciudad Real");
+			});
+		</script>
+		
+		<div id="ov_place_13" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle Toledo
+		</div>
+		<script>
+			$("#ov_place_13").click(function(e){
+				show_geoloc("Calle Toledo, Ciudad Real");
+			});
+		</script>
+		
+		<div id="ov_place_14" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle Estacion Via Crucis
+		</div>
+		<script>
+			$("#ov_place_14").click(function(e){
+				show_geoloc("Calle Estacion Via Crucis, Ciudad Real");
+			});
+		</script>
+		
+		<div id="ov_place_15" style="font-family:'4';font-size:1.2em;color:#5E3656;padding:5px 10px;text-align:center;text-decoration:underline;cursor:pointer">
+			Calle Paz
+		</div>
+		<script>
+			$("#ov_place_15").click(function(e){
+				show_geoloc("Calle Paz, Ciudad Real");
+			});
+		</script>
+		
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>						
+		
+	</div>
+	
+</div>	
