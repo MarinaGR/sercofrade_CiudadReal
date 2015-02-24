@@ -55,13 +55,11 @@
 		<div class="texto_hermandad">
 			La hermandad se fundó el 29 de mayo de 1999 y se erigió canónicamente el 30 de julio de ese mismo año en la parroquia de Ntra. Sra. de los Ángeles. En Enero de 1998 tuvo lugar la primera reunió con el Sr. Obispo D. Rafael Torija para informarle del proyecto de fundar una nueva hermandad con la intención de ampliar y enriquecer la Semana Santa de Ciudad Real. El Sr. Obispo puso algunas condiciones para que el proyecto siguiera adelante. Tras muchos intentos fallidos, finalmente en abril de 1999 el párroco D. Francisco Romero, admite el proyecto y permite establecer en la Parroquia de Ntra. Sra. de los Ángeles la sede canónica de la hermandad. El 30 de julio por fin se aprueba la hermandad.
 			<br><br>
-			Meter información de los pasos
-			<br><br>
 			La túnica es de color blanco con botones y fajín color azul, del mismo color son el escapulario trasero y el capillo que lleva bordado el escudo de la hermandad. Los hermanos llevan sandalias negras y calcetas blancas y portan cirios color azul.
 			<br><br>
-			Meter información de porteo
+			La imagen se porta a costal, por una cuadrilla de 42 costaleros.
 			<br><br>
-			Meter información banda de música
+			Agrupación Musical Santo Tomás de Villanueva.
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -71,15 +69,11 @@
 		<div class="informacion_hermandad">
 			<b>Hábito:</b><br>
 			<img src="./resources/habitos/prendimiento.jpg" style="display:block">
-			<b>Templo de Residencia Canónica:</b><br>Convento de Santa Teresa.
+			<b>Ubicación del titular:</b><br>Parroquia de Nuestra Señora de los Angeles.
 			<br><br>
-			<b>Fundación:</b><br>1831.
+			<b>Fundación:</b><br>1999.
 			<br><br>
-			<b>Hermanos:</b><br>160.
-			<br><br>
-			<b>Nazarenos:</b><br>90.
-			<br><br>
-			<b>Atributos de los Hermanos:</b><br>Cruz de Madera
+			<b>Insignia(s) destacadas:</b><br>Senatus, Orfebrería de A. Santos Campanario (2006).<br>Estandarte Cristo, bordado sobre terciopelo azul Francia con bordados de Jesús Díaz Hellín y orfebrería de A. Santos Campanario (2009).<br>Banderín del Grupo Joven de la Hermandad, bordado en terciopelo azul Francia, con bordados de Jesús Díaz Hellín y orfebrería de A. Santos Campanarios (2009).<br>Cruz Guía en madera de cedro donada por la Parroquia, con orfebrería de Ramón Orovio (2003).<br>Faroles Cruz Guía, Orfebrería A. Santos Campanario (2006).<br>Ciriales y pértiga, Orfebrería Ramón Orovio (2003).<br>Bandera de Paso, Orfebrería A. Santos Campanario y Taller de costura Real Textil (2007).<br>Libro de Reglas y pértiga, Orfebrería Ramón Orovio (2004).<br>Estandarte Corporativo, con Orfebrería de A. Santos Campanario con bordados de Jesús Díaz Hellín en terciopelo azul Francia.
 			<br><br>
 			<b>Culto(s) organizados:</b><br>Triduo al Santísimo Cristo de los Afligidos.
 		</div>
@@ -89,11 +83,26 @@
 		</div>
 		
 		<div class="informacion_hermandad">
-			Cofradía del Santisimo Cristo de los Afligidos.<br>
-			Convento de los Padres Carmelitas<br>
-			Plaza de la Santa, nº 2<br>
-			05001 - AVILA<br><br>			
-			afligidosavilahm@gmail.com 
+			Casa Hermandad<br>
+			Residencial Ronda nº 11<br>
+			<a id="web" href="http://www.prendimiento.es">Página web</a><br>
+			<a id="twitter" href="https://twitter.com/GJPRENDIMIENTO1">Twitter</a><br>
+			<a id="blog" href="http://cautivoysalud.blogspot.com.es/">Blog</a>
+			<script>
+				$("a").on("click",function(e){
+					var url = $(this).attr('href');
+					var containHttp = new RegExp('http\\b');
+					var containHttps = new RegExp('https\\b');
+					if(containHttp.test(url)){
+						e.preventDefault();
+						window.open(url, "_system", "location=yes");
+					}
+					else if(containHttps.test(url)){
+						e.preventDefault();
+						window.open(url, "_system", "location=yes");
+					}
+				});
+			</script>
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -101,12 +110,12 @@
 		</div>
 		
 		<div id="ov_to_proce" class="enlace_a_procesion">
-			Via Matris (11 de Abril, Viernes de Dolores)
+			Prendimiento (29 de Marzo, Domingo de Ramos)
 		</div>
 		<script>
 			$("#ov_to_proce").click(function(e){
 				
-				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_via_matris_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_prendimiento_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
 							
 			});
 		</script>

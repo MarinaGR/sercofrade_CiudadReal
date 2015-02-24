@@ -55,13 +55,11 @@
 		<div class="texto_hermandad">
 			El día 19 de Noviembre de 1953 se dio lectura a la carta por la cual la hermandad de Nuestra Señora de la Esperanza quedaba vinculada a la Parroquia de Nuestra Señora del Pilar, donde debería realizar todos los cultos. El día 15 de Diciembre de ese mismo año, la imagen de la Virgen de la Esperanza es bendecida en la iglesia de San Pedro Apóstol. En la Semana Santa de 1954 procesiona por primera vez.
 			<br><br>
-			Meter información de los pasos
-			<br><br>
 			Túnica blanca con botonadura verde, siendo este ultimo color el empleado para el capillo en terciopelo, lo mismo que la cola y capa recogida a los brazos, también de color verde glasé. En el capillo lleva para la visión el anagrama del Ave María, bordado en fino tul verde. Guante blanco, sandalia negra y calceta blanca. Los hermanos portan faroles.
 			<br><br>
-			Meter información de porteo
+			La imagen se porta a costal, por una cuadrilla de 35 costaleros.
 			<br><br>
-			Meter información banda de música
+			Banda de Música Santa Cecilia de Calzada de Calatrava.
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -71,17 +69,13 @@
 		<div class="informacion_hermandad">
 			<b>Hábito:</b><br>
 			<img src="./resources/habitos/esperanza.jpg" style="display:block">
-			<b>Templo de Residencia Canónica:</b><br>Convento de Santa Teresa.
+			<b>Ubicación del titular:</b><br>Parroquia de Nuestra Señora del Pilar.
 			<br><br>
-			<b>Fundación:</b><br>1831.
+			<b>Fundación:</b><br>1953.
 			<br><br>
-			<b>Hermanos:</b><br>160.
+			<b>Atributos de los Hermanos:</b><br>Estandarte Guía con la imagen de la Virgen, realizado en casa Mur en 1954.<br>Faroles Guía de la orfebrería de los Hermanos Ángulo de Lucena (Córdoba) año 1986.<br>Estandarte Simpecado realizado en los talleres García y Poo de Sevilla en 2007.<br>Las tallas en madera policromada del estandarte son obra de Dña. Dolores León Peñuelas.<br>Representación de la Junta con los cetros y el Libro de Reglas, realizados en los talleres de Ramón Orovio de Torralba de Calatrava.<br>Estandarte Corporativo elaborado en la Casa de Bordados Perales de Madrid, donado por el grupo joven de la Hermandad en el año 2007.<br>Ciriales en plata realizados en los talleres de Orfebrería Antonio León de Sevilla, año 2008.
 			<br><br>
-			<b>Nazarenos:</b><br>90.
-			<br><br>
-			<b>Atributos de los Hermanos:</b><br>Cruz de Madera
-			<br><br>
-			<b>Culto(s) organizados:</b><br>Triduo al Santísimo Cristo de los Afligidos.
+			<b>Culto(s) organizados:</b><br>Solemne Triduo - 15, 16 y 17 de Diciembre.<br>Función Solemne - 18 Diciembre.<br>Misa de difuntos - 2 sábados antes del Domingo de Ramos.<br>Misa de Hermandad - Primer sábado de cada mes.<br>Presentación del cartel de la Hermandad - En Cuaresma.<br>Este año con motivo del LX Aniversario, tendrá lugar el pregón de la Hermandad.
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -89,11 +83,26 @@
 		</div>
 		
 		<div class="informacion_hermandad">
-			Cofradía del Santisimo Cristo de los Afligidos.<br>
-			Convento de los Padres Carmelitas<br>
-			Plaza de la Santa, nº 2<br>
-			05001 - AVILA<br><br>			
-			afligidosavilahm@gmail.com 
+			Casa Hermandad<br>
+			C/ Progreso nº 8 13003 Ciudad Real<br>
+			<a id="web" href="http://www.esperanzaciudadreal.com/">Página web</a><br>
+			<a id="twitter" href="https://twitter.com/hdadesperanzacr">Twitter 1</a><br>
+			<a id="twitter" href="https://twitter.com/GJ_EsperanzaCR">Twitter 2</a>
+			<script>
+				$("a").on("click",function(e){
+					var url = $(this).attr('href');
+					var containHttp = new RegExp('http\\b');
+					var containHttps = new RegExp('https\\b');
+					if(containHttp.test(url)){
+						e.preventDefault();
+						window.open(url, "_system", "location=yes");
+					}
+					else if(containHttps.test(url)){
+						e.preventDefault();
+						window.open(url, "_system", "location=yes");
+					}
+				});
+			</script>
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -101,12 +110,12 @@
 		</div>
 		
 		<div id="ov_to_proce" class="enlace_a_procesion">
-			Via Matris (11 de Abril, Viernes de Dolores)
+			Esperanza (31 de Marzo, Martes Santo)
 		</div>
 		<script>
 			$("#ov_to_proce").click(function(e){
 				
-				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_via_matris_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_esperanza_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
 							
 			});
 		</script>

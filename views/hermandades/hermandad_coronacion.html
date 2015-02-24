@@ -55,13 +55,11 @@
 		<div class="texto_hermandad">
 			El 1 de mayo de 1992 queda constituida esta hermandad por un grupo de catequistas de la Parroquia de Santa María del Prado. El 23 de septiembre de 1993 son aprobados sus primeros estatutos. Los fundadores de la hermandad procesionaron por primera vez en la madrugada del Viernes Santo de 1944 con un paso de misterio que estaba formado por tres imágenes: la del Señor, que era de vestir, y dos soldados de talla completa, uno colocándole la corona de espinas y otro burlándose de él. Ese misterio procesionó hasta la Semana Santa de 1996.
 			<br><br>
-			Meter información de los pasos
-			<br><br>
 			Túnica blanca con fajín y clámide de color púrpura, el capillo también blanco. Sandalias negras y calcetas blancas. Portan cirio de color granate en el misterio y blancos en el palio.
 			<br><br>
-			Meter información de porteo
+			La imagen se porta a costal, por una cuadrilla de 35 costaleros.
 			<br><br>
-			Meter información banda de música
+			Banda de Música de Granátula de Calatrava.
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -71,17 +69,13 @@
 		<div class="informacion_hermandad">
 			<b>Hábito:</b><br>
 			<img src="./resources/habitos/coronacion.jpg" style="display:block">
-			<b>Templo de Residencia Canónica:</b><br>Convento de Santa Teresa.
+			<b>Ubicación del titular:</b><br>Parroquia de Santa María del Prado (La Merced).
 			<br><br>
-			<b>Fundación:</b><br>1831.
+			<b>Fundación:</b><br>1992.
 			<br><br>
-			<b>Hermanos:</b><br>160.
+			<b>Insignia(s) destacadas:</b><br>Libro de Reglas (2013).
 			<br><br>
-			<b>Nazarenos:</b><br>90.
-			<br><br>
-			<b>Atributos de los Hermanos:</b><br>Cruz de Madera
-			<br><br>
-			<b>Culto(s) organizados:</b><br>Triduo al Santísimo Cristo de los Afligidos.
+			<b>Culto(s) organizados:</b><br>6,7 y 8 de Marzo - Triduo en honor y gloria a Santa María del Perdón (19.00 horas).<br>9 de Marzo - Función Solemne y besamanos a Santa María del Perdón (11.30 horas).<br>2, 3 y 4 de Abril - Triduo en honor y gloria al Santísimo Cristo Ultrajado y Coronado de Espinas (20.00 horas).<br>5 de Abril - Función Solemne al Santísimo Cristo Ultrajado y Coronado de Espinas (20.00 horas).<br>30 Marzo - Mesa Redonda "Devoción y fe".<br>Septiembre - Vigilia de Oración.<br>Misa de Hermandad primer Domingo de cada mes.
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -89,11 +83,24 @@
 		</div>
 		
 		<div class="informacion_hermandad">
-			Cofradía del Santisimo Cristo de los Afligidos.<br>
-			Convento de los Padres Carmelitas<br>
-			Plaza de la Santa, nº 2<br>
-			05001 - AVILA<br><br>			
-			afligidosavilahm@gmail.com 
+			C/ Rosa, 1, C .P. 13002<br>
+			Parroquia de Santa María del Prado (La Merced<br>
+			<a id="web" href="http://hermandadcoronaciondeespinas.blogspot.com.es">Página web</a><br>
+			<script>
+				$("a").on("click",function(e){
+					var url = $(this).attr('href');
+					var containHttp = new RegExp('http\\b');
+					var containHttps = new RegExp('https\\b');
+					if(containHttp.test(url)){
+						e.preventDefault();
+						window.open(url, "_system", "location=yes");
+					}
+					else if(containHttps.test(url)){
+						e.preventDefault();
+						window.open(url, "_system", "location=yes");
+					}
+				});
+			</script>
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -101,12 +108,12 @@
 		</div>
 		
 		<div id="ov_to_proce" class="enlace_a_procesion">
-			Via Matris (11 de Abril, Viernes de Dolores)
+			Coronación de Espinas (29 de Marzo, Domingo de Ramos)
 		</div>
 		<script>
 			$("#ov_to_proce").click(function(e){
 				
-				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_via_matris_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_coronacion_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
 							
 			});
 		</script>

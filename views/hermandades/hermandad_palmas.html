@@ -55,13 +55,11 @@
 		<div class="texto_hermandad">
 			Fundada en la Iglesia de los Jesuitas, donde actualmente se encuentra el colegio Hermano Gárate, el 9 de Abril de 1944 por el patronato de la Congregación Juvenil Mariana de María Inmaculada, San Luís y San Estanislao. La hermandad asumió como escudo propio el de las congregaciones marianas y adoptaron los colores azul celeste y blanco para las túnicas de los cofrades, queriendo con ello rendir un tributo a la Madre Inmaculada, ya que el lema de la congregación era «A Cristo por María».
 			<br><br>
-			Meter información de los pasos
-			<br><br>
 			Túnica blanca con botonadura amarilla y capillo blanco ribeteado con un cordón amarillo, capa azul celeste con el anagrama de la congregación mariana en fondo blanco en el lado izquierdo; fajín también azul celeste con borlas de hilo de oro; guante blanco y calzado negro. Los hermanos portan palmas.
 			<br><br>
-			Meter información de porteo
+			La imagen se porta a costal, por una cuadrilla de 40 costaleros.
 			<br><br>
-			Meter información banda de música
+			Agrupación Musical Nuestro Padre Jesús Redentor de Moral de Calatrava.
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -71,29 +69,35 @@
 		<div class="informacion_hermandad">
 			<b>Hábito:</b><br>
 			<img src="./resources/habitos/palmas.jpg" style="display:block">
-			<b>Templo de Residencia Canónica:</b><br>Convento de Santa Teresa.
+			<b>Ubicación del titular:</b><br>Iglesia de San Ignacio de Loyola (Salesianos).
 			<br><br>
-			<b>Fundación:</b><br>1831.
+			<b>Fundación:</b><br>1944.
 			<br><br>
-			<b>Hermanos:</b><br>160.
-			<br><br>
-			<b>Nazarenos:</b><br>90.
-			<br><br>
-			<b>Atributos de los Hermanos:</b><br>Cruz de Madera
-			<br><br>
-			<b>Culto(s) organizados:</b><br>Triduo al Santísimo Cristo de los Afligidos.
+			<b>Culto(s) organizados:</b><br>Solemne triudo dedicado a su Titular los días 13, 14, 15 de marzo, durante el mismo la primera Eucaristía es dedicada a los hermanos difuntos de la Hermandad.<br>Función Principal del Instituto el 16 de marzo, durante la cual se hace la jura de reglas y protestación de fe, imponiendo a los nuevos hermanos la medalla de la Hermandad.
 		</div>
 		
 		<div class="titulos_hermandad">
 			CONTACTO
 		</div>
 		
-		<div class="informacion_hermandad">
-			Cofradía del Santisimo Cristo de los Afligidos.<br>
-			Convento de los Padres Carmelitas<br>
-			Plaza de la Santa, nº 2<br>
-			05001 - AVILA<br><br>			
-			afligidosavilahm@gmail.com 
+		<div class="informacion_hermandad">	
+			<a id="web" href="http://hermandaddelaspalmasciudadreal.blogspot.com.es/">Página web</a><br>
+			<a id="twitter" href="https://twitter.com/Hdad_Palmas">Twitter</a>
+			<script>
+				$("a").on("click",function(e){
+					var url = $(this).attr('href');
+					var containHttp = new RegExp('http\\b');
+					var containHttps = new RegExp('https\\b');
+					if(containHttp.test(url)){
+						e.preventDefault();
+						window.open(url, "_system", "location=yes");
+					}
+					else if(containHttps.test(url)){
+						e.preventDefault();
+						window.open(url, "_system", "location=yes");
+					}
+				});
+			</script>
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -101,12 +105,12 @@
 		</div>
 		
 		<div id="ov_to_proce" class="enlace_a_procesion">
-			Via Matris (11 de Abril, Viernes de Dolores)
+			Las Palmas (29 de Marzo, Domingo de Ramos)
 		</div>
 		<script>
 			$("#ov_to_proce").click(function(e){
 				
-				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_via_matris_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_palmas_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
 							
 			});
 		</script>
