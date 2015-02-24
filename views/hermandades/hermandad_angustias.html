@@ -59,9 +59,9 @@
 			<br><br>
 			La túnica es negra mate, en forma de capote militar, con botonadura redonda dorada en la parte central y cierre en bocamanga de cordón amarillo. Capillo de raso negro con el escudo de la hermandad bordado, guante, zapato y calcetín negro. Los hermanos alumbran con cera natural color negro.
 			<br><br>
-			Meter información de porteo
+			Porteo a costal, por 28 costaleros.
 			<br><br>
-			Meter información banda de música
+			Acompañamiento Musical Santo Tomás de Villanueva de Ciudad Real
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -71,17 +71,17 @@
 		<div class="informacion_hermandad">
 			<b>Hábito:</b><br>
 			<img src="./resources/habitos/angustias.jpg" style="display:block">
-			<b>Templo de Residencia Canónica:</b><br>Convento de Santa Teresa.
+			<br>
+			<b>Fundación:</b><br>1943.
 			<br><br>
-			<b>Fundación:</b><br>1831.
+			<b>Ubicación de los titulares:</b><br>
+			Capilla del Santísimo en la Parroquia de Santa MAría del Prado (La Merced)
 			<br><br>
-			<b>Hermanos:</b><br>160.
-			<br><br>
-			<b>Nazarenos:</b><br>90.
-			<br><br>
-			<b>Atributos de los Hermanos:</b><br>Cruz de Madera
-			<br><br>
-			<b>Culto(s) organizados:</b><br>Triduo al Santísimo Cristo de los Afligidos.
+			<b>Culto(s) organizados:</b><br>
+			Cuaresma: Misa de Hermandad<br>
+			Septiembre: Festividad de Nuestra Señora de las Angustias<br>
+			Nomviembre: Misa por los Difuntos de la Hermandad
+			
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -89,11 +89,28 @@
 		</div>
 		
 		<div class="informacion_hermandad">
-			Cofradía del Santisimo Cristo de los Afligidos.<br>
-			Convento de los Padres Carmelitas<br>
-			Plaza de la Santa, nº 2<br>
-			05001 - AVILA<br><br>			
-			afligidosavilahm@gmail.com 
+			C/Rosa nº 1, 13003 Ciudad Real<br>
+			Parroquia Santa María del Prado (La Merced)
+			<br><br>			
+			<a href="http://angustiasdeciudadreal.blogspot.com.es" class="enlace_externo">Página web</a>
+
+			<script>
+			$("a").on("click", function(e) {
+				var url = $(this).attr('href');
+				var containsHttp = new RegExp('http\\b'); 
+				var containsHttps = new RegExp('https\\b'); 
+				
+				if(containsHttp.test(url)) { 
+					e.preventDefault(); 
+					window.open(url, "_system", "location=yes"); 
+				}
+				else if(containsHttps.test(url)) { 
+					e.preventDefault(); 
+					window.open(url, "_system", "location=yes"); 
+				}
+			});						
+			</script>
+			
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -101,12 +118,12 @@
 		</div>
 		
 		<div id="ov_to_proce" class="enlace_a_procesion">
-			Via Matris (11 de Abril, Viernes de Dolores)
+			Angustias (3 de Abril, Viernes Santo)
 		</div>
 		<script>
 			$("#ov_to_proce").click(function(e){
 				
-				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_via_matris_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_angustias_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
 							
 			});
 		</script>

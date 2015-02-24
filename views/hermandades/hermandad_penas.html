@@ -55,13 +55,11 @@
 		<div class="texto_hermandad">
 			La hermandad de la Humillación, más conocida como "Las Penas", nace con la idea de ser una de las hermandades denominadas como "serias" o de silencio, debido a la escasez que había en Ciudad Real de este tipo de hermandades. El 23 de enero de 1992 se crea la hermandad y el 12 de febrero del mismo año se aprueba canónicamente. El 7 de Abril de 1993 procesiona por primera vez a la 1:30 de la madrugada del Miércoles Santo. Desde su primera salida procesional la hermandad ha cumplido su objetivo al caracterizarse por su serenidad, sencillez, orden y espíritu penitencial. La procesión va en completo silencio roto únicamente por la música de un trío de capilla.
 			<br><br>
-			Meter información de los pasos
-			<br><br>
 			Túnica de color rojo con botonadura color negro, al igual que el capillo con babero con el escudo de la hermandad; fajín alto de pita,  zapato y calcetín negro. Los hermanos portan cirios de color rojo.
 			<br><br>
-			Meter información de porteo
+			La imagen se porta a costal, por una cuadrilla de 35 costaleros.
 			<br><br>
-			Meter información banda de música
+			La Cofradía va acompañada por un trío de música de capilla compuesto por instrumentos de viento y madera (clarinete, oboe y fagot) se interpretan piezas fúnebres y molotes.
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -71,17 +69,13 @@
 		<div class="informacion_hermandad">
 			<b>Hábito:</b><br>
 			<img src="./resources/habitos/penas.jpg" style="display:block">
-			<b>Templo de Residencia Canónica:</b><br>Convento de Santa Teresa.
+			<b>Ubicación titular:</b><br>Parroquia de Santo Tomás de Villanueva.
 			<br><br>
-			<b>Fundación:</b><br>1831.
+			<b>Fundación:</b><br>1992.
 			<br><br>
-			<b>Hermanos:</b><br>160.
+			<b>Insignia(s) destacadas:</b><br>La Cruz Guía esta realizada en madre de pino y policromada en los talleres de Francisco Ortega de Ciudad Real año 203 según diseño de Francisco Turrillo Rodríguez, esta rematada con cuatro ráfagas y asas de metal plateado.<br>Los faroles que acompañan a la Cruz Guía, realizados en 2007, en madera y metal plateado de la Orfebrería de Orovio de la Torre.<br>Libro de Reglas realizado en 2010, en cuero por María de la Paz Rodríguez Alañón, con láminas en pergamino decoradas por Francisco Turrillo Rodríguez.<br>Senatus, estandarte con la inscrición SENTUS POPULUSQUE ROMANUS bordado en hilo de oro sobre terciopelo rojo de los talleros de Francisco Perales en 2008, con vara repujada de la Orfebrería Santa Cruz de Sevilla.<br>Bandera de Paso del año 2009, con los colores de la Hermandad rojo sobre negro. En cada cuartel lleva bordado las cuatro órdenes militares Españolas, Santiago, Alcántara, Montesa y Calatrava, esta realizada en los Talleres de Nazaret.<br>Estandarte Corporativo, es la insignia más importante y que representa a ésta, en todos los actos litúrgicos. Está bordado sobre terciopelo rojo, sobre el cual preside el escudo de la Hermandad. Fue realizado en 2004 por los talleres de Francisco José Perales siendo el asta de la Orfebrería de Orovio de la Torre.<br>Bocinas y Paños, rememoran las antiguas trompetas de dolor del barroco. Están realizadas en 2008 en metal plateado por la Orfebrería Santa Cruz de Sevilla, cada bocina lleva un paño bordado en hilo de oro sobre terciopelo rojo con el escudo de la corporación, y sobre terciopelo marrón carmelita con el escudo de la Orden Carmelita, fueron realizados en los Talleres de Francisco José Perales.
 			<br><br>
-			<b>Nazarenos:</b><br>90.
-			<br><br>
-			<b>Atributos de los Hermanos:</b><br>Cruz de Madera
-			<br><br>
-			<b>Culto(s) organizados:</b><br>Triduo al Santísimo Cristo de los Afligidos.
+			<b>Culto(s) organizados:</b><br>Función Solemne al Señor de las Penas en Cuaresma.
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -89,24 +83,37 @@
 		</div>
 		
 		<div class="informacion_hermandad">
-			Cofradía del Santisimo Cristo de los Afligidos.<br>
-			Convento de los Padres Carmelitas<br>
-			Plaza de la Santa, nº 2<br>
-			05001 - AVILA<br><br>			
-			afligidosavilahm@gmail.com 
-		</div>
+			Carmen nº 4, Bajo Izquierda<br>
+			<a id="web" href="http://www.actiweb.es/laspenasciudadreal./">Página web</a><br>
+			<a id="blog" href="http://jesusdelaspenas.blogspot.com.es/">Blog</a>
+			<script>
+				$("a").on("click",function(e){
+					var url = $(this).attr('href');
+					var containHttp = new RegExp('http\\b');
+					var containHttps = new RegExp('https\\b');
+					if(containHttp.test(url)){
+						e.preventDefault();
+						window.open(url, "_system", "location=yes");
+					}
+					else if(containHttps.test(url)){
+						e.preventDefault();
+						window.open(url, "_system", "location=yes");
+					}
+				});
+			</script>
+			</div>
 		
 		<div class="titulos_hermandad">
 			PROCESIONES
 		</div>
 		
 		<div id="ov_to_proce" class="enlace_a_procesion">
-			Via Matris (11 de Abril, Viernes de Dolores)
+			Las Penas (31 de Marzo, Martes Santo)
 		</div>
 		<script>
 			$("#ov_to_proce").click(function(e){
 				
-				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_via_matris_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_penas_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
 							
 			});
 		</script>

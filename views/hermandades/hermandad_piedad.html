@@ -55,13 +55,11 @@
 		<div class="texto_hermandad">
 			Se fundó  en 1616 teniendo como titular una imagen de Cristo Crucificado de Giraldo Merlo. Ya entonces se daba culto a la imagen del crucificado, con el nombre de Santísimo Cristo de la Piedad. En 1727 se redactaron nuevas constituciones en las que ya aparece la túnica de negro para acompañar al Cristo en procesión. En los últimos años del siglo XIX y primeros del XX, la hermandad estaba casi extinguida. En 1904 se reorganizó tallándose por esta  época unas nuevas andas al Cristo. En el año 1941 volvió a desfilar esta Cofradía con un Cristo de autor anónimo que en la actualidad se encuentra colocado en la parte superior del Retablo de la Catedral. En 1946 se redactaron nuevos estatutos y ese mismo año se realizó el actual Cristo que es obra de Castillo Lastrucci.
 			<br><br>
-			Meter información de los pasos
-			<br><br>
 			Túnica de terciopelo negro con escapulario del mismo color, botones y fajín de raso blanco y cruz blanca de raso sobre el capillo. Guante blanco, zapato y calcetín negro. Los hermanos alumbran con cirios eléctricos.
 			<br><br>
-			Meter información de porteo
+			Forma de portar, a costal, tiene una cuadrilla de 35 costaleros.
 			<br><br>
-			Meter información banda de música
+			A. C. Banda de Cornetas y Tambores<br>Nuestra Señora del Prado - La Pasión.
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -71,17 +69,11 @@
 		<div class="informacion_hermandad">
 			<b>Hábito:</b><br>
 			<img src="./resources/habitos/piedad.jpg" style="display:block">
-			<b>Templo de Residencia Canónica:</b><br>Convento de Santa Teresa.
+			<b>Ubicación de la titular:</b><br>S. I. B. Catedral de Ciudad Real.
 			<br><br>
-			<b>Fundación:</b><br>1831.
+			<b>Fundación:</b><br>1616.
 			<br><br>
-			<b>Hermanos:</b><br>160.
-			<br><br>
-			<b>Nazarenos:</b><br>90.
-			<br><br>
-			<b>Atributos de los Hermanos:</b><br>Cruz de Madera
-			<br><br>
-			<b>Culto(s) organizados:</b><br>Triduo al Santísimo Cristo de los Afligidos.
+			<b>Culto(s) organizados:</b><br>Solemne Triduo y Función en honor al Santísimo Cristo de la Piedad del 3 al 5 de abril.<br>Santo Via Crucis el 5 de abril.<br>Función Solemne el 6 de abril.<br>Exaltación de la Cruz - Devoto Besapies.
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -89,11 +81,26 @@
 		</div>
 		
 		<div class="informacion_hermandad">
-			Cofradía del Santisimo Cristo de los Afligidos.<br>
-			Convento de los Padres Carmelitas<br>
-			Plaza de la Santa, nº 2<br>
-			05001 - AVILA<br><br>			
-			afligidosavilahm@gmail.com 
+			Casa Hermandad<br>	
+			C/ Azucena nº 21, Bajo B 13002<br>
+			<a id="web" href="http://eternapiedad.blogspot.com.es/">Página web</a><br>
+			<a id="twitter" href="https://twitter.com/Hdad_Piedad">Twitter</a><br>
+			<a id="facebook" href="https://www.facebook.com/eternapiedad?_rdr">Facebook</a>
+			<script>
+				$("a").on("click",function(e){
+					var url = $(this).attr('href');
+					var containHttp = new RegExp('http\\b');
+					var containHttps = new RegExp('https\\b');
+					if(containHttp.test(url)){
+						e.preventDefault();
+						window.open(url, "_system", "location=yes");
+					}
+					else if(containHttps.test(url)){
+						e.preventDefault();
+						window.open(url, "_system", "location=yes");
+					}
+				});
+			</script>
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -101,12 +108,12 @@
 		</div>
 		
 		<div id="ov_to_proce" class="enlace_a_procesion">
-			Via Matris (11 de Abril, Viernes de Dolores)
+			Cristo de la Piedad (3 de Abril, Viernes Santo)
 		</div>
 		<script>
 			$("#ov_to_proce").click(function(e){
 				
-				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_via_matris_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_cristo_piedad_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
 							
 			});
 		</script>

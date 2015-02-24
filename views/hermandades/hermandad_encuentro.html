@@ -55,13 +55,11 @@
 		<div class="texto_hermandad">
 			Fundada dentro de la Hermandad Ferroviaria de Acción Católica de Nuestra Señora de Alarcos y San Rafael Arcángel en 1945. Procesionó por primera vez en la Semana Santa de 1946, sacando en 1949 una rica colección de estandartes pertenecientes a la antigua hermandad de la Coronación de Espinas. Antiguamente, el misterio completo estaba expuesto al culto en la Parroquia de San Pedro. Sin embargo, desde 1970 y tras las obras en la parroquia, tuvo que abandonarla no volviendo a entrara nunca, salvo el Viernes Santo, día en que procesiona. El misterio estuvo guardado en los hangares de la antigua estación de ferrocarril, donde sufrió destrozos en 1982. Fueron restauradas las imágenes y se celebró una misa en el campo de la ferroviaria con la asistencia de una representación de todas las hermandades de Semana Santa.
 			<br><br>
-			Meter información de los pasos
-			<br><br>
 			La túnica es blanca con botonadura en terciopelo morado, cíngulo amarillo y capa de este mismo color, con las cuatro órdenes militares en el lado izquierdo, capillo de terciopelo morado con el anagrama en tul “J.H.S.” a través del cual se logra la visión. Zapato negro y guante blanco. Los hermanos portan cetros niquelados con el anagrama anteriormente reseñado.
 			<br><br>
-			Meter información de porteo
+			Forma de portar, a ruedas.
 			<br><br>
-			Meter información banda de música
+			Banda de Cornetas y Tambores cadetes Nuestro Padre Jesús Rescatado, de Villanueva de los Infantes (Ciudad Real).
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -71,17 +69,11 @@
 		<div class="informacion_hermandad">
 			<b>Hábito:</b><br>
 			<img src="./resources/habitos/encuentro.jpg" style="display:block">
-			<b>Templo de Residencia Canónica:</b><br>Convento de Santa Teresa.
+			<b>Fundación:</b><br>1945.
 			<br><br>
-			<b>Fundación:</b><br>1831.
+			<b>Insignia(s) destacadas:</b><br>Estandarte corporativo con el escudo de la Cofradía y las cuatro órdenes militares, realizado por D. José Perales en Madrid (2009).<br>Estandarte del Imperio Romano, confeccionado por las Religiosas Adoratrices de Madrid en 1926.<br>Gallardetes del SPQR confeccionados en damaso de seda dorado, realizado por las Religiosas Adoratrices de Madrid en 1926.<br>Estandarte con el Águila Morada, confeccionado por la camarera de la Hermandad de la Coronación, Dª Julia Olivas, en 1928.<br>Estandarte con las cruces de Jerusalén, confeccionado en 1930 en el pueblo toledano de La Lagartera.<br>Estandarte de la Coronación, confeccionado en La Lagartera en 1930.<br>Estandarte con el escudo de Ciudad Real, confeccionado en el mismo año y sitio del anterior.<br>Estandarte negro con un águila bordada en oro, símbolo del Imperio Romano, confeccionado en La Lagartera.
 			<br><br>
-			<b>Hermanos:</b><br>160.
-			<br><br>
-			<b>Nazarenos:</b><br>90.
-			<br><br>
-			<b>Atributos de los Hermanos:</b><br>Cruz de Madera
-			<br><br>
-			<b>Culto(s) organizados:</b><br>Triduo al Santísimo Cristo de los Afligidos.
+			<b>Culto(s) organizados:</b><br>13, 14 y 15 de marzo - Triduo en honor al Santísimo Cristo del Encuentro (20.00 horas).<br>15 de junio - Domingo de la Santísimo Trinidad - Acto en honor a nuestra Patrona la Virgen de Alarcos en su Ermita.<br>29 de septiembre - Acto en honor al Arcángel San Rafael.
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -89,11 +81,23 @@
 		</div>
 		
 		<div class="informacion_hermandad">
-			Cofradía del Santisimo Cristo de los Afligidos.<br>
-			Convento de los Padres Carmelitas<br>
-			Plaza de la Santa, nº 2<br>
-			05001 - AVILA<br><br>			
-			afligidosavilahm@gmail.com 
+			Parroquia de San Pedro<br><br>			
+			<a id="web" href="http://www.cofradiaelencuentro.es/Inicio/principal.htm">Página web</a>
+			<script>
+				$("a").on("click",function(e){
+					var url = $(this).attr('href');
+					var containHttp = new RegExp('http\\b');
+					var containHttps = new RegExp('https\\b');
+					if(containHttp.test(url)){
+						e.preventDefault();
+						window.open(url, "_system", "location=yes");
+					}
+					else if(containHttps.test(url)){
+						e.preventDefault();
+						window.open(url, "_system", "location=yes");
+					}
+				});
+			</script>
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -101,12 +105,12 @@
 		</div>
 		
 		<div id="ov_to_proce" class="enlace_a_procesion">
-			Via Matris (11 de Abril, Viernes de Dolores)
+			El Encuentro (3 de Abril, Viernes Santo)
 		</div>
 		<script>
 			$("#ov_to_proce").click(function(e){
 				
-				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_via_matris_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_encuentro_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
 							
 			});
 		</script>

@@ -55,13 +55,11 @@
 		<div class="texto_hermandad">
 			La hermandad se fundó en la Parroquia de Santiago en el año 1612. El primer titular de la hermandad era un Cristo crucificado con pelo natural y unas enagüillas de terciopelo bordadas en oro. Dicha imagen tenía la advocación de Caridad, igual que la imagen actual. Durante los primeros años la hermandad procesionaba con la única imagen de ese crucificado. En el año 1908 se sustituye por otro y se forma el misterio completo con las imágenes de la Virgen María, María Magdalena, el apóstol San Juan y el soldado romano Longinos. Sin embargo, en 1936 coincidiendo con la Guerra Civil, ambos Crucificados fueron destruidos. La hermandad se reorganiza en 1940, cuando  obtiene el actual titular y el actual misterio que procesionaron por primera vez en el año 1941. En el año 2006  es donada a la hermandad la imagen de una Virgen a la cual se le da el nombre de María Santísima de la Estrella.
 			<br><br>
-			Meter información de los pasos
-			<br><br>
 			Túnica de raso granate, botonadura hueso y grecas bordadas en mangas y bajos, fajín blanco con dos borlas, capillo hueso con la estampa del paso y capa hueso con la Cruz de Santiago. Guante blanco y zapato negro. Los hermanos portan cirios naturales.
 			<br><br>
-			Meter información de porteo
+			La imagen se porta a costal.
 			<br><br>
-			Meter información banda de música
+			Agrupación Musical Santo Tomás de Villanueva.
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -71,17 +69,13 @@
 		<div class="informacion_hermandad">
 			<b>Hábito:</b><br>
 			<img src="./resources/habitos/longinos.jpg" style="display:block">
-			<b>Templo de Residencia Canónica:</b><br>Convento de Santa Teresa.
+			<b>Ubicación del titular:</b><br>Capilla del Santísimo Cristo de la Caridad, Parroquia de Santiago Apóstol.
 			<br><br>
-			<b>Fundación:</b><br>1831.
+			<b>Fundación:</b><br>1612.
 			<br><br>
-			<b>Hermanos:</b><br>160.
+			<b>Insigina(s) destacadas:</b><br>ruz de Guía, imagen de Cristo Crucificado en tamaño académico, 1967.<br>Estandarte de Cristo, con una pintura de Cristina Soriano, 1987.<br>Estandarte del misterio, obra de Prado Ingelmo, 2001.<br>Libro de Reglas, de la orfebrería de Orovio de la Torre, 2007.<br>Cuatro ciriales en metal plateado y dorado, de la misma orfebrería, 2006.<br>Dos incensarios en metal plateado, también de Orovio de la Torre, 2006.
 			<br><br>
-			<b>Nazarenos:</b><br>90.
-			<br><br>
-			<b>Atributos de los Hermanos:</b><br>Cruz de Madera
-			<br><br>
-			<b>Culto(s) organizados:</b><br>Triduo al Santísimo Cristo de los Afligidos.
+			<b>Culto(s) organizados:</b><br>7, 8, 9 de marzo - Triduo en Honor al Titular.<br>14 de septiembre - Función con motivo de la Festividad de la Exaltación de la Cruz.
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -89,11 +83,24 @@
 		</div>
 		
 		<div class="informacion_hermandad">
-			Cofradía del Santisimo Cristo de los Afligidos.<br>
-			Convento de los Padres Carmelitas<br>
-			Plaza de la Santa, nº 2<br>
-			05001 - AVILA<br><br>			
-			afligidosavilahm@gmail.com 
+			Parroquia de Santiago Apóstol, Plaza de Santiago s/n, 13003 Ciudad Real<br>
+			<a id="web" href="http://hermandadsantisimocristodelacaridad.blogspot.com.es/">Página web</a><br>
+			<a id="twitter" href="https://twitter.com/hdad_caridadCR">Twitter</a>
+			<script>
+				$("a").on("click",function(e){
+					var url = $(this).attr('href');
+					var containHttp = new RegExp('http\\b');
+					var containHttps = new RegExp('https\\b');
+					if(containHttp.test(url)){
+						e.preventDefault();
+						window.open(url, "_system", "location=yes");
+					}
+					else if(containHttps.test(url)){
+						e.preventDefault();
+						window.open(url, "_system", "location=yes");
+					}
+				});
+			</script>
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -101,12 +108,12 @@
 		</div>
 		
 		<div id="ov_to_proce" class="enlace_a_procesion">
-			Via Matris (11 de Abril, Viernes de Dolores)
+			Cristo de la Caridad (2 de Abril, Jueves Santo)
 		</div>
 		<script>
 			$("#ov_to_proce").click(function(e){
 				
-				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_via_matris_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_longinos_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
 							
 			});
 		</script>

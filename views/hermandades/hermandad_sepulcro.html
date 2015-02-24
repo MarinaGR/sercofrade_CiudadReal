@@ -55,13 +55,11 @@
 		<div class="texto_hermandad">
 			Fundada en 1689 en la Parroquia de Santa María del Prado, actual Catedral, para venerar una imagen de Jesús muerto que recibía culto en uno  de los altares del Convento de las Madres Carmelitas Descalzas. Desde su fundación  en la Hermandad participaban los “armaos” que eran soldados y alabarderos. Los hermanos de túnica tuvieron que desaparecer en el siglo XIX, y sólo quedó  la compañía de los armaos hasta 1943, fecha en que se impuso la túnica actual. En 1892 la hermandad adquiere un nuevo paso que se componía únicamente por la Santa Cruz con el sudario. Posteriormente, en el año 1893 se añadió a este paso la imagen de la Virgen María colocándola delante de la cruz con la Corona de Espinas entre sus manos.
 			<br><br>
-			Meter información de los pasos
-			<br><br>
 			Túnica negra con botonadura blanca en túnica y bocamangas, cíngulo de seda blanco, capa también blanca con la cruz de Jerusalén en rojo bordada en el lado izquierdo; capillo de raso negro; guante blanco, calcetín y zapato negro. Los hermanos portan cirio de color blanco. 
 			<br><br>
-			Meter información de porteo
+			Porteo a costal, por 30 costaleros
 			<br><br>
-			Meter información banda de música
+			Procesión en silencio
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -71,17 +69,18 @@
 		<div class="informacion_hermandad">
 			<b>Hábito:</b><br>
 			<img src="./resources/habitos/sepulcro.jpg" style="display:block">
-			<b>Templo de Residencia Canónica:</b><br>Convento de Santa Teresa.
+			<br>
+			<b>Fundación:</b><br>1989.
 			<br><br>
-			<b>Fundación:</b><br>1831.
+			<b>Ubicación de los titulares:</b><br>
+			Santísimo Cristo de las Cinco Llagas<br>
+			Capilla del Santísimo de la Parroquia de Santa María del Prado (La Merced)<br>
+			Nuestra señora de la Pasión<br>
+			Convento de las Hermanas de la Cruz
 			<br><br>
-			<b>Hermanos:</b><br>160.
-			<br><br>
-			<b>Nazarenos:</b><br>90.
-			<br><br>
-			<b>Atributos de los Hermanos:</b><br>Cruz de Madera
-			<br><br>
-			<b>Culto(s) organizados:</b><br>Triduo al Santísimo Cristo de los Afligidos.
+			<b>Culto(s) organizados:</b><br>
+			Triduo en honor y gloria del Santísimo Cristo de las Cinco Llagas<br>
+			Nuestra Señora de la Pasión
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -89,11 +88,27 @@
 		</div>
 		
 		<div class="informacion_hermandad">
-			Cofradía del Santisimo Cristo de los Afligidos.<br>
-			Convento de los Padres Carmelitas<br>
-			Plaza de la Santa, nº 2<br>
-			05001 - AVILA<br><br>			
-			afligidosavilahm@gmail.com 
+			C/Rosa nº 1, 13003 Ciudad Real<br>
+			Parroquia Santa María del Prado (La Merced)
+			<br><br>			
+			<a href="http://santosepulcro.tk" class="enlace_externo">Página web</a>
+
+			<script>
+			$("a").on("click", function(e) {
+				var url = $(this).attr('href');
+				var containsHttp = new RegExp('http\\b'); 
+				var containsHttps = new RegExp('https\\b'); 
+				
+				if(containsHttp.test(url)) { 
+					e.preventDefault(); 
+					window.open(url, "_system", "location=yes"); 
+				}
+				else if(containsHttps.test(url)) { 
+					e.preventDefault(); 
+					window.open(url, "_system", "location=yes"); 
+				}
+			});						
+			</script>
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -101,12 +116,12 @@
 		</div>
 		
 		<div id="ov_to_proce" class="enlace_a_procesion">
-			Via Matris (11 de Abril, Viernes de Dolores)
+			Santo Sepulcro (3 de Abril, Viernes Santo)
 		</div>
 		<script>
 			$("#ov_to_proce").click(function(e){
 				
-				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_via_matris_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_sepulcro_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
 							
 			});
 		</script>

@@ -55,13 +55,11 @@
 		<div class="texto_hermandad">
 			La hermandad de Nuestra Señora de la Soledad es la más antigua de las que componen actualmente la Semana Santa de Ciudad Real. Los datos más antiguos datan de 1565. La antigua imagen de la Virgen de la Soledad fue destruida en la Guerra Civil. En 1941 salió el nuevo paso que entonces desfilaba sin palio. En 1945 la imagen fue sustituida por la actual. Ese mismo año desfiló un nuevo paso: la Santa Cruz únicamente con un sudario. En 1975 se añadió al paso la imagen de la Virgen de la Amargura que en principio iba orientada hacia la cruz en el paso. La hermandad siempre había realizado su estación de penitencia el Viernes Santo por la noche, pero desde el año 1956 se traslada a la noche del Sábado Santo.
 			<br><br>
-			Meter información de los pasos
-			<br><br>
 			Túnica de sarga negra con el capillo del mismo color que lleva bordado el escudo de la Hermandad a la altura del pecho. A la cintura se ceñirá con un cinturón de esparto de 12 centímetros, zapato y calcetín negro. Los hermanos alumbran con cirios.
 			<br><br>
-			Meter información de porteo
+			Porteo a costal, tiene una cuadrilla de 448 costaleros.
 			<br><br>
-			Meter información banda de música
+			Acompañamiento musical en el Paso del Misterio de Música de capilla, y en el Paso de Palio por la Banda Sinfónica "Reina de la Amargura" de Jaén.
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -71,17 +69,14 @@
 		<div class="informacion_hermandad">
 			<b>Hábito:</b><br>
 			<img src="./resources/habitos/soledad.jpg" style="display:block">
-			<b>Templo de Residencia Canónica:</b><br>Convento de Santa Teresa.
+			<br>
+			<b>Fundación:</b><br>1565.
 			<br><br>
-			<b>Fundación:</b><br>1831.
+			<b>Ubicación de los titulares:</b><br>Ntra. Sra. de la Soledad en la Parroquia de San Pedro y María Stma. de la Amargura y San Juan Evangelista en la Capilla de la Casa Hermandad.
 			<br><br>
-			<b>Hermanos:</b><br>160.
-			<br><br>
-			<b>Nazarenos:</b><br>90.
-			<br><br>
-			<b>Atributos de los Hermanos:</b><br>Cruz de Madera
-			<br><br>
-			<b>Culto(s) organizados:</b><br>Triduo al Santísimo Cristo de los Afligidos.
+			<b>Culto(s) organizados:</b><br>
+			En enero, Solemne Triduo y Función en honor a María Santísima del Consuelo, coincidiendo con la apertura del besamanos de la Santísima Virgen.<br>
+			En la segunda semana de cuarsema, Quinario en honor a Nuestro Padre Jesús de la Bondad y Solemne Función de Instituto con profesión de fe.
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -89,11 +84,28 @@
 		</div>
 		
 		<div class="informacion_hermandad">
-			Cofradía del Santisimo Cristo de los Afligidos.<br>
-			Convento de los Padres Carmelitas<br>
-			Plaza de la Santa, nº 2<br>
-			05001 - AVILA<br><br>			
-			afligidosavilahm@gmail.com 
+			Casa Hermandad situada en Paseo Carlos Eraña s/n (Bajos de Unicaja)
+			<br><br>			
+			<a href="http://www.sabadosdesoledad.blogspot.com" class="enlace_externo">Página web</a>
+			<br><br>
+			<a href="https://twitter.com/CDLAniversario" class="enlace_externo">Twitter</a>
+			
+			<script>
+			$("a").on("click", function(e) {
+				var url = $(this).attr('href');
+				var containsHttp = new RegExp('http\\b'); 
+				var containsHttps = new RegExp('https\\b'); 
+				
+				if(containsHttp.test(url)) { 
+					e.preventDefault(); 
+					window.open(url, "_system", "location=yes"); 
+				}
+				else if(containsHttps.test(url)) { 
+					e.preventDefault(); 
+					window.open(url, "_system", "location=yes"); 
+				}
+			});						
+			</script>
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -101,12 +113,12 @@
 		</div>
 		
 		<div id="ov_to_proce" class="enlace_a_procesion">
-			Via Matris (11 de Abril, Viernes de Dolores)
+			Soledad (4de Abril, Sábado Santo)
 		</div>
 		<script>
 			$("#ov_to_proce").click(function(e){
 				
-				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_via_matris_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_soledad_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
 							
 			});
 		</script>

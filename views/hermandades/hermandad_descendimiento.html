@@ -55,13 +55,11 @@
 		<div class="texto_hermandad">
 			La Hermandad de Esclavos del Descendimiento de la Cruz fue reorganizada en la Parroquia de Santa María del Prado, actual Catedral, el 19 de abril de 1688 con la efigie que se veneraba en la Capilla del Dulce Nombre de Jesús. Durante el siglo XVIII, se extinguió y se volvió a reorganizar el 7 de Abril de 1770. El Viernes Santo de 1771 salió en la procesión del Santo Entierro. Al crearse el Obispado Priorato en 1875, la hermandad pasó al templo de La Merced. Fue de nuevo reorganizada en 1889. En 1902 adquirió un nuevo conjunto escultórico del Descendimiento. Durante la Guerra Civil se perdió su patrimonio. Se reorganiza en 1939 cuando se celebró una junta con una representación del gremio de la construcción en la que se dio cuenta de la llegada del nuevo paso adquirido por la Comisión de Semana Santa. 
 			<br><br>
-			Meter información de los pasos
-			<br><br>
 			La túnica es de terciopelo negro con botonadura blanca, al igual que el capillo y el escapulario. Lleva en el capillo bordado el antiguo escudo de la hermandad. Cíngulo amarillo, zapato negro y guante blanco. Los hermanos portan faroles y cirios morados.
 			<br><br>
-			Meter información de porteo
+			Porteo a costal, por 40 costaleros.
 			<br><br>
-			Meter información banda de música
+			Acompañamiento musical de la Banda de Cornetas y Tambores Jesús Nazareno Rescatado de Valdepeñas
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -71,17 +69,15 @@
 		<div class="informacion_hermandad">
 			<b>Hábito:</b><br>
 			<img src="./resources/habitos/descendimiento.jpg" style="display:block">
-			<b>Templo de Residencia Canónica:</b><br>Convento de Santa Teresa.
+			<br>
+			<b>Fundación:</b><br>1688.
 			<br><br>
-			<b>Fundación:</b><br>1831.
+			<b>Ubicación de los titulares:</b><br>
+			Ermita de los Remedios
 			<br><br>
-			<b>Hermanos:</b><br>160.
-			<br><br>
-			<b>Nazarenos:</b><br>90.
-			<br><br>
-			<b>Atributos de los Hermanos:</b><br>Cruz de Madera
-			<br><br>
-			<b>Culto(s) organizados:</b><br>Triduo al Santísimo Cristo de los Afligidos.
+			<b>Culto(s) organizados:</b><br>
+			14, 15 y 16 de Marzo: Triduo al Santísimo Cristo del Amor<br>
+			13 de Abril: Función Principal de Instituto
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -89,11 +85,26 @@
 		</div>
 		
 		<div class="informacion_hermandad">
-			Cofradía del Santisimo Cristo de los Afligidos.<br>
-			Convento de los Padres Carmelitas<br>
-			Plaza de la Santa, nº 2<br>
-			05001 - AVILA<br><br>			
-			afligidosavilahm@gmail.com 
+			C/Rosa nº 1  Parroquia Santa María del Prado (La Merced)
+			<br><br>			
+			<a href="http://santodescendimiento.blogspot.com.es" class="enlace_externo">Página web</a>
+
+			<script>
+			$("a").on("click", function(e) {
+				var url = $(this).attr('href');
+				var containsHttp = new RegExp('http\\b'); 
+				var containsHttps = new RegExp('https\\b'); 
+				
+				if(containsHttp.test(url)) { 
+					e.preventDefault(); 
+					window.open(url, "_system", "location=yes"); 
+				}
+				else if(containsHttps.test(url)) { 
+					e.preventDefault(); 
+					window.open(url, "_system", "location=yes"); 
+				}
+			});						
+			</script>
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -101,12 +112,12 @@
 		</div>
 		
 		<div id="ov_to_proce" class="enlace_a_procesion">
-			Via Matris (11 de Abril, Viernes de Dolores)
+			Descendimiento (3 de Abril, Viernes Santo)
 		</div>
 		<script>
 			$("#ov_to_proce").click(function(e){
 				
-				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_via_matris_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_descendimiento_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
 							
 			});
 		</script>

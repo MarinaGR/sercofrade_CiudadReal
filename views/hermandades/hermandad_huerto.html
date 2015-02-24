@@ -55,13 +55,11 @@
 		<div class="texto_hermandad">
 			La hermandad se fundó en el año 1688 para dar culto al misterio de Jesucristo orando en el huerto a su Eterno Padre. En 1730 se redactan nuevas ordenanzas y en 1786 la hermandad traslada a la Parroquia de San Pedro. En 1911 la hermandad cambia el misterio tradicional por uno nuevo, que será pasto de las llamas en la guerra civil. En las primeras salidas procesionales los hermanos portaban palmas, siendo estas sustituidas a partir de 1967 por los actuales cetros niquelados. Desde el año  2005 el Cristo titular de la Hermandad está expuesto al culto en la Ermita de la Virgen de Alarcos, en la capilla de San Isidro Labrador.
 			<br><br>
-			Meter información de los pasos
-			<br><br>
 			La túnica es morada con botonadura granate, capillo y cíngulo de terciopelo granate, capa de raso color granate vivo, sandalia negra y guantes y calcetas blancas. Los hermanos portan cetro niquelado terminado en un cáliz rodeado por dos hojas de olivo.
 			<br><br>
-			Meter información de porteo
+			A dos hombros, por 40 portadores
 			<br><br>
-			Meter información banda de música
+			Banda de Cornetas y Tambores de Jesús Nazareno, de Fernancaballero en la Cruz de Guía y Agrupación Musical Santo Tomás de Villanueva, de Ciudad Real en el Misterio.
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -73,15 +71,11 @@
 			<img src="./resources/habitos/huerto.jpg" style="display:block">
 			<b>Templo de Residencia Canónica:</b><br>Convento de Santa Teresa.
 			<br><br>
-			<b>Fundación:</b><br>1831.
+			<b>Fundación:</b><br>1688.
 			<br><br>
-			<b>Hermanos:</b><br>160.
+			<b>Insignia(s):</b><br>Cruz de Guía en metal plateado de la orfebrería de Ramón Orovio de la Torre (1999).<br>Tres estandartes grandes y dos pequeños bordados por las Adoratrices de Ciudad Real (1951).<br>Estandarte del Cáliz de la Casa de Santa Rufina, de Madrid (1971).<br>Guión del Grupo Joven, antiguo guión de la Banda de Cornetas y Tambores de la Hermandad confeccionado por la casa de Rufina de Madrid.<br>Estandarte de Jesús y el Ángel bordados en los talleres de Carrasquilla en 1994.<br>Estandarte Corporativo bordado en oro por los talleres de García y Poo de Sevilla en 2002.<br>Estandarte con el escudo de la Hermandad bordado en oro sobre terciopelo morado obra del bordador valenciano D. Juan José Barber.
 			<br><br>
-			<b>Nazarenos:</b><br>90.
-			<br><br>
-			<b>Atributos de los Hermanos:</b><br>Cruz de Madera
-			<br><br>
-			<b>Culto(s) organizados:</b><br>Triduo al Santísimo Cristo de los Afligidos.
+			<b>Culto(s) organizados:</b><br>6, 7 y 8 de Marzo - Triduo en honor al Titular, 20.00 horas.<br>5 Abril. Conferencia "La Pascua de Jesús. De la Pascua judía a la cristiana" 20.00 horas en la Parroquia de San Juan Bautista.<br>Misa por lod Difuntos de la Hermandad de la Oración en el Huerto y la Hermandad de San Isidro Labrador en Mayo.<br>Acto en la Ermita de Alarcos, con motivo de la festividad de la Exaltación de la Cruz, en el mes de Septiembre.
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -89,11 +83,24 @@
 		</div>
 		
 		<div class="informacion_hermandad">
-			Cofradía del Santisimo Cristo de los Afligidos.<br>
-			Convento de los Padres Carmelitas<br>
-			Plaza de la Santa, nº 2<br>
-			05001 - AVILA<br><br>			
-			afligidosavilahm@gmail.com 
+			C/ Paloma, nº 15 C. P. 13003 Ciudad Real<br>
+			<a id="web" href="http://www.oracionenelhuertocr.com/">Página web</a><br>
+			<a id="twitter" href="https://twitter.com/Hdad_HuertoCR">Twitter</a>
+			<script>
+				$("a").on("click",function(e){
+					var url = $(this).attr('href');
+					var containHttp = new RegExp('http\\b');
+					var containHttps = new RegExp('https\\b');
+					if(containHttp.test(url)){
+						e.preventDefault();
+						window.open(url, "_system", "location=yes");
+					}
+					else if(containHttps.test(url)){
+						e.preventDefault();
+						window.open(url, "_system", "location=yes");
+					}
+				});
+			</script>
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -101,12 +108,12 @@
 		</div>
 		
 		<div id="ov_to_proce" class="enlace_a_procesion">
-			Via Matris (11 de Abril, Viernes de Dolores)
+			Oración en el Huerto (3 de Abril, Viernes Santo)
 		</div>
 		<script>
 			$("#ov_to_proce").click(function(e){
 				
-				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_via_matris_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_oracion_huerto_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
 							
 			});
 		</script>

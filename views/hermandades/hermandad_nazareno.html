@@ -55,13 +55,11 @@
 		<div class="texto_hermandad">
 			El 6 de marzo de 1725 se funda la hermandad en la sala capitular del Convento de Nuestra Señora del Rosario, para dar culto a la imagen de Jesús Nazareno. La hermandad permaneció en este convento hasta el año 1836. En 1837 la hermandad se traslada a a la Parroquia San Pedro. En la Guerra Civil, la imagen fue destruida. En 1941 se obtiene la actual imagen.
 			<br><br>
-			Meter información de los pasos
-			<br><br>
 			Túnica de terciopelo morado con escapulario y capillo blanco, fajín del mismo color sobre el que se coloca la medalla de la hermandad sobre un óvalo de terciopelo morado, guantes blancos y calcetín y zapato negro. Los hermanos portan farol eléctrico.
 			<br><br>
-			Meter información de porteo
+			La imagen se porta a costal, por una cuadrilla de 35 costaleros.
 			<br><br>
-			Meter información banda de música
+			Agrupación Musical Nuestra Señora de los Reyes de Sevilla.<br>Con composición musical dedicada "A tus Pies Padre Nazareno" de Mariano Infante Jurado (2006)
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -71,17 +69,13 @@
 		<div class="informacion_hermandad">
 			<b>Hábito:</b><br>
 			<img src="./resources/habitos/nazareno.jpg" style="display:block">
-			<b>Templo de Residencia Canónica:</b><br>Convento de Santa Teresa.
+			<b>Ubicación del titular:</b><br>Convento de Santa Teresa.
 			<br><br>
-			<b>Fundación:</b><br>1831.
+			<b>Fundación:</b><br>1725.
 			<br><br>
-			<b>Hermanos:</b><br>160.
+			<b>Insignia(s) destacadas:</b><br>Dos Gallardetes en terciopelo morado bordados en oro con pedrería del año 1915.<br>Estandarte de la Hermandad en aplique realizado por Enrique Ojeda en Ecija del año 1990.<br>Bandera de San Pedro bordada en oro sobre terciopelo morado realizada por Jesús Día Hellín Guide.<br>Cruz Guía Arbórea en madera de cedro del año 2006.<br>Libro de Reglas y Vara del Secretario de la Orfebrería de Orovio de la Torre del año 2006.<br>Seis Ciriales de metal cincelado y plateado de la Orfebrería Hermanos Delgado de Sevilla 2008.<br>Dos bocinas de metal cincelado y plateado de la Orfebrería de los Hermanos Delgado de Sevilla con paños bordados en oro fino sobre terciopelo morado por Jesús Día Hellín Guide del año.
 			<br><br>
-			<b>Nazarenos:</b><br>90.
-			<br><br>
-			<b>Atributos de los Hermanos:</b><br>Cruz de Madera
-			<br><br>
-			<b>Culto(s) organizados:</b><br>Triduo al Santísimo Cristo de los Afligidos.
+			<b>Culto(s) organizados:</b><br>Función Solemne el V Domingo de Cuaresma y Solemne Triduo los tres días previos.<br>Eucaristía de Difuntos en el mes de noviembre.<br>Eucaristía de Aniversario Fundacional de la Hermandad el 6 de enero.
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -89,11 +83,25 @@
 		</div>
 		
 		<div class="informacion_hermandad">
-			Cofradía del Santisimo Cristo de los Afligidos.<br>
-			Convento de los Padres Carmelitas<br>
-			Plaza de la Santa, nº 2<br>
-			05001 - AVILA<br><br>			
-			afligidosavilahm@gmail.com 
+			Casa Hermandad<br>
+			Avenida Alfonso X el Sabio nº 2, 1º A<br>
+			<a id="web" href="http://www.hermandadnazareno.org/">Página web</a><br>
+			<a id="twitter" href="https://twitter.com/nazarenocr">Twitter</a>
+			<script>
+				$("a").on("click",function(e){
+					var url = $(this).attr('href');
+					var containHttp = new RegExp('http\\b');
+					var containHttps = new RegExp('https\\b');
+					if(containHttp.test(url)){
+						e.preventDefault();
+						window.open(url, "_system", "location=yes");
+					}
+					else if(containHttps.test(url)){
+						e.preventDefault();
+						window.open(url, "_system", "location=yes");
+					}
+				});
+			</script>
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -101,12 +109,23 @@
 		</div>
 		
 		<div id="ov_to_proce" class="enlace_a_procesion">
-			Via Matris (11 de Abril, Viernes de Dolores)
+			Nazareno (22 de Marzo, Domingo de Pasión)
 		</div>
 		<script>
 			$("#ov_to_proce").click(function(e){
 				
-				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_via_matris_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_nazareno_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+			});
+		</script>
+		
+		<div id="ov_to_proce1" class="enlace_a_procesion">
+			Nazareno (3 de Abril, Viernes Santo)
+		</div>
+		<script>
+			$("#ov_to_proce1").click(function(e){
+				
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_nazareno_02.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
 							
 			});
 		</script>

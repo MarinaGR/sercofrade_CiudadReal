@@ -55,13 +55,11 @@
 		<div class="texto_hermandad">
 			Se desconoce la fecha de la fundación de esta hermandad pero hay documentos que reflejan que la hermandad ya existía en el año 1727. Tras pasar una serie de visicitudes, la hermandad se reorganiza en el año 1846. En 1936, con el inicio de la guerra civil el misterio de la hermandad  fue destruido. En 1940 la hermandad se vuelve a reorganizar. En 1944 la hermandad estrena el paso. Fue la primera Hermandad que sacó su misterio a costal en la Semana Santa de 1963. En 2008 incorpora en su salida procesional la imagen de un Niño Jesús portado por menores.
 			<br><br>
-			Meter información de los pasos
-			<br><br>
 			La túnica es de lana color hueso, manga perdida, botones y greca de la túnica color eminencia. Cinturón de raso del mismo color con dos cintas que penden del lado izquierdo rematadas con borlas de oro. Capillo de raso con el escudo de la hermandad bordado en oro. Se completa la túnica con zapato negro y guante blanco. Los hermanos portan farol electrónico.
 			<br><br>
-			Meter información de porteo
+			La imagen se porta a costal, a dos hombros por 32 costaleros.
 			<br><br>
-			Meter información banda de música
+			Un solo tambor para marcar el paso de los portadores.
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -71,17 +69,13 @@
 		<div class="informacion_hermandad">
 			<b>Hábito:</b><br>
 			<img src="./resources/habitos/pilatos.jpg" style="display:block">
-			<b>Templo de Residencia Canónica:</b><br>Convento de Santa Teresa.
+			<b>Ubicación del titular:</b><br>Parroquia de Santiago Apóstol
 			<br><br>
-			<b>Fundación:</b><br>1831.
+			<b>Fundación:</b><br>1727.
 			<br><br>
-			<b>Hermanos:</b><br>160.
+			<b>Insignia(s) destacadas:</b><br>Dos gallardetes diseñados por Felipe García Coronado, y confeccionados por las Monjas Concepcionistas en 1935.<br>Estandarte estrenado en la Semana Santa de 1959, obra de D. Juan Bermúdez Calahorra, representando la escena en que Poncio Pilato se dirige al pueblo pidiendo a quien dejar en libertad, si a Jesús Nazareno o a Barrabás.<br>Estandarte sobre terciopelo granate con el rostro del Cristo, pintado por el murciano D. Jesús Cerro Casado, entrenado en 1992.<br>Estandarte con pintura de Dña. Pilar Muñoz, estrenado en 1996.<br>Estandarte con un óleo, pintado por Dña. Ana Belén Díaz Burgos, estrenado en el año 2005.
 			<br><br>
-			<b>Nazarenos:</b><br>90.
-			<br><br>
-			<b>Atributos de los Hermanos:</b><br>Cruz de Madera
-			<br><br>
-			<b>Culto(s) organizados:</b><br>Triduo al Santísimo Cristo de los Afligidos.
+			<b>Culto(s) organizados:</b><br>11, 12 y 13 de Abril a las 19.30 horas Triduo.<br>16 de Abril trasladado del Titular desde la Parroquia hasta el Guardapasos.<br>1 de Mayo Cruz de Mayo del Grupo Joven de la Hermandad.<br>22 de Junio, elaboración de una alfombra de colores para el Corpus Christi por el Grupo Joven.<br>31 de Julio, ofrenda a la Virgen del Prado.<br>17 Noviembre, misa en memoria de los hermanos difuntos.<br>21 y 22 Noviembre campaña de Navidad.
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -89,11 +83,24 @@
 		</div>
 		
 		<div class="informacion_hermandad">
-			Cofradía del Santisimo Cristo de los Afligidos.<br>
-			Convento de los Padres Carmelitas<br>
-			Plaza de la Santa, nº 2<br>
-			05001 - AVILA<br><br>			
-			afligidosavilahm@gmail.com 
+			Casa Hermandad<br>
+			C/ Luz nº 13 1º A, 13003 Ciudad Real<br>
+			<a id="web" href="http://www.pilatos.es/">Página web</a><br>
+			<script>
+				$("a").on("click",function(e){
+					var url = $(this).attr('href');
+					var containHttp = new RegExp('http\\b');
+					var containHttps = new RegExp('https\\b');
+					if(containHttp.test(url)){
+						e.preventDefault();
+						window.open(url, "_system", "location=yes");
+					}
+					else if(containHttps.test(url)){
+						e.preventDefault();
+						window.open(url, "_system", "location=yes");
+					}
+				});
+			</script>
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -101,12 +108,12 @@
 		</div>
 		
 		<div id="ov_to_proce" class="enlace_a_procesion">
-			Via Matris (11 de Abril, Viernes de Dolores)
+			Ecce Homo (2 de Abril, Jueves Santo)
 		</div>
 		<script>
 			$("#ov_to_proce").click(function(e){
 				
-				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_via_matris_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_pilatos_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
 							
 			});
 		</script>
