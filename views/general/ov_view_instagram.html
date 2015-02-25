@@ -38,6 +38,22 @@
 				- INSTAGRAM #CRCOFRADE15 -
 			</div>
 			<iframe src="http://widget.websta.me/in/tag:crcofrade15/?s=100&w=2&h=5&b=1&p=5" allowtransparency="true" frameborder="0" scrolling="no" style="border:none;overflow:hidden;width:225px; height: 575px;display:block;margin:auto;" ></iframe> <!-- websta - web.stagram.com -->		
+			<script>
+			$("a").on("click", function(e) {
+				var url = $(this).attr('href');
+				var containsHttp = new RegExp('http\\b'); 
+				var containsHttps = new RegExp('https\\b'); 
+				
+				if(containsHttp.test(url)) { 
+					e.preventDefault(); 
+					window.open(url, "_system", "location=yes"); 
+				}
+				else if(containsHttps.test(url)) { 
+					e.preventDefault(); 
+					window.open(url, "_system", "location=yes"); 
+				}
+			});						
+			</script>
 		</div>
 				
 		<div class="ov_clear_floats"> </div>
