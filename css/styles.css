@@ -359,6 +359,14 @@ iframe {
 	position:relative;
 	height:auto;	
 }
+.ov_box_content_side{
+	display: block;
+	width: 95%;
+	padding: 0 1% 20px 1%;
+	/*background-color: #400B34;*/
+	height: auto;
+	margin: auto;	
+}
 .ov_text_info_title{
 	text-align:center;
 	font-size:1.3em;
@@ -572,6 +580,10 @@ iframe {
 	text-decoration: underline;
 	cursor: pointer;
 	display: block;
+}
+.informacion_hermandad img, .tunica {
+	margin: 5px auto;
+	height: 280px;
 }
 .enlace_a_procesion
 {
