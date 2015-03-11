@@ -122,7 +122,8 @@
 		<div style="margin:auto;width:90%">		
 
 			<div id="mapa_nazareno" class="iframe_route"></div>
-			<script>			
+			<script>
+			setTimeout(function() {
 				var lineSymbol = { path: google.maps.SymbolPath.FORWARD_OPEN_ARROW, scale: 2 };
 				$("#mapa_nazareno").gmap3({
 					map:{
@@ -184,6 +185,7 @@
 						}
 					}
 				});
+			}, 1000);
 			</script>
 		
 		</div>
