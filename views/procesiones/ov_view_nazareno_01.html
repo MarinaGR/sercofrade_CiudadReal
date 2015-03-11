@@ -119,16 +119,71 @@
 			(El mapa no se mostrará sin una conexión a Internet activa)
 		</div>
 		
-		<div style="margin:auto;width:90%">
-		
-			<iframe id="route_map" class="iframe_route" src=""> 
-				
-			</iframe>
-			<script>
-				route_map_url="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAD0H1_lbHwk3jMUzjVeORmISbIP34XtzU&origin=Calle General Rey, 1, Ciudad Real&destination=Calle General Rey, 1, Ciudad Real&avoid=tolls|highways&mode=walking&waypoints=38.984473, -3.926329|Calle Ruiz Morote, Ciudad Real|Calle Hernán Pérez del Pulgar, Ciudad Real|Plaza Pilar, Ciudad Real|Calle General Aguilera, Ciudad Real|Plaza Mayor, Ciudad Real|Calle María Cristina, Ciudad Real|Calle Feria, Ciudad Real|Calle Prado, Ciudad Real|Calle Camarín, Ciudad Real|Calle Caballeros, Ciudad Real|Pasaje de la Merced, Ciudad Real|Calle Toledo,17, Ciudad Real|Calle María Cristina, Ciudad Real|Calle Cruz, 1, Ciudad Real|Calle Paloma, Ciudad Real|Calle Ruiz Morote, Ciudad Real&language=es&zoom=15&center=38.984473, -3.926329";
-				setTimeout(function(){
-					$("#route_map").attr("src",route_map_url);
-				},2000);
+		<div style="margin:auto;width:90%">		
+
+			<div id="mapa_nazareno" class="iframe_route"></div>
+			<script>			
+				var lineSymbol = { path: google.maps.SymbolPath.FORWARD_OPEN_ARROW, scale: 2 };
+				$("#mapa_nazareno").gmap3({
+					map:{
+						options:{
+							center:[38.985864, -3.928438],
+							zoom:16
+						}
+					},
+					marker:{
+						values:[
+							{latLng:[38.984557, -3.926658], data:"San Pedro"}
+						]
+					},
+					polyline:{
+						options:{
+							strokeColor: "#6F65D5",
+							strokeOpacity: 0.6,
+							strokeWeight: 4,
+							icons: [{icon: lineSymbol, offset: '15%'},
+							{icon: lineSymbol, offset: '30%'},
+							{icon: lineSymbol, offset: '45%'},
+							{icon: lineSymbol, offset: '60%'},
+							{icon: lineSymbol, offset: '75%'},
+							{icon: lineSymbol, offset: '90%'},
+							],
+							path:[
+							[38.984557, -3.926658],
+							[38.984378, -3.926535],
+							[38.984299, -3.926776],
+							[38.984300, -3.926767],
+							[38.983372, -3.926572],
+							[38.983531, -3.927572],
+							[38.983608, -3.928465],
+							[38.983728, -3.928541],
+							[38.983833, -3.928750],
+							[38.984331, -3.928353],
+							[38.984554, -3.928269],
+							[38.984684, -3.928312],
+							[38.984834, -3.928218],
+							[38.985864, -3.928438],
+							[38.986337, -3.928481],
+							[38.985897, -3.929053],
+							[38.986866, -3.930549],
+							[38.986919, -3.930702],
+							[38.987338, -3.930423],
+							[38.987700, -3.929908],
+							[38.987306, -3.929662],
+							[38.987579, -3.929152],
+							[38.988017, -3.928404],
+							[38.986597, -3.928487],
+							[38.986525, -3.928379],
+							[38.986343, -3.928489],
+							[38.986003, -3.928438],
+							[38.986062, -3.927269],
+							[38.985115, -3.927202],
+							[38.984539, -3.926899],
+							[38.984300, -3.926767],
+							]
+						}
+					}
+				});
 			</script>
 		
 		</div>
