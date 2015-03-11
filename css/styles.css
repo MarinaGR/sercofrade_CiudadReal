@@ -640,13 +640,14 @@ iframe {
 }
 .iframe_route
 {
-	background-color:#91273E;
 	border:none;
 	width:100%;
-	height:500px;
+	height:450px;
+	/*background-color:#91273E;
 	background-image:url(../resources/general_images/loader.gif);
 	background-repeat:no-repeat;
-	background-position:center center;
+	background-position:center center;*/
+	
 }
 .iframe_route_02
 {
