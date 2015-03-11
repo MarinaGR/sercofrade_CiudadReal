@@ -1,37 +1,43 @@
 <!-- Volver -->
 <div  class="ov_back_button_container">
-	
+
 	<div class="ov_back_button_container_limited">
 		<div id="ov_back_button_3" class="ov_back_button_1">
 			<img src="./resources/general_images/atras.png" style="height:15px;display:inline"/> Volver
 		</div>
-		
+
 		<div id="ov_back_button_4" class="ov_back_button_2">
 			<img src="./resources/general_images/menu.png" style="height:15px;display:inline"/> Menú
 		</div>
 	</div>
-	
+
 </div>
-<div class="back_hollow_filler"> </div>
+<div class="back_hollow_filler"></div>
 <script>
-		$("#ov_back_button_3").click(function(e){
-			
-			onBackKeyDown();
-						
+	$("#ov_back_button_3").click(function(e) {
+
+		onBackKeyDown();
+
+	});
+	$("#ov_back_button_4").click(function(e) {
+
+		load_view({
+			view_to_load : 'ov_view_container_02',
+			url_to_load : './views/general/ov_view_main_menu.html',
+			view_background_color : '#EBEBEB',
+			view_background_image : 'none',
+			view_to_hide : 'ov_view_container_01'
 		});
-		$("#ov_back_button_4").click(function(e){
-			
-			load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/general/ov_view_main_menu.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
-						
-		});		
+
+	}); 
 </script>
 <!-- Volver -->
 <div class="ov_zone_general">
-	
+
 	<div class="ov_zone_limited_2">
-		
-		<div style="padding:10px;background-color:#5E3656">
-			
+
+		<div class="contenedor_escudo">
+
 			<div class="titulos_procesion">
 				MEDINACELI
 			</div>
@@ -39,11 +45,11 @@
 				31 de Marzo - Martes Santo
 			</div>
 			<div class="subtitulos_procesion">
-				Salida a las <b>19:00h</b> desde la Parroquia de Nuestra Señora del Pilar. 
+				Salida a las <b>19:00h</b> desde la Parroquia de Nuestra Señora del Pilar.
 			</div>
-			
+
 		</div>
-		
+
 		<div class="informacion_procesion">
 			La Hermandad organiza una salida procesional, en la tarde del Martes Santo.
 			La imagen se porta a costal, por una cuadrilla de 35 costaleros.
@@ -51,362 +57,395 @@
 			El exorno floral es de claveles blancos.
 			<br>
 		</div>
-		
+
 		<div class="titulos_hermandad">
 			ORGANIZA.
 		</div>
-		
+
 		<div id="ov_to_herman" class="enlace_a_hermandad">
 			Real Cofradía de Esclavitud de Nuestro Padre Jesús de Medinaceli y del Santísimo Niño del Remedio
 		</div>
 		<script>
-			$("#ov_to_herman").click(function(e){
-				
-				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/hermandades/hermandad_medinaceli.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
-							
+			$("#ov_to_herman").click(function(e) {
+
+				load_view({
+					view_to_load : 'ov_view_container_02',
+					url_to_load : './views/hermandades/hermandad_medinaceli.html',
+					view_background_color : '#EBEBEB',
+					view_background_image : 'none',
+					view_to_hide : 'ov_view_container_01'
+				});
+
 			});
 		</script>
-		
+
 		<div class="titulos_hermandad">
 			TÚNICA.
 		</div>
-		
+
 		<div class="informacion_procesion">
 			De color amarillo oro en forma de amplio manto, forros visibles de raso blanco, y puños con adornos dorados, sujeta con cíngulo morado y oro. Capillo morado con bordados en oro, escapulario grande bordado con el escudo de la cofradía, guante blanco, zapato y calcetín negro. Los hermanos portan farol eléctrico.
 			<img src="./resources/habitos/medinaceli.jpg" style="display:block" class="tunica" />
 		</div>
-		
+
 		<div class="titulos_hermandad">
 			PASOS.
 		</div>
-		
-		<div class="hollow_10px"> </div>
-		
+
+		<div class="hollow_10px"></div>
+
 		<div class="subtitulo_pasos">
 			Niño del Remedio
 		</div>
-		
+
 		<div class="informacion_pasos">
 			Autor: Adoratrices de Ciudad Real
 			<br>
 			Fecha: 1965
+			<br>
+			<br>
+			El Niño porta potencias en metal sobredorado y viste túnica de cola de color granate bordada en oro por las religiosas. El paso del niño es de estilo barroco, estrenado en 1965. Está dorado en pan de oro.
 			<br><br>
-			 El Niño porta potencias en metal sobredorado y viste túnica de cola de color granate bordada en oro por las religiosas. El paso del niño es de estilo barroco, estrenado en 1965. Está dorado en pan de oro.<br>Nuestro Padre Jesús Nazareno de Medinaceli. Obra de Faustino Sanz. El Señor viste túnica morada bordada en oro por las Hermanas del Stmo. Sacramento de Jaén (1993). Porta una corona de espinas en plata sobre dorada. Las manos las lleva maniatadas por un cordón de oro y sobre el pecho lleva el escapulario de los esclavos de la hermandad, elaborados en los talleres de Francisco Franco, de Sevilla. El paso del Cristo es de estilo barroco, estrenado en 1962 y ampliado en 1999, con respiraderos y canastilla dorada en pan de oro. Posse ocho candelabros guardabrisas. Delante del respiradero delantero lleva una imagen a escala de la Virgen del Pilar.
-			<p>Estrenos 2014</p>
-			Bañado en plata de la Antigua Imagen de la Virgen del Pilar, que porta el paso de misterio en el frontal, por Industrias Élite de Sevilla.<br>Cordones para Jesús de Medinaceli, confeccionados por D. Jesús Díaz-Hellín.<br>Gemelos para la camisa de procesión del Señor, de Industrias Élite de Sevilla.<br>Tableros de casetones que componen el frontal y la trasera del nuevo paso de Cristo.
-			<br><br>	
-			<img src="./resources/pasos/medinaceli.jpg" class="imagenes_pasos"/>			
+			<img src="./resources/pasos/ninoremedio.jpg" class="imagenes_pasos"/>
 		</div>
-											
+		<div class="hollow_10px"></div>
+
+		<div class="subtitulo_pasos">
+			Cristo de  Medinaceli
+		</div>
+
+		<div class="informacion_pasos">
+			Autor: Faustino Sanz
+			<br>
+			Fecha: 1962
+			<br><br<p></p>
+			Nuestro Padre Jesús Nazareno de Medinaceli. Obra de Faustino Sanz. El Señor viste túnica morada bordada en oro por las Hermanas del Stmo. Sacramento de Jaén (1993). Porta una corona de espinas en plata sobre dorada. Las manos las lleva maniatadas por un cordón de oro y sobre el pecho lleva el escapulario de los esclavos de la hermandad, elaborados en los talleres de Francisco Franco, de Sevilla. El paso del Cristo es de estilo barroco, estrenado en 1962 y ampliado en 1999, con respiraderos y canastilla dorada en pan de oro. Posse ocho candelabros guardabrisas. Delante del respiradero delantero lleva una imagen a escala de la Virgen del Pilar.
+			<br><p>
+				Estrenos 2015
+			</p>
+			Libro de Reglas
+			<br>
+			Restauración de la Cruz de Guía
+			<br>
+			Peana nueva de la Imagen del Señor
+			<br>
+			Cartelas traseras del paso elaboradas por el tallista cordobés José Carlos Rubio Valverde.
+			<br>
+			<br>
+			<img src="./resources/pasos/medinaceli.jpg" class="imagenes_pasos"/>
+		</div>
+
 		<div class="titulos_hermandad">
 			MÚSICA.
 		</div>
-		
+
 		<div class="informacion_procesion">
-			Agrupación Musical Santo Tomás de Villanueva (Ciudad Real)
+			Banda de Cornetas y Tambores San Juan Bautista de Pozuelo de Calatrava en la sección del Niño del Remedio.
+			<br>
+			Agrupación Musical Santo Tomás de Villanueva acompañando a Jesús de Medinaceli.
 		</div>
-		
+
 		<div class="titulos_hermandad">
 			RECORRIDO.
 		</div>
-		
+
 		<div class="informacion_procesion">
 			Con salida y llegada a la Parroquia de Nuestra Señora del Pilar.
 			La ruta se recorre en sentido horario.
 			(El mapa no se mostrará sin una conexión a Internet activa)
 		</div>
-		
+
 		<div style="margin:auto;width:90%">
-		
+
 			<iframe id="route_map" src="" width="600" height="450" frameborder="0" style="border:0"></iframe>
 
 			<script>
-				route_map_url="https://www.google.com/maps/embed?pb=!1m43!1m12!1m3!1d3101.1996447013175!2d-3.9241969764676345!3d38.98793969909201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m28!1i0!3e2!4m5!1s0xd6bc34813c077e5%3A0x6aea60df007dbfa4!2sCalle+D.+Pedro+Pardo+Garcia%2C+13004+Ciudad+Real%2C+Espa%C3%B1a!3m2!1d38.986009599999996!2d-3.9158267999999996!4m3!3m2!1d38.989164599999995!2d-3.9237495!4m3!3m2!1d38.9895115!2d-3.9240937999999996!4m3!3m2!1d38.9895248!2d-3.9255437!4m3!3m2!1d38.9869157!2d-3.9306942!4m3!3m2!1d38.9868583!2d-3.91708!5e0!3m2!1ses!2ses!4v1424346284494";
-				setTimeout(function(){
-					$("#route_map").attr("src",route_map_url);
-				},2000);
+				route_map_url = "https://www.google.com/maps/embed?pb=!1m43!1m12!1m3!1d3101.1996447013175!2d-3.9241969764676345!3d38.98793969909201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m28!1i0!3e2!4m5!1s0xd6bc34813c077e5%3A0x6aea60df007dbfa4!2sCalle+D.+Pedro+Pardo+Garcia%2C+13004+Ciudad+Real%2C+Espa%C3%B1a!3m2!1d38.986009599999996!2d-3.9158267999999996!4m3!3m2!1d38.989164599999995!2d-3.9237495!4m3!3m2!1d38.9895115!2d-3.9240937999999996!4m3!3m2!1d38.9895248!2d-3.9255437!4m3!3m2!1d38.9869157!2d-3.9306942!4m3!3m2!1d38.9868583!2d-3.91708!5e0!3m2!1ses!2ses!4v1424346284494";
+				setTimeout(function() {
+					$("#route_map").attr("src", route_map_url);
+				}, 2000);
 			</script>
-		
+
 		</div>
-		
-		<div class="hollow_10px"> </div>
-		
+
+		<div class="hollow_10px"></div>
+
 		<div class="titulos_hermandad">
 			ITINERARIO.
 		</div>
-		
+
 		<div class="informacion_procesion">
 			Pulsa sobre cualquier dirección para obtener una ruta desde tu posición actual.
 			(Necesitarás una conexión a Internet activa)
 		</div>
-		
+
 		<div id="geoloc_map_container" style="margin:auto;width:90%;display:none">
-		
-			<iframe id="geoloc_map" class="iframe_route_02" src=""> </iframe>
-			
+
+			<iframe id="geoloc_map" class="iframe_route_02" src=""></iframe>
+
 			<div id="geoloc_map_text" style="font-family:'4';font-size:1.2em;color:#333;padding:10px 10px;text-align:center;">
 				Espere, calculando ruta...
 			</div>
-			
+
 			<div class="ov_button_01" onclick="$('#geoloc_map_container').hide()">
 				Ocultar
 			</div>
-			
-			<div class="hollow_10px"> </div>
-			
+
+			<div class="hollow_10px"></div>
+
 			<div class="ov_button_01" onclick="show_geoloc(destination);">
 				Actualizar
-			</div>			
-			
+			</div>
+
 		</div>
-		
+
 		<div id="ov_place_1" class="punto_a_ruta">
 			Calle Virgen De La Blanca
 		</div>
 		<script>
-			$("#ov_place_1").click(function(e){
+			$("#ov_place_1").click(function(e) {
 				show_geoloc("Calle Virgen De La Blanca, Ciudad Real");
 			});
 		</script>
-		
+
 		<div id="ov_place_2" class="punto_a_ruta">
 			Calle Virgen De Begoña
 		</div>
 		<script>
-			$("#ov_place_2").click(function(e){
+			$("#ov_place_2").click(function(e) {
 				show_geoloc("Calle Virgen De Begoña, Ciudad Real");
 			});
 		</script>
-		
+
 		<div id="ov_place_3" class="punto_a_ruta">
 			Carretera De Carrión
 		</div>
 		<script>
-			$("#ov_place_3").click(function(e){
+			$("#ov_place_3").click(function(e) {
 				show_geoloc("Carretera De Carrion, Ciudad Real");
 			});
 		</script>
-		
+
 		<div id="ov_place_4" class="punto_a_ruta">
 			Calle Marta
 		</div>
 		<script>
-			$("#ov_place_4").click(function(e){
+			$("#ov_place_4").click(function(e) {
 				show_geoloc("Calle Marta, Ciudad Real");
 			});
 		</script>
-		
+
 		<div id="ov_place_5" class="punto_a_ruta">
 			Calle Alonso Quijano
 		</div>
 		<script>
-			$("#ov_place_5").click(function(e){
+			$("#ov_place_5").click(function(e) {
 				show_geoloc("Calle Alonso Quijano, Ciudad Real");
 			});
 		</script>
-		
+
 		<div id="ov_place_6" class="punto_a_ruta">
 			Calle Libertad
 		</div>
 		<script>
-			$("#ov_place_6").click(function(e){
+			$("#ov_place_6").click(function(e) {
 				show_geoloc("Calle Libertad, Ciudad Real");
 			});
 		</script>
-		
+
 		<div id="ov_place_7" class="punto_a_ruta">
 			Calle Juan De Avila
 		</div>
 		<script>
-			$("#ov_place_7").click(function(e){
+			$("#ov_place_7").click(function(e) {
 				show_geoloc("Calle Juan De Avila, Ciudad Real");
 			});
 		</script>
-		
+
 		<div id="ov_place_8" class="punto_a_ruta">
 			Calle Felipe II
 		</div>
 		<script>
-			$("#ov_place_8").click(function(e){
+			$("#ov_place_8").click(function(e) {
 				show_geoloc("Calle Felipe II, Ciudad Real");
 			});
 		</script>
-		
+
 		<div id="ov_place_9" class="punto_a_ruta">
 			Calle Cañas
 		</div>
 		<script>
-			$("#ov_place_9").click(function(e){
+			$("#ov_place_9").click(function(e) {
 				show_geoloc("Calle Cañas, Ciudad Real");
 			});
 		</script>
-		
+
 		<div id="ov_place_10" class="punto_a_ruta">
 			Plaza Inmaculada
 		</div>
 		<script>
-			$("#ov_place_10").click(function(e){
+			$("#ov_place_10").click(function(e) {
 				show_geoloc("Plaza Inmaculada, Ciudad Real");
 			});
 		</script>
-				
+
 		<div id="ov_place_11" class="punto_a_ruta">
 			Calle Lirio
 		</div>
 		<script>
-			$("#ov_place_11").click(function(e){
+			$("#ov_place_11").click(function(e) {
 				show_geoloc("Calle Lirio, Ciudad Real");
 			});
 		</script>
-				
+
 		<div id="ov_place_12" class="punto_a_ruta">
 			Calle Norte
 		</div>
 		<script>
-			$("#ov_place_12").click(function(e){
+			$("#ov_place_12").click(function(e) {
 				show_geoloc("Calle Norte, Ciudad Real");
 			});
 		</script>
-		
+
 		<div id="ov_place_13" class="punto_a_ruta">
 			Plaza De Santiago
 		</div>
 		<script>
-			$("#ov_place_13").click(function(e){
+			$("#ov_place_13").click(function(e) {
 				//show_geoloc("");
 			});
 		</script>
-				
+
 		<div id="ov_place_14" class="punto_a_ruta">
 			Calle Ángel
 		</div>
 		<script>
-			$("#ov_place_14").click(function(e){
+			$("#ov_place_14").click(function(e) {
 				show_geoloc("Calle Angel, Ciudad Real");
 			});
 		</script>
-		
+
 		<div id="ov_place_15" class="punto_a_ruta">
 			Calle Jacinto
 		</div>
 		<script>
-			$("#ov_place_15").click(function(e){
+			$("#ov_place_15").click(function(e) {
 				show_geoloc("Calle Jacinto, Ciudad Real");
 			});
 		</script>
-				
+
 		<div id="ov_place_16" class="punto_a_ruta">
 			Calle Toledo
 		</div>
 		<script>
-			$("#ov_place_16").click(function(e){
+			$("#ov_place_16").click(function(e) {
 				show_geoloc("Calle Toledo, Ciudad Real");
 			});
 		</script>
-				
+
 		<div id="ov_place_17" class="punto_a_ruta">
 			Plaza De La Merced
 		</div>
 		<script>
-			$("#ov_place_17").click(function(e){
+			$("#ov_place_17").click(function(e) {
 				show_geoloc("Plaza De Merced, Ciudad Real");
 			});
 		</script>
-				
+
 		<div id="ov_place_18" class="punto_a_ruta">
 			Pasaje De La Merced
 		</div>
 		<script>
-			$("#ov_place_18").click(function(e){
+			$("#ov_place_18").click(function(e) {
 				show_geoloc("Pasaje De La Merced, Ciudad Real");
 			});
 		</script>
-				
+
 		<div id="ov_place_19" class="punto_a_ruta">
 			Calle Caballeros
 		</div>
 		<script>
-			$("#ov_place_19").click(function(e){
+			$("#ov_place_19").click(function(e) {
 				show_geoloc("Calle Caballeros, Ciudad Real");
 			});
 		</script>
-				
+
 		<div id="ov_place_20" class="punto_a_ruta">
 			Calle Camarín
 		</div>
 		<script>
-			$("#ov_place_20").click(function(e){
+			$("#ov_place_20").click(function(e) {
 				show_geoloc("Calle Camarin, Ciudad Real");
 			});
 		</script>
-		
+
 		<div id="ov_place_21" class="punto_a_ruta">
 			Paseo Del Prado
 		</div>
 		<script>
-			$("#ov_place_21").click(function(e){
+			$("#ov_place_21").click(function(e) {
 				show_geoloc("Paseo Del Prado, Ciudad Real");
 			});
 		</script>
-		
+
 		<div id="ov_place_22" class="punto_a_ruta">
 			Plaza Mayor
 		</div>
 		<script>
-			$("#ov_place_22").click(function(e){
+			$("#ov_place_22").click(function(e) {
 				show_geoloc("Plaza Mayor, Ciudad Real");
 			});
 		</script>
-		
+
 		<div id="ov_place_23" class="punto_a_ruta">
 			Calle Encuentro
 		</div>
 		<script>
-			$("#ov_place_23").click(function(e){
+			$("#ov_place_23").click(function(e) {
 				show_geoloc("Calle Encuentro, Ciudad Real");
 			});
 		</script>
-		
+
 		<div id="ov_place_24" class="punto_a_ruta">
 			Calle Cuchilleria
 		</div>
 		<script>
-			$("#ov_place_24").click(function(e){
+			$("#ov_place_24").click(function(e) {
 				show_geoloc("Calle Cuchilleria, Ciudad Real");
 			});
 		</script>
-		
+
 		<div id="ov_place_25" class="punto_a_ruta">
 			Calle Lanza
 		</div>
 		<script>
-			$("#ov_place_25").click(function(e){
+			$("#ov_place_25").click(function(e) {
 				show_geoloc("Calle Lanza, Ciudad Real");
 			});
 		</script>
-		
+
 		<div id="ov_place_26" class="punto_a_ruta">
 			Calle Mata
 		</div>
 		<script>
-			$("#ov_place_26").click(function(e){
+			$("#ov_place_26").click(function(e) {
 				show_geoloc("Calle Mata, Ciudad Real");
 			});
 		</script>
-		
+
 		<div id="ov_place_27" class="punto_a_ruta">
 			Carretera Carrion
 		</div>
 		<script>
-			$("#ov_place_27").click(function(e){
+			$("#ov_place_27").click(function(e) {
 				show_geoloc("Carretera Carrion, Ciudad Real");
 			});
 		</script>
-				
-		<div class="hollow_10px"> </div>
-		<div class="hollow_10px"> </div>
-		<div class="hollow_10px"> </div>						
-		
+
+		<div class="hollow_10px"></div>
+		<div class="hollow_10px"></div>
+		<div class="hollow_10px"></div>
+
 	</div>
-	
-</div>	
+
+</div>

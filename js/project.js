@@ -6,10 +6,10 @@ var current_url="./index.html";
 var previous_view="ov_view_container_01";
 var previous_url="./index.html";
 
-var current_view_background_color="#6B135B";
+var current_view_background_color="#A02B44";
 var current_view_background_image="url(./resources/general_images/loading_background.jpg)";
 
-var prev_view_background_color="#6B135B";
+var prev_view_background_color="#A02B44";
 var prev_view_background_image="url(./resources/general_images/loading_background.jpg)";
 
 
@@ -154,7 +154,7 @@ function onBodyLoad()
 		
 	$('#ov_view_container_02').css("min-height",(viewport_height-60)+"px");
 	
-	load_view({view_to_load: 'ov_view_container_01', url_to_load: './views/general/ov_view_loading.html', view_background_color: '#6B135B', view_background_image: 'url(./resources/general_images/loading_background.jpg)', view_to_hide: 'ov_view_container_02' });	
+	load_view({view_to_load: 'ov_view_container_01', url_to_load: './views/general/ov_view_loading.html', view_background_color: '#A02B44', view_background_image: 'url(./resources/general_images/loading_background.jpg)', view_to_hide: 'ov_view_container_02' });	
 			
 }
 

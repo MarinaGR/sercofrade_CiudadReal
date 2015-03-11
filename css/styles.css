@@ -3,9 +3,10 @@
 @font-face{font-family: "3";src: url("./../resources/fonts/TitilliumWeb-Bold.ttf") format("truetype");}
 @font-face{font-family: "4";src: url("./../resources/fonts/TitilliumWeb-Light.ttf") format("truetype");}
 
+
 body
 {
-	background-color:#5E3656;
+	background-color:#91273E;
 	font-size:12px;
 	margin:0px;
 }
@@ -23,7 +24,7 @@ iframe {
 	height:100%;
 	z-index:1200;
 	opacity:0.95;
-	background-color:#5E3656;
+	background-color:#91273E;
 	background-image:url(./../resources/general_images/loader.gif);
 	background-repeat:no-repeat;
 	background-position:center center;
@@ -49,6 +50,7 @@ iframe {
 	background-position:center center;
 	background-image:none;
 	background-size:cover;
+	background-color:#91273E;
 }
 
 .ov_zone_general
@@ -140,7 +142,7 @@ iframe {
 	width:100%;	
 	height:6px;
 	min-height:6px;
-	background-color:#5E3656;
+	background-color:#91273E;
 }
 
 .hollow_10px{
@@ -230,7 +232,7 @@ iframe {
 {
 	font-size:1.5em;
 	font-family:"2";
-	color:#5E3656;
+	color:#91273E;
 	padding-top:5px;
 	padding-left:10px;
 	padding-bottom:0px;
@@ -241,7 +243,7 @@ iframe {
 {
 	font-size:1.1em;
 	font-family:"4";
-	color:#5E3656;
+	color:#91273E;
 	padding-left:10px;
 	line-height:12px;
 	padding-top:5px;
@@ -267,7 +269,7 @@ iframe {
 	margin:auto;
 	width:90%;
 	position:relative;
-	background-color:#5E3656;
+	background-color:#91273E;
 	cursor:pointer
 }
 .ov_small_menu_item_title
@@ -310,9 +312,9 @@ iframe {
 }
 .back_hollow_filler
 {
-	height:80px;
-	max-height:80px;
-	min-height:75px;
+	height:70px;
+	max-height:70px;
+	min-height:65px;
 }
 .ov_back_button_1{
 	float:left;
@@ -355,7 +357,7 @@ iframe {
 	float:left;
 	width:68%;	
 	padding: 0 1% 20px 1%;
-	background-color:#400B34;
+	background-color:#591229;
 	position:relative;
 	height:auto;	
 }
@@ -363,7 +365,7 @@ iframe {
 	display: block;
 	width: 95%;
 	padding: 0 1% 20px 1%;
-	/*background-color: #400B34;*/
+	/*background-color: #591229;*/
 	height: auto;
 	margin: auto;	
 }
@@ -385,7 +387,7 @@ iframe {
 }
 /*calendar */
 #ov_calendar_container{
-	background-color:#5E3656;
+	background-color:#91273E;
 	margin:auto;
 	max-width:700px;
 }
@@ -525,7 +527,7 @@ iframe {
 	text-decoration:underline
 }
 /*proce view */
-.ov_button_01{text-align:center;margin:auto;width:180px;max-width:180px;padding:5px 0px;color:#FFF;font-family:"1";font-size:1em;cursor:pointer;background-color:#5E3656;}
+.ov_button_01{text-align:center;margin:auto;width:180px;max-width:180px;padding:5px 0px;color:#FFF;font-family:"1";font-size:1em;cursor:pointer;background-color:#91273E;}
 
 .ov_button_01:hover{text-align:center;margin:auto;width:180px;max-width:180px;padding:5px 0px;color:#FFF;font-family:"1";font-size:1em;cursor:pointer;background-color:#333;}
 
@@ -533,7 +535,7 @@ iframe {
 .contenedor_escudo
 {
 	padding:10px;
-	background-color:#5E3656;
+	background-color:#91273E;
 	color:#FFF;
 }
 .texto_hermandad 
@@ -562,7 +564,7 @@ iframe {
 	color:#FFF;
 	padding:10px;
 	text-align:left;
-	background-color:#5E3656;
+	background-color:#91273E;
 }
 .titulos_procesion
 {
@@ -599,7 +601,7 @@ iframe {
 .informacion_hermandad a {
 	font-family: '4';
 	font-size: 1.1em;
-	color: #5E3656;
+	color: #91273E;
 	margin: 5px 10px;
 	text-decoration: underline;
 	cursor: pointer;
@@ -613,7 +615,7 @@ iframe {
 {
 	font-family:'4';
 	font-size:1.2em;
-	color:#5E3656;
+	color:#91273E;
 	padding:20px 10px;
 	text-align:center;
 	text-decoration:underline;
@@ -638,7 +640,7 @@ iframe {
 }
 .iframe_route
 {
-	background-color:#5E3656;
+	background-color:#91273E;
 	border:none;
 	width:100%;
 	height:500px;
@@ -648,7 +650,7 @@ iframe {
 }
 .iframe_route_02
 {
-	background-color:#5E3656;
+	background-color:#91273E;
 	border:none;
 	width:100%;
 	height:400px;
@@ -660,7 +662,7 @@ iframe {
 {
 	font-family:'4';
 	font-size:1.2em;
-	color:#5E3656;
+	color:#91273E;
 	padding:5px 10px;
 	text-align:center;
 	text-decoration:underline;
