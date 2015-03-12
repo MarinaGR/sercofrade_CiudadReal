@@ -118,14 +118,72 @@
 		
 		<div style="margin:auto;width:90%">
 		
-			<iframe id="route_map" class="iframe_route" src=""> 
-				
-			</iframe>
+			<div id="mapa_jesus_caido" class="iframe_route"></div>
 			<script>
-				route_map_url="https://www.google.com/maps/embed?pb=!1m57!1m12!1m3!1d3101.228938753488!2d-3.9284965680097774!3d38.98727105778487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m42!1i0!3e2!4m3!3m2!1d38.984427499999995!2d-3.9262953!4m3!3m2!1d38.9845897!2d-3.9269193999999996!4m3!3m2!1d38.9869655!2d-3.9278505999999997!4m3!3m2!1d38.989593299999996!2d-3.9282152999999997!4m5!1s0xd6bc36be811aa7f%3A0x7c8f8fc4a1097ce1!2sPlaza+Carmen%2C+13003+Ciudad+Real!3m2!1d38.9887825!2d-3.9304899!4m5!1s0xd6bc36b836466bb%3A0x30b72de509514a58!2sCalle+Azucena%2C+Ciudad+Real!3m2!1d38.9870641!2d-3.9311423!4m3!3m2!1d38.9859898!2d-3.9289313!4m3!3m2!1d38.985999!2d-3.9284388999999997!4m3!3m2!1d38.9844009!2d-3.9268185!5e0!3m2!1ses!2ses!4v1424344335922";
-				setTimeout(function(){
-					$("#route_map").attr("src",route_map_url);
-				},2000);
+			setTimeout(function() {
+				var lineSymbol = { path: google.maps.SymbolPath.FORWARD_OPEN_ARROW, scale: 2 };
+				$("#mapa_jesus_caido").gmap3({
+					map:{
+					options:{
+					center:[38.988013, -3.928411],
+					zoom:15
+					}
+					},
+					marker:{
+					values:[
+					{latLng:[38.984557, -3.926658], data:"San Pedro"}]
+					},
+					polyline:{
+					options:{
+						strokeColor: "#6F65D5",
+						strokeOpacity: 0.6,
+						strokeWeight: 4,
+						icons: [{icon: lineSymbol, offset: '15%'},
+						{icon: lineSymbol, offset: '30%'},
+						{icon: lineSymbol, offset: '45%'},
+						{icon: lineSymbol, offset: '60%'},
+						{icon: lineSymbol, offset: '75%'},
+						{icon: lineSymbol, offset: '90%'},
+						],
+						path:[
+
+						[38.984557, -3.926658],
+						
+						[38.984351, -3.926598],
+						[38.984304, -3.926771],
+						
+						[38.984588, -3.926919],
+						[38.985122, -3.927198],
+						[38.986130, -3.927263],
+						[38.987328, -3.927416],
+						[38.986534, -3.928395],
+						[38.986601, -3.928476],
+						[38.988144, -3.928401],
+						[38.988717, -3.928293],
+						[38.989778, -3.928212],
+						[38.989588, -3.928952],
+						[38.989415, -3.929438],
+						[38.988819, -3.930349],
+						[38.988827, -3.930422],
+						[38.988737, -3.930551],
+						[38.988583, -3.930483],
+						[38.988534, -3.930562],
+						[38.987864, -3.930790],
+						[38.987064, -3.931147],		
+						
+						[38.986870, -3.930573],
+						[38.985890, -3.929047],
+						
+						[38.984962, -3.928590],
+						
+						[38.985104, -3.927191],
+						[38.984589, -3.926928],
+						
+						]
+						}
+					}
+				});
+			},1000);
 			</script>
 		
 		</div>
