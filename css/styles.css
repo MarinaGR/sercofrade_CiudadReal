@@ -327,11 +327,11 @@ iframe {
 	overflow:hidden;
 	text-align:center;
 	cursor:pointer;
-	width:150px;
+	width:120px;
 	border-radius:5px;	
 }
 .ov_back_button_2{
-	float:right;
+	float:left;
 	font-size:18px;
 	font-family:"1";
 	background-color:#FFF;
@@ -341,9 +341,24 @@ iframe {
 	overflow:hidden;
 	text-align:center;
 	cursor:pointer;
-	width:150px;
+	width:120px;
 	border-radius:5px;	
 }
+.ov_back_button_3{
+	float: right;
+	font-size: 18px;
+	font-family: "1";
+	background-color: #FFF;
+	color: #333;
+	height: 30px;
+	padding-top: 0px;
+	overflow: hidden;
+	text-align: center;
+	cursor: pointer;
+	width: 60px;
+	border-radius: 5px;
+}
+
 .ov_box_empty_side{
 	float:left;
 	width:30%;
@@ -456,11 +471,11 @@ iframe {
 	
 }
 .ov_box_14{
-	width:45%;
+	width:48%;
 	float:left
 }
 .ov_box_15{
-	width:55%;
+	width:52%;
 	float:left
 }
 .ov_box_16{
@@ -476,7 +491,7 @@ iframe {
 }
 .ov_text_12{
 	text-align:left;
-	font-size:1.7em;
+	font-size:1.6em;
 	font-family:"3";
 	color:#FFF;
 	padding:10px;
