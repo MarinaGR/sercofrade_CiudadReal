@@ -304,6 +304,8 @@ iframe {
 	display:none;
 	overflow:hidden;
 	top: 80px;
+	background: #fff url(../resources/general_images/escudo.jpg) no-repeat right;
+	background-size: 50px;
 }
 .ov_back_button_container_limited
 {
@@ -327,7 +329,7 @@ iframe {
 	overflow:hidden;
 	text-align:center;
 	cursor:pointer;
-	width:120px;
+	width:130px;
 	border-radius:5px;	
 }
 .ov_back_button_2{
@@ -341,7 +343,7 @@ iframe {
 	overflow:hidden;
 	text-align:center;
 	cursor:pointer;
-	width:120px;
+	width:130px;
 	border-radius:5px;	
 }
 .ov_back_button_3{
