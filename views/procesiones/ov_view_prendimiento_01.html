@@ -36,7 +36,7 @@
 				PRENDIMIENTO
 			</div>
 			<div class="subtitulos_procesion">
-				29 de Marzo - Domingo de Ramos
+				20 de Marzo - Domingo de Ramos
 			</div>
 			<div class="subtitulos_procesion">
 				Salida a las <b>18:00h</b> desde la Parroquia de Nuestra Señora de los Ángeles.
@@ -92,12 +92,7 @@
 			Fecha: 2000
 			<br><br>
 			Jesús Cautivo viste túnica blanca con cordón y cinturón de oro. Lleva potencias sobre doradas. El soldado romano lleva espada, casco y coraza de metal dorado  y viste túnica negra que le llega a la altura de las rodillas y capa azul. El sayón viste faldilla corta y faja hebrea y lleva sujeta la cuerda que ata las manos de Jesús. La imagen de Judas va vestida con túnica azul oscura y beca en color obre portando en la mano izquierda una bolsa. 
-			<p>Estrenos 2015</p>
-			2 Palermos, 7 Varas corporativas, 5 varas de insignias, Cruz Parroquial y dos ciriales de Cruz Parroquial de la Orfebrería Santos Campanario de Sevilla.
-			<br>Túnica de capilla de terciopelo morado para Jesús Cautivo.
-			<br>Llamador para el paso de palio de Orfebrería Hijos de Juan Fernández.
-			<br>Saya bordada sobre tisú de plata con cotilla para María Santísima de la Salud.
-			<br<<br>
+			<br><br>
 			<img src="./resources/pasos/prendimiento.jpg" class="imagenes_pasos"/>			
 		</div>
 											
@@ -127,83 +122,118 @@
 				var lineSymbol = { path: google.maps.SymbolPath.FORWARD_OPEN_ARROW, scale: 2 };
 				$("#mapa_prendimiento").gmap3({
 					map:{
-					options:{
-					center:[38.983872, -3.927417],
-					zoom:15
-					}
+						options:{
+						center:[38.982888, -3.926342],
+						zoom:15
+						}
 					},
 					marker:{
-					values:[
-					{latLng:[38.979464, -3.923509], data:"Calle Madrid"}]
+						values:[
+						{latLng:[38.979589, -3.923818], data:"Calle Madrid"}]
 					},
 					polyline:{
 					options:{
 						strokeColor: "#6F65D5",
 						strokeOpacity: 0.6,
 						strokeWeight: 4,
-						icons: [{icon: lineSymbol, offset: '10%'},
-						{icon: lineSymbol, offset: '20%'},
-						{icon: lineSymbol, offset: '30%'},
-						{icon: lineSymbol, offset: '40%'},
-						{icon: lineSymbol, offset: '50%'},
-						{icon: lineSymbol, offset: '60%'},
-						{icon: lineSymbol, offset: '70%'},
-						{icon: lineSymbol, offset: '80%'},
-						{icon: lineSymbol, offset: '90%'},
-						],
+						icons: [{icon: lineSymbol, offset: '3%'},
+								{icon: lineSymbol, offset: '10%'},
+								{icon: lineSymbol, offset: '15%'},
+								{icon: lineSymbol, offset: '20%'},
+								{icon: lineSymbol, offset: '25%'},
+								{icon: lineSymbol, offset: '30%'},
+								{icon: lineSymbol, offset: '35%'},
+								{icon: lineSymbol, offset: '40%'},
+								{icon: lineSymbol, offset: '45%'},
+								{icon: lineSymbol, offset: '50%'},
+								{icon: lineSymbol, offset: '55%'},
+								{icon: lineSymbol, offset: '60%'},
+								{icon: lineSymbol, offset: '65%'},
+								{icon: lineSymbol, offset: '70%'},
+								{icon: lineSymbol, offset: '75%'},
+								{icon: lineSymbol, offset: '80%'},
+								{icon: lineSymbol, offset: '85%'},
+								{icon: lineSymbol, offset: '90%'},
+								{icon: lineSymbol, offset: '98%'},
+								],
 						path:[
 
-						[38.979464, -3.923509],
-						[38.979994, -3.924338],
-
-						[38.980373, -3.923944],
-						[38.980750, -3.923501],
-						[38.981636, -3.925075],
-						[38.981772, -3.925070],
-						[38.982679, -3.925802],
-						[38.982845, -3.925840],
-
-						[38.983065, -3.925681],
-						[38.983649, -3.925303],
-						[38.983999, -3.925193],
-						[38.984794, -3.925185],
-						[38.985069, -3.926518],
-						[38.985040, -3.927164],
-						[38.985117, -3.927204],
-						[38.984989, -3.928280],
-						[38.985846, -3.928435],
-						[38.986340, -3.928489],
-						[38.985909, -3.929052],
-						[38.986768, -3.930375],
-						[38.986924, -3.930697],
-						[38.987337, -3.930410],
-
-						[38.987700, -3.929908],
-						[38.987308, -3.929661],
-						[38.987599, -3.929096],
-						[38.988016, -3.928412],
-						[38.986609, -3.928487],
-						[38.986530, -3.928387],
-						[38.986340, -3.928484],
-						[38.986000, -3.928433],
-						[38.986067, -3.927266],
-						[38.985154, -3.927210],
-						[38.984303, -3.926765],
-						[38.983317, -3.926569],
-						[38.982806, -3.926062],
-						[38.982683, -3.926070],
-						[38.982629, -3.925906],
-						[38.981845, -3.925311],
-						[38.981670, -3.925367],
-						[38.981572, -3.925204],
-						[38.981632, -3.925070],
-						[38.980438, -3.923002],
-						[38.980073, -3.923466],
-						[38.979439, -3.922438],
-						[38.979128, -3.922763],
-						[38.979370, -3.923173],
-						[38.979351, -3.923286],
-						[38.979464, -3.923509]
+							[38.979589, -3.923818],  //parroquia nuestra señora de los ángeles
+							[38.979637, -3.923767],
+							[38.979994, -3.924338],  //calle madrid
+							[38.980389, -3.923924],  // islas canarias
+							[38.980754, -3.923503],  //carlos eraña
+							[38.981220, -3.924247],
+							[38.981632, -3.925029],
+							
+							[38.981733, -3.925043],  //rotonda
+							[38.981806, -3.925153],
+							[38.981960, -3.925231],  //calle granada
+							[38.982693, -3.925801],
+							
+							[38.982816, -3.925822],  //rotonda
+							[38.982856, -3.925945],
+							[38.982788, -3.926067],
+							[38.982673, -3.926056],
+							[38.982512, -3.926458],
+							[38.982403, -3.926683],  //san francisco
+							[38.982623, -3.926663],
+							[38.982781, -3.927307],  //calle montesa
+							[38.983227, -3.928535],
+							[38.983573, -3.928453],  //plaza del pilar
+							[38.983788, -3.928588],
+							[38.983835, -3.928700],
+							[38.984040, -3.928507],  //general aguilera
+							[38.984380, -3.928269],
+							[38.984493, -3.928224],
+							[38.984628, -3.928215],
+							[38.984726, -3.928184],
+							[38.984894, -3.928173],
+							[38.984931, -3.928172],
+							[38.984985, -3.928161],
+							[38.985036, -3.928262],
+							
+							[38.985075, -3.928314],  //plaza mayor
+							[38.985043, -3.928502],
+							[38.985367, -3.928708],
+							[38.985749, -3.928927],
+							[38.985892, -3.929054],  //calle feria
+							[38.986217, -3.929540],  //paseo del prado
+							[38.986749, -3.930355],  
+							[38.986918, -3.930690],  //calle camarin
+							[38.987326, -3.930433], 
+							[38.987701, -3.929902],
+							[38.987303, -3.929658],  
+							[38.987705, -3.928928],  //merced
+							[38.987999, -3.928402],
+							[38.986593, -3.928488],  //calle toledo
+							[38.986530, -3.928386],  //calle calatrava
+							[38.986316, -3.928500],
+							[38.985994, -3.928432],  //calle cruz
+							[38.986059, -3.927255],  //calle paloma
+							[38.985108, -3.927209],
+							[38.984319, -3.926760],  //ruiz morote
+							[38.983349, -3.926572], 
+							[38.982818, -3.926047],  //plaza san francisco
+							[38.982737, -3.926082],
+							[38.982652, -3.926026],
+							
+							[38.982631, -3.925903],  //calle granada
+							[38.982446, -3.925731],
+							[38.981966, -3.925390],
+							[38.981780, -3.925293],
+							[38.981674, -3.925347],
+							[38.981584, -3.925205],
+							[38.981628, -3.925063],  //carlos eraña
+							[38.981231, -3.924248],
+							[38.980449, -3.922993],  //san miguel
+							[38.980074, -3.923433],  //nuestra señora de los angeles
+							[38.979418, -3.922435],  //murcia
+							[38.979116, -3.922752],  //madrid
+							[38.979365, -3.923184],
+							[38.979336, -3.923299],
+							[38.979592, -3.923701],  
+							
 						]
 						}
 					}
@@ -243,7 +273,7 @@
 			</div>			
 			
 		</div>
-		
+				
 		<div id="ov_place_1" class="punto_a_ruta">
 			Parroquia de los Ángeles
 		</div>
@@ -271,15 +301,6 @@
 			});
 		</script>
 		
-		<div id="ov_place_4" class="punto_a_ruta">
-			Calle Granada
-		</div>
-		<script>
-			$("#ov_place_4").click(function(e){
-				show_geoloc("Calle Granada, Ciudad Real");
-			});
-		</script>
-		
 		<div id="ov_place_5" class="punto_a_ruta">
 			Plaza De San Francisco
 		</div>
@@ -290,29 +311,29 @@
 		</script>
 		
 		<div id="ov_place_6" class="punto_a_ruta">
-			Calle Palma
+			Calle Montesa
 		</div>
 		<script>
 			$("#ov_place_6").click(function(e){
-				show_geoloc("Calle Palma, Ciudad Real");
+				show_geoloc("Calle Montesa, Ciudad Real");
 			});
 		</script>
 		
 		<div id="ov_place_7" class="punto_a_ruta">
-			Calle Lanza
+			Plaza del Pilar
 		</div>
 		<script>
 			$("#ov_place_7").click(function(e){
-				show_geoloc("Calle Lanza, Ciudad Real");
+				show_geoloc("Plaza del Pilar, Ciudad Real");
 			});
 		</script>
 		
 		<div id="ov_place_8" class="punto_a_ruta">
-			Calle Cuchilleria
+			Calle General Aguilera
 		</div>
 		<script>
 			$("#ov_place_8").click(function(e){
-				show_geoloc("Calle Cuchilleria, Ciudad Real");
+				show_geoloc("Calle General Aguilera, Ciudad Real");
 			});
 		</script>
 		
@@ -324,174 +345,147 @@
 				show_geoloc("Plaza Mayor, Ciudad Real");
 			});
 		</script>
-		
+
 		<div id="ov_place_10" class="punto_a_ruta">
-			Calle Maria Cristina
-		</div>
-		<script>
-			$("#ov_place_10").click(function(e){
-				show_geoloc("Calle Maria Cristina, Ciudad Real");
-			});
-		</script>
-				
-		<div id="ov_place_11" class="punto_a_ruta">
 			Calle Feria
 		</div>
 		<script>
-			$("#ov_place_11").click(function(e){
+			$("#ov_place_10").click(function(e){
 				show_geoloc("Calle Feria, Ciudad Real");
 			});
 		</script>
 				
+		<div id="ov_place_11" class="punto_a_ruta">
+			Paseo del Prado
+		</div>
+		<script>
+			$("#ov_place_11").click(function(e){
+				show_geoloc("Paseo del Prado, Ciudad Real");
+			});
+		</script>
+				
 		<div id="ov_place_12" class="punto_a_ruta">
-			Paseo Del Prado
+			Calle Camarín
 		</div>
 		<script>
 			$("#ov_place_12").click(function(e){
-				show_geoloc("Paseo Del Prado, Ciudad Real");
+				show_geoloc("Calle Camarín, Ciudad Real");
 			});
 		</script>
 		
 		<div id="ov_place_13" class="punto_a_ruta">
-			Calle Camarín
+			Plaza de la Merced
 		</div>
 		<script>
 			$("#ov_place_13").click(function(e){
-				show_geoloc("Calle Camarin, Ciudad Real");
+				show_geoloc("Plaza de la Merced, Ciudad Real");
 			});
 		</script>
 				
 		<div id="ov_place_14" class="punto_a_ruta">
-			Calle Caballeros
+			Calle Toledo
 		</div>
 		<script>
 			$("#ov_place_14").click(function(e){
-				show_geoloc("Calle Caballeros, Ciudad Real");
+				show_geoloc("Calle Toledo, Ciudad Real");
 			});
 		</script>
 		
 		<div id="ov_place_15" class="punto_a_ruta">
-			Plaza De La Merced
-		</div>
-		<script>
-			$("#ov_place_15").click(function(e){
-				show_geoloc("Plaza De La Merced, Ciudad Real");
-			});
-		</script>
-				
-		<div id="ov_place_16" class="punto_a_ruta">
-			Calle Toledo
-		</div>
-		<script>
-			$("#ov_place_16").click(function(e){
-				show_geoloc("Calle Toledo, Ciudad Real");
-			});
-		</script>
-				
-		<div id="ov_place_17" class="punto_a_ruta">
 			Calle Calatrava
 		</div>
 		<script>
-			$("#ov_place_17").click(function(e){
+			$("#ov_place_15").click(function(e){
 				show_geoloc("Calle Calatrava, Ciudad Real");
 			});
 		</script>
 				
-		<div id="ov_place_18" class="punto_a_ruta">
-			Calle María Cristina
-		</div>
-		<script>
-			$("#ov_place_18").click(function(e){
-				show_geoloc("Calle Maria Cristina, Ciudad Real");
-			});
-		</script>
-				
-		<div id="ov_place_19" class="punto_a_ruta">
+		<div id="ov_place_16" class="punto_a_ruta">
 			Calle Cruz
 		</div>
 		<script>
-			$("#ov_place_19").click(function(e){
+			$("#ov_place_16").click(function(e){
 				show_geoloc("Calle Cruz, Ciudad Real");
 			});
 		</script>
 				
-		<div id="ov_place_20" class="punto_a_ruta">
+		<div id="ov_place_17" class="punto_a_ruta">
 			Calle Paloma
 		</div>
 		<script>
-			$("#ov_place_20").click(function(e){
+			$("#ov_place_17").click(function(e){
 				show_geoloc("Calle Paloma, Ciudad Real");
 			});
 		</script>
 		
-		<div id="ov_place_21" class="punto_a_ruta">
+		<div id="ov_place_18" class="punto_a_ruta">
 			Calle Ruiz Morote
 		</div>
 		<script>
-			$("#ov_place_21").click(function(e){
+			$("#ov_place_18").click(function(e){
 				show_geoloc("Calle Ruiz Morote, Ciudad Real");
 			});
 		</script>
 		
-		<div id="ov_place_22" class="punto_a_ruta">
+		<div id="ov_place_19" class="punto_a_ruta">
 			Plaza De San Francisco
 		</div>
 		<script>
-			$("#ov_place_22").click(function(e){
+			$("#ov_place_19").click(function(e){
 				show_geoloc("Plaza De San Francisco, Ciudad Real");
 			});
 		</script>
-		
-		<div id="ov_place_23" class="punto_a_ruta">
+
+		<div id="ov_place_20" class="punto_a_ruta">
 			Calle Granada
 		</div>
 		<script>
-			$("#ov_place_23").click(function(e){
+			$("#ov_place_20").click(function(e){
 				show_geoloc("Calle Granada, Ciudad Real");
 			});
 		</script>
 		
-		<div id="ov_place_24" class="punto_a_ruta">
+		<div id="ov_place_21" class="punto_a_ruta">
 			Paseo Carlos Eraña
 		</div>
 		<script>
-			$("#ov_place_24").click(function(e){
+			$("#ov_place_21").click(function(e){
 				show_geoloc("Paseo Carlos Eraña, Ciudad Real");
 			});
 		</script>
 		
-		<div id="ov_place_25" class="punto_a_ruta">
+		<div id="ov_place_22" class="punto_a_ruta">
 			Calle San Miguel
 		</div>
 		<script>
-			$("#ov_place_25").click(function(e){
+			$("#ov_place_22").click(function(e){
 				show_geoloc("Calle San Miguel, Ciudad Real");
 			});
 		</script>
 		
-		<div id="ov_place_26" class="punto_a_ruta">
+		<div id="ov_place_23" class="punto_a_ruta">
 			Calle Nuestra Señora De Los Angeles			
 		</div>
 		<script>
-			$("#ov_place_26").click(function(e){
-				show_geoloc("Calle Nuestra Señora De Los Angeles	, Ciudad Real");
+			$("#ov_place_23").click(function(e){
+				show_geoloc("Calle Nuestra Señora De Los Angeles, Ciudad Real");
 			});
 		</script>
 		
-		<div id="ov_place_27" class="punto_a_ruta">
+		<div id="ov_place_24" class="punto_a_ruta">
 			Calle Murcia			
 		</div>
 		<script>
-			$("#ov_place_27").click(function(e){
+			$("#ov_place_24").click(function(e){
 				show_geoloc("Calle Murcia, Ciudad Real");
 			});
 		</script>
 		
-		<div id="ov_place_28" class="punto_a_ruta">
+		<div id="ov_place_25" class="punto_a_ruta">
 			Calle Madrid			
 		</div>
 		<script>
-			$("#ov_place_28").click(function(e){
+			$("#ov_place_25").click(function(e){
 				show_geoloc("Calle Madrid, Ciudad Real");
 			});
 		</script>

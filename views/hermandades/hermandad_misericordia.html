@@ -55,11 +55,9 @@
 		<div class="texto_hermandad">
 			La hermandad de la Virgen de la Misericordia fue fundada por un grupo de catequistas de la Parroquia de San Pedro en el año 1985. La primera titular con la que procesionó pertenecía a a una camarera y fue bendecida en 1986. En los primeros estatutos se acordó que solamente podrían pertenecer a esta cofradía jóvenes con edades comprendidas entre los 8 y los 20 años. Finalmente en 1988 la hermandad optó por que pudiese pertenecer a la hermandad quien quisiera independientemente de su edad. Fue la primera en España en contar con una cuadrilla “mixta”. En 1990 procesiona por primera vez la actual imagen de la Virgen de la Misericordia.
 			<br><br>
-			Túnica de sarga blanca con botonadura, cíngulo y capillo de color granate. En el babero del capillo lleva bordado el escudo de la hermandad. Sandalias franciscanas negras y calcetín blanco. Los hermanos portan callado peregrino, consistente en un báculo de madera enrollado en la parte superior con 14 vueltas de pita, simbolizando las estaciones del Vía Crucis.
-			<br><br>
 			El paso se porta a costal, por 30 costaleros.
-			<br><br>
-			Banda Municipal de Música de Porzuna (Ciudad Real)
+			<p><b>MÚSICA</b></p>
+			Banda Municipal de Música de Porzuna (Ciudad Real) 
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -67,13 +65,16 @@
 		</div>
 		
 		<div class="informacion_hermandad">
-			<b>Tunica:</b><br>
+			<b>Túnica:</b><br>
+			Túnica de sarga blanca con botonadura, cíngulo y capillo de color granate. En el babero del capillo lleva bordado el escudo de la hermandad. Sandalias franciscanas negras y calcetín blanco. Los hermanos portan callado peregrino, consistente en un báculo de madera enrollado en la parte superior con 14 vueltas de pita, simbolizando las estaciones del Vía Crucis.
+			<br><br>
 			<img src="./resources/habitos/misericordia.jpg" style="display:block">
 			<b>Ubicación de la titular:</b><br>Capilla de San Juan Bautista de la Parroquia de San Pedro Apóstol.
 			<br><br>
 			<b>Fundación:</b><br>1985.
 			<br><br>
-			<b>Insignia(s) destacadas:</b><br>Estandarte de la Virgen del Prado, realizado por la Hermandad en su XXV Aniversario, como agradecimiento a la Patrona.
+			<b>Insignia(s) destacadas:</b><br>
+			· Estandarte de la Virgen del Prado, realizado por la Hermandad en su XXV Aniversario, como agradecimiento a la Patrona.
 			<br><br>
 		</div>
 		
@@ -82,7 +83,7 @@
 		</div>
 		
 		<div class="informacion_hermandad">
-			Parroquia de San Pedro Apóstol<br>			
+			Parroquia de San Pedro Apóstol<br><br>		
 			<a id="web" href="http://misericordia-ciudadreal.blogspot.com.es/">Página web</a><br>
 			<a id="twitter" href="https://twitter.com/misericordiacrl">Twitter</a>
 			<script>
@@ -92,11 +93,13 @@
 					var containHttps = new RegExp('https\\b');
 					if(containHttp.test(url)){
 						e.preventDefault();
-						window.open(url, "_system", "location=yes");
+						var new_url=extern_web+url.substr(7);
+						window.open(new_url, "_system", "location=yes");
 					}
 					else if(containHttps.test(url)){
 						e.preventDefault();
-						window.open(url, "_system", "location=yes");
+						var new_url=extern_web+url.substr(8);
+						window.open(new_url, "_system", "location=yes");
 					}
 				});
 			</script>
@@ -107,7 +110,7 @@
 		</div>
 		
 		<div id="ov_to_proce" class="enlace_a_procesion">
-			Misericordia (3 de Abril, Viernes Santo)
+			Misericordia (Viernes Santo)
 		</div>
 		<script>
 			$("#ov_to_proce").click(function(e){

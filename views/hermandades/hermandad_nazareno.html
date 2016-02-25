@@ -55,11 +55,12 @@
 		<div class="texto_hermandad">
 			El 6 de marzo de 1725 se funda la hermandad en la sala capitular del Convento de Nuestra Señora del Rosario, para dar culto a la imagen de Jesús Nazareno. La hermandad permaneció en este convento hasta el año 1836. En 1837 la hermandad se traslada a a la Parroquia San Pedro. En la Guerra Civil, la imagen fue destruida. En 1941 se obtiene la actual imagen.
 			<br><br>
-			Túnica de terciopelo morado con escapulario y capillo blanco, fajín del mismo color sobre el que se coloca la medalla de la hermandad sobre un óvalo de terciopelo morado, guantes blancos y calcetín y zapato negro. Los hermanos portan farol eléctrico.
-			<br><br>
 			La imagen se porta a costal, por una cuadrilla de 35 costaleros.
-			<br><br>
-			Agrupación Musical Nuestro Padre Jesús  de la Pasión, de Linares (Jaén) 
+			<p><b>MÚSICA</b></p>
+			DOMINGO DE PASIÓN:<br>
+			· Agrupación Musical “Nuestro Padre Jesús de la Pasión” de Linares (Jaén). <br><br>
+			VIERNES SANTO:<br>
+			Sin acompañamiento musical. En riguroso silencio. Una coral interpreta misereres en algunos puntos del recorrido. En la Plaza de Santiago, las Hermanas de la Cruz le cantan el tradicional "Sube el Nazareno". También se realizan 7 meditaciones sobre la Pasión de Cristo. 
 			</div>
 		
 		<div class="titulos_hermandad">
@@ -67,13 +68,21 @@
 		</div>
 		
 		<div class="informacion_hermandad">
-			<b>Tunica:</b><br>
+			<b>Túnica:</b><br>			
+			Túnica de terciopelo morado con escapulario y capillo blanco, fajín del mismo color sobre el que se coloca la medalla de la hermandad sobre un óvalo de terciopelo morado, guantes blancos y calcetín y zapato negro. Los hermanos portan farol eléctrico.<br>
 			<img src="./resources/habitos/nazareno.jpg" style="display:block">
 			<b>Ubicación del titular:</b><br>Parroquia de San Pedro
 			<br><br>
-			<b>Fundación:</b><br>1725.
+			<b>Fundación:</b><br>1725
 			<br><br>
-			<b>Insignia(s) destacadas:</b><br>Dos Gallardetes en terciopelo morado bordados en oro con pedrería del año 1915.<br>Estandarte de la Hermandad en aplique realizado por Enrique Ojeda en Ecija del año 1990.<br>Bandera de San Pedro bordada en oro sobre terciopelo morado realizada por Jesús Día Hellín Guide.<br>Cruz Guía Arbórea en madera de cedro del año 2006.<br>Libro de Reglas y Vara del Secretario de la Orfebrería de Orovio de la Torre del año 2006.<br>Seis Ciriales de metal cincelado y plateado de la Orfebrería Hermanos Delgado de Sevilla 2008.<br>Dos bocinas de metal cincelado y plateado de la Orfebrería de los Hermanos Delgado de Sevilla con paños bordados en oro fino sobre terciopelo morado por Jesús Día Hellín Guide del año.
+			<b>Insignia(s) destacadas:</b><br>
+			· Dos Gallardetes en terciopelo morado bordados en oro con pedrería del año 1915.<br>
+			· Estandarte de la Hermandad en aplique realizado por Enrique Ojeda en Ecija del año 1990.<br>
+			· Bandera de San Pedro bordada en oro sobre terciopelo morado realizada por Jesús Día Hellín Guide.<br>
+			· Cruz Guía Arbórea en madera de cedro del año 2006.<br>
+			· Libro de Reglas y Vara del Secretario de la Orfebrería de Orovio de la Torre del año 2006.<br>
+			· Seis Ciriales de metal cincelado y plateado de la Orfebrería Hermanos Delgado de Sevilla 2008.<br>
+			· Dos bocinas de metal cincelado y plateado de la Orfebrería de los Hermanos Delgado de Sevilla con paños bordados en oro fino sobre terciopelo morado por Jesús Día Hellín Guide del año.
 			<br><br>
 		</div>
 		
@@ -84,8 +93,8 @@
 		<div class="informacion_hermandad">
 			Casa Hermandad<br>
 			Avenida Alfonso X el Sabio nº 2, 1º A<br>
-			<a id="web" href="http://www.hermandadnazareno.org/">Página web</a><br>
-			<a id="twitter" href="https://twitter.com/nazarenocr">Twitter</a>
+			<p><a id="web" href="http://www.hermandadnazareno.org/">Página web</a></p>
+			<p><a id="twitter" href="https://twitter.com/nazarenocr">Twitter</a></p>
 			<script>
 				$("a").on("click",function(e){
 					var url = $(this).attr('href');
@@ -93,11 +102,13 @@
 					var containHttps = new RegExp('https\\b');
 					if(containHttp.test(url)){
 						e.preventDefault();
-						window.open(url, "_system", "location=yes");
+						var new_url=extern_web+url.substr(7);
+						window.open(new_url, "_system", "location=yes");
 					}
 					else if(containHttps.test(url)){
 						e.preventDefault();
-						window.open(url, "_system", "location=yes");
+						var new_url=extern_web+url.substr(8);
+						window.open(new_url, "_system", "location=yes");
 					}
 				});
 			</script>
@@ -108,7 +119,7 @@
 		</div>
 		
 		<div id="ov_to_proce" class="enlace_a_procesion">
-			Nazareno (22 de Marzo, Domingo de Pasión)
+			Nazareno (Domingo de Pasión)
 		</div>
 		<script>
 			$("#ov_to_proce").click(function(e){
@@ -119,7 +130,7 @@
 		</script>
 		
 		<div id="ov_to_proce1" class="enlace_a_procesion">
-			Nazareno (3 de Abril, Viernes Santo)
+			Nazareno (Viernes Santo)
 		</div>
 		<script>
 			$("#ov_to_proce1").click(function(e){
@@ -145,6 +156,9 @@
 			Fecha: 1941
 			<br><br>
 			Realizó su primera salida procesional en 1942.
+			<p><b>Estrenos 2016</b></p>
+			Continuación del tallado del paso del Señor, por el tallista cordobés, José Carlos Rubio.<br>
+			Nueva túnica para la imagen del Señor. 
 			<br><br>
 			<img src="./resources/pasos/nazareno.jpg" class="imagenes_pasos" />			
 		</div>

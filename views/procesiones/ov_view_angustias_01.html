@@ -36,7 +36,7 @@
 				ANGUSTIAS
 			</div>
 			<div class="subtitulos_procesion">
-				3 de Abril - Viernes Santo
+				25 de Marzo - Viernes Santo
 			</div>
 			<div class="subtitulos_procesion">
 				Salida a las <b>21:30h</b> desde Parroquia de la Merced.
@@ -90,9 +90,8 @@
 			Autor: Luis Marco Pérez
 			<br>
 			Fecha: 1944
-			<p>Estrenos 2015</p>
-			Tallado del frontal del canasto del Paso del Señor y cuatro candelabros de guardabrisas de siete luces para las esquinas, todo ello realizado en los talleres de Alberto Fernández Romero de Villarrubia de los Ojos.
-			<br>Remate del Senatus en orfebrería plateada, realizado en los talleres Paula Orfebrería de Lucena.
+			<p><b>Estrenos 2016</b></p>
+			Cruz parroquial, con adornos en metal plateado, realizada en talleres Ramón Orovio de la Torre (Torralba de Calatrava, Ciudad Real).
 			<br><br>
 			<img src="./resources/pasos/angustias.jpg" class="imagenes_pasos"/>						
 		</div>
@@ -122,64 +121,69 @@
 				var lineSymbol = { path: google.maps.SymbolPath.FORWARD_OPEN_ARROW, scale: 2 };
 				$("#mapa_angustias").gmap3({
 					map:{
-					options:{
-					center:[38.986137, -3.926220],
-					zoom:15
-					}
+						options:{
+						center:[38.986137, -3.926220],
+						zoom:15
+						}
 					},
 					marker:{
-					values:[
-					{latLng:[38.987916, -3.928551], data:"Pasaje de la Merced"}]
+						values:[
+						{latLng:[38.987916, -3.928551], data:"Pasaje de la Merced"}]
 					},
 					polyline:{
 					options:{
 						strokeColor: "#6F65D5",
 						strokeOpacity: 0.6,
 						strokeWeight: 4,
-						icons: [{icon: lineSymbol, offset: '15%'},
-						{icon: lineSymbol, offset: '30%'},
-						{icon: lineSymbol, offset: '45%'},
-						{icon: lineSymbol, offset: '60%'},
-						{icon: lineSymbol, offset: '75%'},
-						{icon: lineSymbol, offset: '90%'},
-						],
+						icons: [{icon: lineSymbol, offset: '3%'},
+								{icon: lineSymbol, offset: '10%'},
+								{icon: lineSymbol, offset: '20%'},
+								{icon: lineSymbol, offset: '30%'},
+								{icon: lineSymbol, offset: '40%'},
+								{icon: lineSymbol, offset: '50%'},
+								{icon: lineSymbol, offset: '60%'},
+								{icon: lineSymbol, offset: '70%'},
+								{icon: lineSymbol, offset: '80%'},
+								{icon: lineSymbol, offset: '90%'},
+								{icon: lineSymbol, offset: '98%'},
+								],
 						path:[
 
-						[38.987916, -3.928551],
-						[38.988011, -3.928404],
-						[38.987325, -3.928457],
-						[38.986599, -3.928487],
-						[38.986533, -3.928382],
-						[38.986339, -3.928500],
-						[38.985895, -3.929050],
-						
-						[38.984950, -3.928596],//Punto plaza mayor
-						
-						[38.984992, -3.928261],
-						[38.985115, -3.927197],
-						[38.985040, -3.927167],
-						[38.985073, -3.926537],
-						[38.984957, -3.926008],
-						[38.986137, -3.926220],
-						[38.987788, -3.926360],
-						[38.988130, -3.926446],
-						[38.989137, -3.926888],
-						[38.988924, -3.927806],
-						[38.988757, -3.928294],
-						[38.989778, -3.928212],
-						[38.989588, -3.928952],
-						[38.989415, -3.929438],
-						[38.988819, -3.930349],
-						[38.988827, -3.930422],
-						[38.988737, -3.930551],
-						[38.987302, -3.929656],
-						[38.987702, -3.928924],
-						[38.987916, -3.928551],
-						
+							[38.987916, -3.928551],
+							[38.988011, -3.928404],
+							[38.987325, -3.928457],
+							[38.986599, -3.928487],
+							[38.986533, -3.928382],
+							[38.986339, -3.928500],
+							[38.985895, -3.929050],
+
+							[38.985088, -3.928372], //plaza mayor
+							[38.984986, -3.928147], 
+							[38.985106, -3.927194],
+							[38.985008, -3.927140], //lanza
+							[38.985050, -3.926494],
+							[38.984957, -3.926008],
+							[38.986137, -3.926220],
+							[38.987788, -3.926360],
+							[38.988130, -3.926446],
+							[38.989137, -3.926888],
+							[38.988924, -3.927806],
+							[38.988757, -3.928294],
+							[38.989778, -3.928212],
+							[38.989588, -3.928952],
+							[38.989415, -3.929438],
+							[38.988819, -3.930349],
+							[38.988827, -3.930422],
+							[38.988737, -3.930551],
+							[38.987302, -3.929656],
+							[38.987702, -3.928924],
+							[38.987916, -3.928551],
+							
 						]
 						}
 					}
 				});
+			
 			},1000);
 			</script>
 		
@@ -217,11 +221,11 @@
 		</div>
 		
 		<div id="ov_place_1" class="punto_a_ruta">
-			Calle Prado
+			Parroquia de la Merced
 		</div>
 		<script>
 			$("#ov_place_1").click(function(e){
-				show_geoloc("Calle Prado, Ciudad Real");
+				show_geoloc("Pasaje De La Merced, Ciudad Real");
 			});
 		</script>
 		
@@ -279,24 +283,6 @@
 			});
 		</script>
 		
-		<div id="ov_place_8" class="punto_a_ruta">
-			Calle Cuchilleria
-		</div>
-		<script>
-			$("#ov_place_8").click(function(e){
-				show_geoloc("Calle Cuchilleria, Ciudad Real");
-			});
-		</script>
-		
-		<div id="ov_place_9" class="punto_a_ruta">
-			Calle Lanza
-		</div>
-		<script>
-			$("#ov_place_9").click(function(e){
-				show_geoloc("Calle Lanza, Ciudad Real");
-			});
-		</script>
-		
 		<div id="ov_place_10" class="punto_a_ruta">
 			Calle Cardenal Monescillo
 		</div>
@@ -323,21 +309,39 @@
 				show_geoloc("Calle Jacinto, Ciudad Real");
 			});
 		</script>
-		
+				
 		<div id="ov_place_13" class="punto_a_ruta">
-			Plaza Del Carmen
+			Calle Toledo
 		</div>
 		<script>
 			$("#ov_place_13").click(function(e){
-				show_geoloc("Plaza Del Carmen, Ciudad Real");
+				show_geoloc("Calle Toledo, Ciudad Real");
 			});
 		</script>
 		
 		<div id="ov_place_14" class="punto_a_ruta">
-			Calle Caballeros
+			Calle Estación Vía Crucis
 		</div>
 		<script>
 			$("#ov_place_14").click(function(e){
+				show_geoloc("Calle Estación Vía Crucis, Ciudad Real");
+			});
+		</script>
+		
+		<div id="ov_place_15" class="punto_a_ruta">
+			Plaza del Carmen
+		</div>
+		<script>
+			$("#ov_place_15").click(function(e){
+				show_geoloc("Plaza del Carmen, Ciudad Real");
+			});
+		</script>
+		
+		<div id="ov_place_15" class="punto_a_ruta">
+			Calle Caballeros
+		</div>
+		<script>
+			$("#ov_place_15").click(function(e){
 				show_geoloc("Calle Caballeros, Ciudad Real");
 			});
 		</script>

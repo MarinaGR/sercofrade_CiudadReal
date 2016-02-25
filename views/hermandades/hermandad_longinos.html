@@ -42,7 +42,7 @@
 				
 				<div class="ov_box_large_menu_item_title">
 					
-					<div class="ov_text_large_menu_item_01" style="color:#FFF">Hermandad del Santísimo Cristo de la Caridad (longinos)</div>				
+					<div class="ov_text_large_menu_item_01" style="color:#FFF">Hermandad del Santísimo Cristo de la Caridad (Longinos)</div>				
 					
 				</div>
 				
@@ -55,10 +55,8 @@
 		<div class="texto_hermandad">
 			La hermandad se fundó en la Parroquia de Santiago en el año 1612. El primer titular de la hermandad era un Cristo crucificado con pelo natural y unas enagüillas de terciopelo bordadas en oro. Dicha imagen tenía la advocación de Caridad, igual que la imagen actual. Durante los primeros años la hermandad procesionaba con la única imagen de ese crucificado. En el año 1908 se sustituye por otro y se forma el misterio completo con las imágenes de la Virgen María, María Magdalena, el apóstol San Juan y el soldado romano Longinos. Sin embargo, en 1936 coincidiendo con la Guerra Civil, ambos Crucificados fueron destruidos. La hermandad se reorganiza en 1940, cuando  obtiene el actual titular y el actual misterio que procesionaron por primera vez en el año 1941. En el año 2006  es donada a la hermandad la imagen de una Virgen a la cual se le da el nombre de María Santísima de la Estrella.
 			<br><br>
-			Túnica de raso granate, botonadura hueso y grecas bordadas en mangas y bajos, fajín blanco con dos borlas, capillo hueso con la estampa del paso y capa hueso con la Cruz de Santiago. Guante blanco y zapato negro. Los hermanos portan cirios naturales.
-			<br><br>
 			La imagen se porta a costal.
-			<br><br>
+			<p><b>MÚSICA</b></p>
 			Agrupación Musical Santo Tomás de Villanueva.
 		</div>
 		
@@ -67,13 +65,21 @@
 		</div>
 		
 		<div class="informacion_hermandad">
-			<b>Tunica:</b><br>
+			<b>Túnica:</b><br>
+			Túnica de raso granate, botonadura hueso y grecas bordadas en mangas y bajos, fajín blanco con dos borlas, capillo hueso con la estampa del paso y capa hueso con la Cruz de Santiago. Guante blanco y zapato negro. Los hermanos portan cirios naturales.
+			<br><br>
 			<img src="./resources/habitos/longinos.jpg" style="display:block">
 			<b>Ubicación del titular:</b><br>Capilla del Santísimo Cristo de la Caridad, Parroquia de Santiago Apóstol.
 			<br><br>
 			<b>Fundación:</b><br>1612.
 			<br><br>
-			<b>Insignia(s) destacadas:</b><br>Cruz de Guía, imagen de Cristo Crucificado en tamaño académico, 1967.<br>Estandarte de Cristo, con una pintura de Cristina Soriano, 1987.<br>Estandarte del misterio, obra de Prado Ingelmo, 2001.<br>Libro de Reglas, de la orfebrería de Orovio de la Torre, 2007.<br>Cuatro ciriales en metal plateado y dorado, de la misma orfebrería, 2006.<br>Dos incensarios en metal plateado, también de Orovio de la Torre, 2006.
+			<b>Insignia(s) destacadas:</b><br>
+			· Cruz de Guía, imagen de Cristo Crucificado en tamaño académico, 1967.<br>
+			· Estandarte de Cristo, con una pintura de Cristina Soriano, 1987.<br>
+			· Estandarte del misterio, obra de Prado Ingelmo, 2001.<br>
+			· Libro de Reglas, de la orfebrería de Orovio de la Torre, 2007.<br>
+			· Cuatro ciriales en metal plateado y dorado, de la misma orfebrería, 2006.<br>
+			· Dos incensarios en metal plateado, también de Orovio de la Torre, 2006.
 			<br><br>
 		</div>
 		
@@ -82,7 +88,7 @@
 		</div>
 		
 		<div class="informacion_hermandad">
-			Parroquia de Santiago Apóstol, Plaza de Santiago s/n, 13003 Ciudad Real<br>
+			Parroquia de Santiago Apóstol, Plaza de Santiago s/n, 13003 Ciudad Real<br><br>
 			<a id="web" href="http://hermandadsantisimocristodelacaridad.blogspot.com.es/">Página web</a><br>
 			<a id="twitter" href="https://twitter.com/hdad_caridadCR">Twitter</a>
 			<script>
@@ -92,11 +98,13 @@
 					var containHttps = new RegExp('https\\b');
 					if(containHttp.test(url)){
 						e.preventDefault();
-						window.open(url, "_system", "location=yes");
+						var new_url=extern_web+url.substr(7);
+						window.open(new_url, "_system", "location=yes");
 					}
 					else if(containHttps.test(url)){
 						e.preventDefault();
-						window.open(url, "_system", "location=yes");
+						var new_url=extern_web+url.substr(8);
+						window.open(new_url, "_system", "location=yes");
 					}
 				});
 			</script>
@@ -107,7 +115,7 @@
 		</div>
 		
 		<div id="ov_to_proce" class="enlace_a_procesion">
-			Cristo de la Caridad (2 de Abril, Jueves Santo)
+			Cristo de la Caridad (Jueves Santo)
 		</div>
 		<script>
 			$("#ov_to_proce").click(function(e){

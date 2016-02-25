@@ -55,10 +55,8 @@
 		<div class="texto_hermandad">
 			El día 19 de Noviembre de 1953 se dio lectura a la carta por la cual la hermandad de Nuestra Señora de la Esperanza quedaba vinculada a la Parroquia de Nuestra Señora del Pilar, donde debería realizar todos los cultos. El día 15 de Diciembre de ese mismo año, la imagen de la Virgen de la Esperanza es bendecida en la iglesia de San Pedro Apóstol. En la Semana Santa de 1954 procesiona por primera vez.
 			<br><br>
-			Túnica blanca con botonadura verde, siendo este ultimo color el empleado para el capillo en terciopelo, lo mismo que la cola y capa recogida a los brazos, también de color verde glasé. En el capillo lleva para la visión el anagrama del Ave María, bordado en fino tul verde. Guante blanco, sandalia negra y calceta blanca. Los hermanos portan faroles.
-			<br><br>
 			La imagen se porta a costal, por una cuadrilla de 35 costaleros.
-			<br><br>
+			<p><b>MÚSICA</b></p>
 			Banda de Música Santa Cecilia de Calzada de Calatrava.
 		</div>
 		
@@ -67,13 +65,22 @@
 		</div>
 		
 		<div class="informacion_hermandad">
-			<b>Tunica:</b><br>
+			<b>Túnica:</b><br>
+			Túnica blanca con botonadura verde, siendo este ultimo color el empleado para el capillo en terciopelo, lo mismo que la cola y capa recogida a los brazos, también de color verde glasé. En el capillo lleva para la visión el anagrama del Ave María, bordado en fino tul verde. Guante blanco, sandalia negra y calceta blanca. Los hermanos portan faroles.
+			<br><br>
 			<img src="./resources/habitos/esperanza.jpg" style="display:block">
 			<b>Ubicación del titular:</b><br>Parroquia de Nuestra Señora del Pilar.
 			<br><br>
 			<b>Fundación:</b><br>1953.
 			<br><br>
-			<b>Atributos de los Hermanos:</b><br>Estandarte Guía con la imagen de la Virgen, realizado en casa Mur en 1954.<br>Faroles Guía de la orfebrería de los Hermanos Ángulo de Lucena (Córdoba) año 1986.<br>Estandarte Simpecado realizado en los talleres García y Poo de Sevilla en 2007.<br>Las tallas en madera policromada del estandarte son obra de Dña. Dolores León Peñuelas.<br>Representación de la Junta con los cetros y el Libro de Reglas, realizados en los talleres de Ramón Orovio de Torralba de Calatrava.<br>Estandarte Corporativo elaborado en la Casa de Bordados Perales de Madrid, donado por el grupo joven de la Hermandad en el año 2007.<br>Ciriales en plata realizados en los talleres de Orfebrería Antonio León de Sevilla, año 2008.
+			<b>Atributos de los Hermanos:</b><br>
+			· Estandarte Guía con la imagen de la Virgen, realizado en casa Mur en 1954.<br>
+			· Faroles Guía de la orfebrería de los Hermanos Ángulo de Lucena (Córdoba) año 1986.<br>
+			· Estandarte Simpecado realizado en los talleres García y Poo de Sevilla en 2007.<br>
+			· Las tallas en madera policromada del estandarte son obra de Dña. Dolores León Peñuelas.<br>
+			· Representación de la Junta con los cetros y el Libro de Reglas, realizados en los talleres de Ramón Orovio de Torralba de Calatrava.<br>
+			· Estandarte Corporativo elaborado en la Casa de Bordados Perales de Madrid, donado por el grupo joven de la Hermandad en el año 2007.<br>
+			· Ciriales en plata realizados en los talleres de Orfebrería Antonio León de Sevilla, año 2008.
 			<br><br>
 		</div>
 		
@@ -83,7 +90,7 @@
 		
 		<div class="informacion_hermandad">
 			Casa Hermandad<br>
-			C/ Progreso nº 8 13003 Ciudad Real<br>
+			C/ Progreso nº 8 13003 Ciudad Real<br><br>
 			<a id="web" href="http://www.esperanzaciudadreal.com/">Página web</a><br>
 			<a id="twitter" href="https://twitter.com/hdadesperanzacr">Twitter 1</a><br>
 			<a id="twitter" href="https://twitter.com/GJ_EsperanzaCR">Twitter 2</a>
@@ -94,11 +101,13 @@
 					var containHttps = new RegExp('https\\b');
 					if(containHttp.test(url)){
 						e.preventDefault();
-						window.open(url, "_system", "location=yes");
+						var new_url=extern_web+url.substr(7);
+						window.open(new_url, "_system", "location=yes");
 					}
 					else if(containHttps.test(url)){
 						e.preventDefault();
-						window.open(url, "_system", "location=yes");
+						var new_url=extern_web+url.substr(8);
+						window.open(new_url, "_system", "location=yes");
 					}
 				});
 			</script>
@@ -109,7 +118,7 @@
 		</div>
 		
 		<div id="ov_to_proce" class="enlace_a_procesion">
-			Esperanza (31 de Marzo, Martes Santo)
+			Esperanza (Martes Santo)
 		</div>
 		<script>
 			$("#ov_to_proce").click(function(e){

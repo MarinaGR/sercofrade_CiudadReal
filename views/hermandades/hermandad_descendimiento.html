@@ -55,11 +55,9 @@
 		<div class="texto_hermandad">
 			La Hermandad de Esclavos del Descendimiento de la Cruz fue reorganizada en la Parroquia de Santa María del Prado, actual Catedral, el 19 de abril de 1688 con la efigie que se veneraba en la Capilla del Dulce Nombre de Jesús. Durante el siglo XVIII, se extinguió y se volvió a reorganizar el 7 de Abril de 1770. El Viernes Santo de 1771 salió en la procesión del Santo Entierro. Al crearse el Obispado Priorato en 1875, la hermandad pasó al templo de La Merced. Fue de nuevo reorganizada en 1889. En 1902 adquirió un nuevo conjunto escultórico del Descendimiento. Durante la Guerra Civil se perdió su patrimonio. Se reorganiza en 1939 cuando se celebró una junta con una representación del gremio de la construcción en la que se dio cuenta de la llegada del nuevo paso adquirido por la Comisión de Semana Santa. 
 			<br><br>
-			La túnica es de terciopelo negro con botonadura blanca, al igual que el capillo y el escapulario. Lleva en el capillo bordado el antiguo escudo de la hermandad. Cíngulo amarillo, zapato negro y guante blanco. Los hermanos portan faroles y cirios morados.
-			<br><br>
 			El paso se porta a costal, por 40 costaleros.
-			<br><br>
-			Banda de Cornetas y Tambores Jesús Nazareno Rescatado de Valdepeñas
+			<p><b>MÚSICA</b></p>
+			Banda de Cornetas y Tambores Jesús Rescatado de Valdepeñas.
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -67,7 +65,9 @@
 		</div>
 		
 		<div class="informacion_hermandad">
-			<b>Tunica:</b><br>
+			<b>Túnica:</b><br>
+			La túnica es de terciopelo negro con botonadura blanca, al igual que el capillo y el escapulario. Lleva en el capillo bordado el antiguo escudo de la hermandad. Cíngulo amarillo, zapato negro y guante blanco. Los hermanos portan faroles y cirios morados.
+			<br><br>
 			<img src="./resources/habitos/descendimiento.jpg" style="display:block">
 			<br>
 			<b>Fundación:</b><br>1688.
@@ -88,20 +88,21 @@
 			<a href="http://santodescendimiento.blogspot.com.es" class="enlace_externo">Página web</a>
 
 			<script>
-			$("a").on("click", function(e) {
-				var url = $(this).attr('href');
-				var containsHttp = new RegExp('http\\b'); 
-				var containsHttps = new RegExp('https\\b'); 
-				
-				if(containsHttp.test(url)) { 
-					e.preventDefault(); 
-					window.open(url, "_system", "location=yes"); 
-				}
-				else if(containsHttps.test(url)) { 
-					e.preventDefault(); 
-					window.open(url, "_system", "location=yes"); 
-				}
-			});						
+				$("a").on("click",function(e){
+					var url = $(this).attr('href');
+					var containHttp = new RegExp('http\\b');
+					var containHttps = new RegExp('https\\b');
+					if(containHttp.test(url)){
+						e.preventDefault();
+						var new_url=extern_web+url.substr(7);
+						window.open(new_url, "_system", "location=yes");
+					}
+					else if(containHttps.test(url)){
+						e.preventDefault();
+						var new_url=extern_web+url.substr(8);
+						window.open(new_url, "_system", "location=yes");
+					}
+				});		
 			</script>
 		</div>
 		
@@ -110,7 +111,7 @@
 		</div>
 		
 		<div id="ov_to_proce" class="enlace_a_procesion">
-			Descendimiento (3 de Abril, Viernes Santo)
+			Descendimiento (Viernes Santo)
 		</div>
 		<script>
 			$("#ov_to_proce").click(function(e){

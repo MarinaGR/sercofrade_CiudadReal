@@ -55,10 +55,8 @@
 		<div class="texto_hermandad">
 			La hermandad fue fundada en 1949 por el artista local José Mur Escolá pero no fue reconocida canónicamente hasta el 22 de Agosto de 1952, en la iglesia de Nuestra Señora del Pilar. Desde su fundación fue una de las hermandades que más culto rindió a su titular y que contó con una gran aceptación social y un crecimiento rápido. Antiguamente, esta hermandad iba acompañada por un grupo de soldados romanos en su desfile procesional.
 			<br><br>
-			Túnica de color amarillo oro en forma de amplio manto, forros visibles de raso blanco, y puños con adornos dorados, sujeta con cíngulo morado y oro. Capillo morado con bordados en oro, escapulario grande bordado con el escudo de la cofradía, guante blanco, zapato y calcetín negro. Los hermanos portan farol eléctrico.
-			<br><br>
 			La imagen se porta a costal, por una cuadrilla de 35 costaleros.
-			<br><br>
+			<p><b>MÚSICA</b></p>
 			Agrupación Musical Santo Tomás de Villanueva (Ciudad Real).
 		</div>
 		
@@ -67,13 +65,17 @@
 		</div>
 		
 		<div class="informacion_hermandad">
-			<b>Tunica:</b><br>
-			<img src="./resources/habitos/perchelera.jpg" style="display:block">
+			<b>Túnica:</b><br>
+			Túnica de color amarillo oro en forma de amplio manto, forros visibles de raso blanco, y puños con adornos dorados, sujeta con cíngulo morado y oro. Capillo morado con bordados en oro, escapulario grande bordado con el escudo de la cofradía, guante blanco, zapato y calcetín negro. Los hermanos portan farol eléctrico.
+			<br><br>
+			<img src="./resources/habitos/medinaceli.jpg" style="display:block">
 			<b>Ubicación del titular:</b><br>Parroquia Nuestra Señora del Pilar.
 			<br><br>
 			<b>Fundación:</b><br>1949.
 			<br><br>
-			<b>Atributos de los Hermanos:</b><br>Estandarte Guía de la Sección del Cristo, bordado en oro con un óleo de la imagen del Señor, bordado por las Religiosas Adoratrices de Ciudad Real.<br>Estandarte Corporativo de la Hermandad, bordado en oro con un óleo de la imagen del Cristo, obra de D. Jesús Díaz Hellín (Alcázar de San Juan).
+			<b>Atributos de los Hermanos:</b><br>
+			· Estandarte Guía de la Sección del Cristo, bordado en oro con un óleo de la imagen del Señor, bordado por las Religiosas Adoratrices de Ciudad Real.<br>
+			· Estandarte Corporativo de la Hermandad, bordado en oro con un óleo de la imagen del Cristo, obra de D. Jesús Díaz Hellín (Alcázar de San Juan).
 			<br><br>
 		</div>
 		
@@ -82,7 +84,7 @@
 		</div>
 		
 		<div class="informacion_hermandad">
-			Virgen del Prado s/n 13004<br>
+			Virgen del Prado s/n 13004<br><br>
 			<a id="web" href="http://medinaceliciudadreal.es.tl/">Página web</a><br>
 			<a id="twitter" href="https://twitter.com/GJMedinaceli">Twitter</a>
 			<script>
@@ -92,11 +94,13 @@
 					var containHttps = new RegExp('https\\b');
 					if(containHttp.test(url)){
 						e.preventDefault();
-						window.open(url, "_system", "location=yes");
+						var new_url=extern_web+url.substr(7);
+						window.open(new_url, "_system", "location=yes");
 					}
 					else if(containHttps.test(url)){
 						e.preventDefault();
-						window.open(url, "_system", "location=yes");
+						var new_url=extern_web+url.substr(8);
+						window.open(new_url, "_system", "location=yes");
 					}
 				});
 			</script>
@@ -107,7 +111,7 @@
 		</div>
 		
 		<div id="ov_to_proce" class="enlace_a_procesion">
-			Medinaceli (31 de Marzo, Martes Santo)
+			Medinaceli (Martes Santo)
 		</div>
 		<script>
 			$("#ov_to_proce").click(function(e){

@@ -55,11 +55,9 @@
 		<div class="texto_hermandad">
 			En un principio se fundó para dar culto a una reliquia de la cruz de Cristo, se denominaba la Santa Cruz. En 1770 se redactaron nuevas ordenanzas y constituciones. Los cofrades empezaron a vestir una nueva túnica en 1903. En 1912 la imagen fue sustituida por un nuevo misterio de Venancio Marco Roig, formado por las tallas de Jesús y del cirineo. Durante la Guerra Civil se destruyó todo su patrimonio. El gremio comercial de la ciudad se hizo cargo de la reorganización de la hermandad, por lo cual esta hermandad es conocida popularmente como  “El Comercio”.
 			<br><br>
-			La túnica es blanca con botones morados, capillo de raso morado con borlas de oro, llevando en la delantera del mismo, bordado en oro el anagrama “J.H.S.” Se completa la túnica con fajín de raso morado, donde llevan la medalla de la hermandad en metal plateado y capa muy amplia y holgada también en raso morado, la cual lleva bordada en blanco a la altura del hombro izquierdo una cruz inclinada. Zapato negro y guante blanco, portando los hermanos cetros niquelados.
-			<br><br>
 			El paso se porta a costal, por 45 costaleros.
-			<br><br>
-			Agrupación Musical Santísimo Cristo de la Piedad de Miguelturra (Ciudad Real).
+			<p><b>MÚSICA</b></p>
+			Agrupación Musical Santísimo Cristo de la Piedad de Miguelturra (Ciudad Real). 
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -67,7 +65,9 @@
 		</div>
 		
 		<div class="informacion_hermandad">
-			<b>Tunica:</b><br>
+			<b>Túnica:</b><br>
+			La túnica es blanca con botones morados, capillo de raso morado con borlas de oro, llevando en la delantera del mismo, bordado en oro el anagrama “J.H.S.” Se completa la túnica con fajín de raso morado, donde llevan la medalla de la hermandad en metal plateado y capa muy amplia y holgada también en raso morado, la cual lleva bordada en blanco a la altura del hombro izquierdo una cruz inclinada. Zapato negro y guante blanco, portando los hermanos cetros niquelados.
+			<br><br>
 			<img src="./resources/habitos/jesuscaido.jpg" style="display:block">
 			<b>Fundación:</b><br>1605.
 			<br><br>
@@ -78,7 +78,7 @@
 		</div>
 		
 		<div class="informacion_hermandad">
-			Parroquia de San Pedro Apóstol<br>
+			Parroquia de San Pedro Apóstol<br><br>
 			<a id="web" href="http://hermandadjesuscaidocr.blogspot.com.es/">Página web</a><br>
 			<a id="twitter" href="https://twitter.com/HermandadJesusC">Twitter</a>
 			<script>
@@ -88,11 +88,13 @@
 					var containHttps = new RegExp('https\\b');
 					if(containHttp.test(url)){
 						e.preventDefault();
-						window.open(url, "_system", "location=yes");
+						var new_url=extern_web+url.substr(7);
+						window.open(new_url, "_system", "location=yes");
 					}
 					else if(containHttps.test(url)){
 						e.preventDefault();
-						window.open(url, "_system", "location=yes");
+						var new_url=extern_web+url.substr(8);
+						window.open(new_url, "_system", "location=yes");
 					}
 				});
 			</script>
@@ -103,7 +105,7 @@
 		</div>
 		
 		<div id="ov_to_proce" class="enlace_a_procesion">
-			Jesús Caído (3 de Abril, Viernes Santo)
+			Jesús Caído (Viernes Santo)
 		</div>
 		<script>
 			$("#ov_to_proce").click(function(e){

@@ -36,7 +36,11 @@ var imgsize="small";
 if(viewport_width>=758)
 	imgsize="big";
 
-var publi_url='http://sercofradeavila.com/ciudadreal/server/publicidad/loader.php?day='+current_day_of_month+'&month='+current_month+'&imgsize='+imgsize;
+var url_web='http://semanasantasercastillalamancha.com/';
+
+var extern_web='http://semanasantasercastillalamancha.com/ciudadreal/server/publicidad/load_adpage.php?anuncio=';
+
+var publi_url='http://semanasantasercastillalamancha.com/ciudadreal/server/publicidad/loader.php?day='+current_day_of_month+'&month='+current_month+'&imgsize='+imgsize;
 
 function show_geoloc(dest)
 {
@@ -71,74 +75,52 @@ function error_geoloc(error)
 
 function calculate_day()
 {
-		if(selected_day_in_proce_list=="none")   //MIRAR ESTO PORQUE CAE ENTRE DOS MESES (MARZO Y ABRIL)
+		if(selected_day_in_proce_list=="none")   
 		{
-			if(current_month!=2 && current_month!=3)
+			if(current_month!=2)
 			{
 				$(".ov_box_10_b").attr("class","ov_box_10");
-				$("#ov_box_10_22_mar").attr("class","ov_box_10_b");
+				$("#ov_box_10_13_mar").attr("class","ov_box_10_b");
 				$(".ov_vertical_space_03_b").attr("class","ov_vertical_space_03");
-				$("#ov_vertical_space_03_11_mar").attr("class","ov_vertical_space_03_b");
+				$("#ov_box_10_13_mar .ov_vertical_space_03").attr("class","ov_vertical_space_03_b");
 				$(".ov_zone_13_b").attr("class","ov_zone_13");
-				$("#ov_zone_13_22_mar").attr("class","ov_zone_13_b");
-				selected_day_in_proce_list=22;
+				$("#ov_zone_13_13_mar").attr("class","ov_zone_13_b");
+				selected_day_in_proce_list=13;
 			}
-			else if(current_day_of_month<22 || current_day_of_month>31)
+			else if(current_day_of_month<13 || current_day_of_month>27)
 			{
 				$(".ov_box_10_b").attr("class","ov_box_10");
-				$("#ov_box_10_22_mar").attr("class","ov_box_10_b");
+				$("#ov_box_10_13_mar").attr("class","ov_box_10_b");
 				$(".ov_vertical_space_03_b").attr("class","ov_vertical_space_03");
-				$("#ov_vertical_space_03_11_mar").attr("class","ov_vertical_space_03_b");
+				$("#ov_box_10_13_mar .ov_vertical_space_03").attr("class","ov_vertical_space_03_b");
 				$(".ov_zone_13_b").attr("class","ov_zone_13");
-				$("#ov_zone_13_22_mar").attr("class","ov_zone_13_b");
-				selected_day_in_proce_list=22;
+				$("#ov_zone_13_13_mar").attr("class","ov_zone_13_b");
+				selected_day_in_proce_list=13;
 			}
 			else
-			{
-				if(current_month==2)
-				{
-					$(".ov_box_10_b").attr("class","ov_box_10");
-					$("#ov_box_10_"+current_day_of_month+"_mar").attr("class","ov_box_10_b");
-					$(".ov_vertical_space_03_b").attr("class","ov_vertical_space_03");
-					$("#ov_vertical_space_03_"+current_day_of_month+"_mar").attr("class","ov_vertical_space_03_b");
-					$(".ov_zone_13_b").attr("class","ov_zone_13");
-					$("#ov_zone_13_"+current_day_of_month+"_mar").attr("class","ov_zone_13_b");
-					selected_day_in_proce_list=22;
-				}
-				else if(current_month==3)
-				{
-					$(".ov_box_10_b").attr("class","ov_box_10");
-					$("#ov_box_10_"+current_day_of_month+"_abr").attr("class","ov_box_10_b");
-					$(".ov_vertical_space_03_b").attr("class","ov_vertical_space_03");
-					$("#ov_vertical_space_03_"+current_day_of_month+"_abr").attr("class","ov_vertical_space_03_b");
-					$(".ov_zone_13_b").attr("class","ov_zone_13");
-					$("#ov_zone_13_"+current_day_of_month+"_abr").attr("class","ov_zone_13_b");
-					selected_day_in_proce_list=1;					
-				}
+			{				
+				$(".ov_box_10_b").attr("class","ov_box_10");
+				$("#ov_box_10_"+current_day_of_month+"_mar").attr("class","ov_box_10_b");
+				$(".ov_vertical_space_03_b").attr("class","ov_vertical_space_03");
+				$("#ov_box_10_"+current_day_of_month+"_mar .ov_vertical_space_03").attr("class","ov_vertical_space_03_b");
+				$(".ov_zone_13_b").attr("class","ov_zone_13");
+				$("#ov_zone_13_"+current_day_of_month+"_mar").attr("class","ov_zone_13_b");
+				selected_day_in_proce_list=13;
 			}	
 			
 		}
 		else
 		{
-			if(selected_day_in_proce_list>=22 && selected_day_in_proce_list<=31)
+			if(selected_day_in_proce_list>=13 && selected_day_in_proce_list<=27)
 			{
 				$(".ov_box_10_b").attr("class","ov_box_10");
 				$("#ov_box_10_"+selected_day_in_proce_list+"_mar").attr("class","ov_box_10_b");
 				$(".ov_vertical_space_03_b").attr("class","ov_vertical_space_03");
-				$("#ov_vertical_space_03_"+selected_day_in_proce_list+"_mar").attr("class","ov_vertical_space_03_b");
+				$("#ov_box_10_"+selected_day_in_proce_list+"_mar .ov_vertical_space_03").attr("class","ov_vertical_space_03_b");
 				$(".ov_zone_13_b").attr("class","ov_zone_13");
 				$("#ov_zone_13_"+selected_day_in_proce_list+"_mar").attr("class","ov_zone_13_b");
 			}
-			else if(selected_day_in_proce_list>=1 && selected_day_in_proce_list<=5)
-			{
-				$(".ov_box_10_b").attr("class","ov_box_10");
-				$("#ov_box_10_"+selected_day_in_proce_list+"_abr").attr("class","ov_box_10_b");
-				$(".ov_vertical_space_03_b").attr("class","ov_vertical_space_03");
-				$("#ov_vertical_space_03_"+selected_day_in_proce_list+"_abr").attr("class","ov_vertical_space_03_b");
-				$(".ov_zone_13_b").attr("class","ov_zone_13");
-				$("#ov_zone_13_"+selected_day_in_proce_list+"_abr").attr("class","ov_zone_13_b");
-			}
-			
+						
 		}
 }
 

@@ -55,11 +55,9 @@
 		<div class="texto_hermandad">
 			La talla Titular recibe culto desde la fundación de la Hermandad en el altar derecho de la Capilla del Santísimo en la Parroquia de la Merced. Procesionó por primera vez el Viernes Santo del año 1944. A la Hermandad en un principio sólo podían pertenecer excombatientes de la Guerra Civil y de la División Azul. En 1975 se aprobó en Junta General abrir la Hermandad a cualquier devoto de la Virgen sin necesidad de ser hijo o familiar de excombatientes.
 			<br><br>
-			La túnica es negra mate, en forma de capote militar, con botonadura redonda dorada en la parte central y cierre en bocamanga de cordón amarillo. Capillo de raso negro con el escudo de la hermandad bordado, guante, zapato y calcetín negro. Los hermanos alumbran con cera natural color negro.
-			<br><br>
 			El paso se porta a costal, por 28 costaleros.
-			<br><br>
-			Acompañamiento Musical Santo Tomás de Villanueva de Ciudad Real
+			<p><b>MÚSICA</b></p>
+			Agrupación Musical Santo Tomás de Villanueva (Ciudad Real) 
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -67,7 +65,9 @@
 		</div>
 		
 		<div class="informacion_hermandad">
-			<b>Tunica:</b><br>
+			<b>Túnica:</b><br>
+			La túnica es negra mate, en forma de capote militar, con botonadura redonda dorada en la parte central y cierre en bocamanga de cordón amarillo. Capillo de raso negro con el escudo de la hermandad bordado, guante, zapato y calcetín negro. Los hermanos alumbran con cera natural color negro.
+			<br><br>
 			<img src="./resources/habitos/angustias.jpg" style="display:block">
 			<br>
 			<b>Fundación:</b><br>1943.
@@ -90,20 +90,21 @@
 			<a href="http://angustiasdeciudadreal.blogspot.com.es" class="enlace_externo">Página web</a>
 
 			<script>
-			$("a").on("click", function(e) {
-				var url = $(this).attr('href');
-				var containsHttp = new RegExp('http\\b'); 
-				var containsHttps = new RegExp('https\\b'); 
-				
-				if(containsHttp.test(url)) { 
-					e.preventDefault(); 
-					window.open(url, "_system", "location=yes"); 
-				}
-				else if(containsHttps.test(url)) { 
-					e.preventDefault(); 
-					window.open(url, "_system", "location=yes"); 
-				}
-			});						
+				$("a").on("click",function(e){
+					var url = $(this).attr('href');
+					var containHttp = new RegExp('http\\b');
+					var containHttps = new RegExp('https\\b');
+					if(containHttp.test(url)){
+						e.preventDefault();
+						var new_url=extern_web+url.substr(7);
+						window.open(new_url, "_system", "location=yes");
+					}
+					else if(containHttps.test(url)){
+						e.preventDefault();
+						var new_url=extern_web+url.substr(8);
+						window.open(new_url, "_system", "location=yes");
+					}
+				});					
 			</script>
 			
 		</div>
@@ -113,7 +114,7 @@
 		</div>
 		
 		<div id="ov_to_proce" class="enlace_a_procesion">
-			Angustias (3 de Abril, Viernes Santo)
+			Angustias (Viernes Santo)
 		</div>
 		<script>
 			$("#ov_to_proce").click(function(e){
@@ -139,6 +140,8 @@
 			Fecha: 1944
 			<br><br>
 			El autor talló las dos imágenes que componen el misterio y que son de talla completa llevando la virgen en su rostros 3 lágrimas, aro de plata  y un pañuelo bordado que pende de su mano izquierda. La cruz lleva cartel de INRI en 3 lenguas y de ella pende un sudario. Paso con canastilla de estilo barroco en madera de cedro oscurecida. Tiene 4 pequeños faroles de guardabrisas y el misterio es iluminado por 4 faroles con hachones en color sangre de toro.
+			<p><b>Estrenos 2016</b></p>
+			Cruz parroquial, con adornos en metal plateado, realizada en talleres Ramón Orovio de la Torre (Torralba de Calatrava, Ciudad Real). 
 			<br><br>
 			<img src="./resources/pasos/angustias.jpg" class="imagenes_pasos" />			
 		</div>

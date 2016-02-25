@@ -55,11 +55,10 @@
 		<div class="texto_hermandad">
 			La hermandad de Nuestra Señora de la Soledad es la más antigua de las que componen actualmente la Semana Santa de Ciudad Real. Los datos más antiguos datan de 1565. La antigua imagen de la Virgen de la Soledad fue destruida en la Guerra Civil. En 1941 salió el nuevo paso que entonces desfilaba sin palio. En 1945 la imagen fue sustituida por la actual. Ese mismo año desfiló un nuevo paso: la Santa Cruz únicamente con un sudario. En 1975 se añadió al paso la imagen de la Virgen de la Amargura que en principio iba orientada hacia la cruz en el paso. La hermandad siempre había realizado su estación de penitencia el Viernes Santo por la noche, pero desde el año 1956 se traslada a la noche del Sábado Santo.
 			<br><br>
-			Túnica de sarga negra con el capillo del mismo color que lleva bordado el escudo de la Hermandad a la altura del pecho. A la cintura se ceñirá con un cinturón de esparto de 12 centímetros, zapato y calcetín negro. Los hermanos alumbran con cirios.
-			<br><br>
 			El paso se porta a costal, tiene una cuadrilla de 48 costaleros.
-			<br><br>
-			En silencio en el Paso del Misterio, y en el Paso de Palio con música de capilla.
+			<p><b>MÚSICA</b></p>
+			· Música de capilla y Coral Polifónica de Miguelturra en Paso de Misterio<br>
+		    · Agrupación Musical Reina de la Amargura de Jaén en Paso de Palio 
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -67,7 +66,9 @@
 		</div>
 		
 		<div class="informacion_hermandad">
-			<b>Tunica:</b><br>
+			<b>Túnica:</b><br>
+			Túnica de sarga negra con el capillo del mismo color que lleva bordado el escudo de la Hermandad a la altura del pecho. A la cintura se ceñirá con un cinturón de esparto de 12 centímetros, zapato y calcetín negro. Los hermanos alumbran con cirios.
+			<br><br>
 			<img src="./resources/habitos/soledad.jpg" style="display:block">
 			<br>
 			<b>Fundación:</b><br>1565.
@@ -83,25 +84,25 @@
 		<div class="informacion_hermandad">
 			Casa Hermandad situada en Paseo Carlos Eraña s/n (Bajos de Unicaja)
 			<br><br>			
-			<a href="http://www.sabadosdesoledad.blogspot.com" class="enlace_externo">Página web</a>
-			<br><br>
+			<a href="http://www.sabadosdesoledad.blogspot.com" class="enlace_externo">Página web</a><br>
 			<a href="https://twitter.com/CDLAniversario" class="enlace_externo">Twitter</a>
 			
 			<script>
-			$("a").on("click", function(e) {
-				var url = $(this).attr('href');
-				var containsHttp = new RegExp('http\\b'); 
-				var containsHttps = new RegExp('https\\b'); 
-				
-				if(containsHttp.test(url)) { 
-					e.preventDefault(); 
-					window.open(url, "_system", "location=yes"); 
-				}
-				else if(containsHttps.test(url)) { 
-					e.preventDefault(); 
-					window.open(url, "_system", "location=yes"); 
-				}
-			});						
+				$("a").on("click",function(e){
+					var url = $(this).attr('href');
+					var containHttp = new RegExp('http\\b');
+					var containHttps = new RegExp('https\\b');
+					if(containHttp.test(url)){
+						e.preventDefault();
+						var new_url=extern_web+url.substr(7);
+						window.open(new_url, "_system", "location=yes");
+					}
+					else if(containHttps.test(url)){
+						e.preventDefault();
+						var new_url=extern_web+url.substr(8);
+						window.open(new_url, "_system", "location=yes");
+					}
+				});				
 			</script>
 		</div>
 		
@@ -110,7 +111,7 @@
 		</div>
 		
 		<div id="ov_to_proce" class="enlace_a_procesion">
-			Soledad (4 de Abril, Sábado Santo)
+			Soledad (Sábado Santo)
 		</div>
 		<script>
 			$("#ov_to_proce").click(function(e){

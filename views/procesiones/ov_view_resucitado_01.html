@@ -36,7 +36,7 @@
 				RESUCITADO
 			</div>
 			<div class="subtitulos_procesion">
-				5 de Abril - Domingo de resurreción
+				27 de Marzo - Domingo de resurrección
 			</div>
 			<div class="subtitulos_procesion">
 				Salida a las <b>12:00h</b> desde S.I.P.B. Catedral.
@@ -45,7 +45,7 @@
 		</div>
 		
 		<div class="informacion_procesion">
-			Esta procesión pertenece a la Asociación de Cofradías, siendo cada año una de las Hermandades que componen la misma la encargada de presidir el cortejo. Organizan una salida procesional, en la mañana del Domingo de Resurreción.
+			Esta procesión pertenece a la Asociación de Cofradías, siendo cada año una de las Hermandades que componen la misma la encargada de presidir el cortejo. Organizan una salida procesional, en la mañana del Domingo de Resurrección.
 			<br>
 			El exorno floral es de clavel rojos y tomillo..
 			<br>
@@ -82,7 +82,7 @@
 		<div class="hollow_10px"> </div>
 		
 		<div class="subtitulo_pasos">
-			Misterio de la Resurreción de Nuestro Señor Jesucristo
+			Misterio de la Resurrección de Nuestro Señor Jesucristo
 		</div>
 		
 		<div class="informacion_pasos">
@@ -135,60 +135,66 @@ Pasión de Ciudad Real</p>
 				$("#mapa_resucitado").gmap3({
 					map:{
 					options:{
-					center:[38.985255, -3.929908],
-					zoom:15
-					}
+						center:[38.985506, -3.928548],
+						zoom:16
+						}
 					},
 					marker:{
-					values:[
-					{latLng:[38.986489, -3.930685], data:"Catedral"}]
+						values:[
+						{latLng:[38.986489, -3.930685], data:"Catedral"}]
 					},
 					polyline:{
 					options:{
 						strokeColor: "#6F65D5",
 						strokeOpacity: 0.6,
 						strokeWeight: 4,
-						icons: [{icon: lineSymbol, offset: '15%'},
-						{icon: lineSymbol, offset: '30%'},
-						{icon: lineSymbol, offset: '45%'},
-						{icon: lineSymbol, offset: '60%'},
-						{icon: lineSymbol, offset: '75%'},
-						{icon: lineSymbol, offset: '90%'},
-						],
+						icons: [{icon: lineSymbol, offset: '3%'},
+								{icon: lineSymbol, offset: '10%'},
+								{icon: lineSymbol, offset: '20%'},
+								{icon: lineSymbol, offset: '30%'},
+								{icon: lineSymbol, offset: '40%'},
+								{icon: lineSymbol, offset: '50%'},
+								{icon: lineSymbol, offset: '60%'},
+								{icon: lineSymbol, offset: '70%'},
+								{icon: lineSymbol, offset: '80%'},
+								{icon: lineSymbol, offset: '90%'},
+								{icon: lineSymbol, offset: '98%'},
+								],
 						path:[
 						
-						[38.986489, -3.930685],
+							[38.986489, -3.930685],
 
-						[38.986746, -3.930367],
-						[38.986220, -3.929530],
-						[38.985703, -3.930308],
+							[38.986746, -3.930367],
+							[38.986220, -3.929530],
+							[38.985703, -3.930308],
+							
+							[38.985426, -3.929961],
+							[38.985255, -3.929908],
+							[38.984100, -3.929194],
+							[38.983662, -3.929312],
+							[38.983545, -3.929811],
+							[38.983274, -3.929672],
+							[38.982761, -3.929221],
+							[38.983023, -3.928674],
+							[38.983306, -3.928502],
+							[38.983611, -3.928462],
+							[38.983730, -3.928534],
+							[38.984205, -3.927295],
+							[38.984307, -3.926767],
+							[38.985108, -3.927193],
+							[38.984987, -3.928247],
+													
+							[38.985639, -3.928863],//plaza mayor
+							[38.985896, -3.929040], 
 						
-						[38.985426, -3.929961],
-						[38.985255, -3.929908],
-						[38.984100, -3.929194],
-						[38.983662, -3.929312],
-						[38.983545, -3.929811],
-						[38.983274, -3.929672],
-						[38.982761, -3.929221],
-						[38.983023, -3.928674],
-						[38.983306, -3.928502],
-						[38.983611, -3.928462],
-						[38.983730, -3.928534],
-						[38.984205, -3.927295],
-						[38.984307, -3.926767],
-						[38.985108, -3.927193],
-						[38.984987, -3.928247],
-												
-						[38.984950, -3.928596],//Punto plaza mayor
-						
-						[38.985900, -3.929052],					
-						[38.986065, -3.928851],
-						[38.987697, -3.929902],
-						[38.987349, -3.930401],
-						[38.986918, -3.930699],
-						[38.986749, -3.930350],
-						[38.986490, -3.930683],
-
+							
+							[38.985900, -3.929052],					
+							[38.986065, -3.928851],
+							[38.987697, -3.929902],
+							[38.987349, -3.930401],
+							[38.986918, -3.930699],
+							[38.986749, -3.930350],
+							[38.986490, -3.930683],
 						
 						]
 						}
@@ -373,6 +379,16 @@ Pasión de Ciudad Real</p>
 				show_geoloc("Calle Prado, Ciudad Real");
 			});
 		</script>
+		
+		<div id="ov_place_16" class="punto_a_ruta">
+			Calle Feria
+		</div>
+		<script>
+			$("#ov_place_16").click(function(e){
+				show_geoloc("Calle Feria, Ciudad Real");
+			});
+		</script>
+				
 				
 		<div class="hollow_10px"> </div>
 		<div class="hollow_10px"> </div>

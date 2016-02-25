@@ -55,11 +55,11 @@
 		<div class="texto_hermandad">
 			El 1 de mayo de 1992 queda constituida esta hermandad por un grupo de catequistas de la Parroquia de Santa María del Prado. El 23 de septiembre de 1993 son aprobados sus primeros estatutos. Los fundadores de la hermandad procesionaron por primera vez en la madrugada del Viernes Santo de 1944 con un paso de misterio que estaba formado por tres imágenes: la del Señor, que era de vestir, y dos soldados de talla completa, uno colocándole la corona de espinas y otro burlándose de él. Ese misterio procesionó hasta la Semana Santa de 1996.
 			<br><br>
-			Túnica blanca con fajín y clámide de color púrpura, el capillo también blanco. Sandalias negras y calcetas blancas. Portan cirio de color granate en el misterio y blancos en el palio.
-			<br><br>
 			La imagen se porta a costal, por una cuadrilla de 35 costaleros.
-			<br><br>
-			Banda de Música de Granátula de Calatrava.
+			<br>
+			<p><b>MÚSICA</b></p>
+			· Banda de CCTT Ntra. Sra. Del Prado-La Pasión. (Ciudad Real) en el Paso de Misterio<br>
+			· Asociación Musical Mozart (Aldea del Rey) en Paso de Palio
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -67,7 +67,9 @@
 		</div>
 		
 		<div class="informacion_hermandad">
-			<b>Tunica:</b><br>
+			<b>Túnica:</b><br>
+			Túnica blanca con fajín y clámide de color púrpura, el capillo también blanco. Sandalias negras y calcetas blancas. Portan cirio de color granate en el misterio y blancos en el palio.
+			<br><br>
 			<img src="./resources/habitos/coronacion.jpg" style="display:block">
 			<b>Ubicación del titular:</b><br>Parroquia de Santa María del Prado (La Merced).
 			<br><br>
@@ -92,11 +94,13 @@
 					var containHttps = new RegExp('https\\b');
 					if(containHttp.test(url)){
 						e.preventDefault();
-						window.open(url, "_system", "location=yes");
+						var new_url=extern_web+url.substr(7);
+						window.open(new_url, "_system", "location=yes");
 					}
 					else if(containHttps.test(url)){
 						e.preventDefault();
-						window.open(url, "_system", "location=yes");
+						var new_url=extern_web+url.substr(8);
+						window.open(new_url, "_system", "location=yes");
 					}
 				});
 			</script>
@@ -107,7 +111,7 @@
 		</div>
 		
 		<div id="ov_to_proce" class="enlace_a_procesion">
-			Coronación de Espinas (29 de Marzo, Domingo de Ramos)
+			Coronación de Espinas (Domingo de Ramos)
 		</div>
 		<script>
 			$("#ov_to_proce").click(function(e){

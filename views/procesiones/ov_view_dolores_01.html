@@ -36,7 +36,7 @@
 				NUESTRA SEÑORA DE LOS DOLORES
 			</div>
 			<div class="subtitulos_procesion">
-				3 de Abril - Viernes Santo
+				25 de Marzo - Viernes Santo
 			</div>
 			<div class="subtitulos_procesion">
 				Salida a las <b>21:30h</b> desde S.I.P.B. Catedral.
@@ -123,66 +123,71 @@
 				var lineSymbol = { path: google.maps.SymbolPath.FORWARD_OPEN_ARROW, scale: 2 };
 				$("#mapa_dolores").gmap3({
 					map:{
-					options:{
-					center:[38.986137, -3.926220],
-					zoom:15
-					}
+						options:{
+						center:[38.986899, -3.928366],
+						zoom:16
+						}
 					},
 					marker:{
-					values:[
-					{latLng:[38.986489, -3.930685], data:"Catedral"}]
+						values:[
+						{latLng:[38.986489, -3.930685], data:"Catedral"}]
 					},
 					polyline:{
 					options:{
 						strokeColor: "#6F65D5",
 						strokeOpacity: 0.6,
 						strokeWeight: 4,
-						icons: [{icon: lineSymbol, offset: '15%'},
-						{icon: lineSymbol, offset: '30%'},
-						{icon: lineSymbol, offset: '45%'},
-						{icon: lineSymbol, offset: '60%'},
-						{icon: lineSymbol, offset: '75%'},
-						{icon: lineSymbol, offset: '90%'},
-						],
+						icons: [{icon: lineSymbol, offset: '3%'},
+								{icon: lineSymbol, offset: '10%'},
+								{icon: lineSymbol, offset: '20%'},
+								{icon: lineSymbol, offset: '30%'},
+								{icon: lineSymbol, offset: '40%'},
+								{icon: lineSymbol, offset: '50%'},
+								{icon: lineSymbol, offset: '60%'},
+								{icon: lineSymbol, offset: '70%'},
+								{icon: lineSymbol, offset: '80%'},
+								{icon: lineSymbol, offset: '90%'},
+								{icon: lineSymbol, offset: '98%'},
+								],
 						path:[
 
-						[38.986489, -3.930685],
-						[38.986745, -3.930354],
-						[38.986863, -3.930546],
-						[38.986916, -3.930697],
-						[38.987349, -3.930391],
-						[38.987701, -3.929910],
-						[38.987303, -3.929666],
-						[38.987614, -3.929078],
-						[38.988022, -3.928408],
-						[38.986600, -3.928478],
-						[38.986530, -3.928384],
-						[38.986344, -3.928483],
-						[38.985896, -3.929049],
-						
-						[38.984950, -3.928596],//Punto plaza mayor
-						
-						[38.984993, -3.928250],
-						[38.985110, -3.927195],
-						[38.985041, -3.927163],
-						[38.985070, -3.926512],
-						[38.984960, -3.926013],
-						[38.986144, -3.926216],
-						[38.987101, -3.926310],
-						[38.987088, -3.926474],
-						[38.986823, -3.927335],
-						[38.987322, -3.927419],
-						[38.988114, -3.927660],
-						[38.988934, -3.927783],
-						[38.988744, -3.928296],
-						[38.988025, -3.928400],
-						[38.986599, -3.928478],
-						[38.986536, -3.928387],
-						[38.986332, -3.928481],
-						[38.985898, -3.929055],
-						[38.986749, -3.930353],
-						[38.986490, -3.930680],
-
+							[38.986489, -3.930685],
+							[38.986745, -3.930354],
+							[38.986863, -3.930546],
+							[38.986916, -3.930697],
+							[38.987349, -3.930391],
+							[38.987701, -3.929910],
+							[38.987303, -3.929666],
+							[38.987614, -3.929078],
+							[38.988022, -3.928408],
+							[38.986600, -3.928478],
+							[38.986530, -3.928384],
+							[38.986344, -3.928483],
+							[38.985896, -3.929049],
+							
+							[38.985896, -3.929040], //plaza mayor
+							[38.985639, -3.928863],
+							
+							[38.984993, -3.928250],
+							[38.985110, -3.927195],
+							[38.985041, -3.927163],
+							[38.985070, -3.926512],
+							[38.984960, -3.926013],
+							[38.986144, -3.926216],
+							[38.987101, -3.926310],
+							[38.987088, -3.926474],
+							[38.986823, -3.927335],
+							[38.987322, -3.927419],
+							[38.988114, -3.927660],
+							[38.988934, -3.927783],
+							[38.988744, -3.928296],
+							[38.988025, -3.928400],
+							[38.986599, -3.928478],
+							[38.986536, -3.928387],
+							[38.986332, -3.928481],
+							[38.985898, -3.929055],
+							[38.986749, -3.930353],
+							[38.986490, -3.930680],
 						
 						]
 						}
@@ -333,11 +338,11 @@
 		</script>
 		
 		<div id="ov_place_13" class="punto_a_ruta">
-			Plaza Constitucion
+			Plaza Elisa Cendrero
 		</div>
 		<script>
 			$("#ov_place_13").click(function(e){
-				show_geoloc("Plaza Constitucion, Ciudad Real");
+				show_geoloc("Plaza Elisa Cendrero, Ciudad Real");
 			});
 		</script>
 		
@@ -347,6 +352,15 @@
 		<script>
 			$("#ov_place_14").click(function(e){
 				show_geoloc("Calle Jacinto, Ciudad Real");
+			});
+		</script>
+		
+		<div id="ov_place_145" class="punto_a_ruta">
+			Calle Toledo
+		</div>
+		<script>
+			$("#ov_place_145").click(function(e){
+				show_geoloc("Calle Toledo, Ciudad Real");
 			});
 		</script>
 		
@@ -360,14 +374,23 @@
 		</script>
 		
 		<div id="ov_place_16" class="punto_a_ruta">
-			Calle Prado
+			Calle Feria
 		</div>
 		<script>
 			$("#ov_place_16").click(function(e){
+				show_geoloc("Calle Feria, Ciudad Real");
+			});
+		</script>
+		
+		<div id="ov_place_17" class="punto_a_ruta">
+			Calle Prado
+		</div>
+		<script>
+			$("#ov_place_17").click(function(e){
 				show_geoloc("Calle Prado, Ciudad Real");
 			});
 		</script>
-			
+					
 		<div class="hollow_10px"> </div>
 		<div class="hollow_10px"> </div>
 		<div class="hollow_10px"> </div>						

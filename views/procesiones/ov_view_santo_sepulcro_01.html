@@ -36,10 +36,10 @@
 				SANTO SEPULCRO
 			</div>
 			<div class="subtitulos_procesion">
-				3 de Abril - Viernes Santo
+				25 de Marzo - Viernes Santo
 			</div>
 			<div class="subtitulos_procesion">
-				Salida a las <b>20:00h</b> desde Guardapasos.
+				Salida a las <b>21:45h</b> desde Iglesia de la Merced
 			</div>
 			
 		</div>
@@ -122,72 +122,60 @@
 			setTimeout(function() {
 				var lineSymbol = { path: google.maps.SymbolPath.FORWARD_OPEN_ARROW, scale: 2 };
 				$("#mapa_sepulcro").gmap3({
-				map:{
-				options:{
-				center:[38.988936, -3.927786],
-				zoom:15
-				}
-				},
-				marker:{
-				values:[
-				{latLng:[38.988012, -3.921885], data:"Rectorado"}]
-				},
-				polyline:{
-				options:{
-				strokeColor: "#6F65D5",
-				strokeOpacity: 0.6,
-				strokeWeight: 4,
-				icons: [{icon: lineSymbol, offset: '15%'},
-				{icon: lineSymbol, offset: '30%'},
-				{icon: lineSymbol, offset: '45%'},
-				{icon: lineSymbol, offset: '60%'},
-				{icon: lineSymbol, offset: '75%'},
-				{icon: lineSymbol, offset: '90%'},
-				],
-				path:[
+					map:{
+						options:{
+						center:[38.986511, -3.928807],
+						zoom:17
+						}
+					},
+					marker:{
+						values:[
+						{latLng:[38.987716, -3.929114], data:"Iglesia de la Merced"}]
+					},
+					polyline:{
+						options:{
+						strokeColor: "#6F65D5",
+						strokeOpacity: 0.6,
+						strokeWeight: 4,
+						icons: [{icon: lineSymbol, offset: '3%'},
+								{icon: lineSymbol, offset: '10%'},
+								{icon: lineSymbol, offset: '20%'},
+								{icon: lineSymbol, offset: '30%'},
+								{icon: lineSymbol, offset: '40%'},
+								{icon: lineSymbol, offset: '50%'},
+								{icon: lineSymbol, offset: '60%'},
+								{icon: lineSymbol, offset: '70%'},
+								{icon: lineSymbol, offset: '80%'},
+								{icon: lineSymbol, offset: '90%'},
+								{icon: lineSymbol, offset: '98%'},
+								],
+					path:[
 
-				[38.988012, -3.921885],
-				[38.987510, -3.924117],
-				[38.988519, -3.924256],
-				[38.988982, -3.924302],
-				[38.989715, -3.924705],
-				[38.989783, -3.924834],
-
-
-				[38.990113, -3.925189],
-				[38.989963, -3.925801],
-
-				[38.989525, -3.925548],
-				[38.989326, -3.925981],
-				[38.989128, -3.926895],
-				[38.988936, -3.927786],
-
-
-
-
-				[38.988747, -3.928293],
-				[38.988624, -3.928328],
-				[38.988334, -3.928926],
-				[38.987696, -3.929910],
-				[38.987296, -3.929658],
-				[38.987583, -3.929119],
-				[38.988017, -3.928405],
-				[38.986603, -3.928486],
-				[38.986530, -3.928392],
-				[38.986343, -3.928491],
-				[38.985893, -3.929052],
-				[38.984990, -3.928247],
-				[38.985110, -3.927191],
-				[38.985037, -3.927170],
-				[38.985066, -3.926526],
-				[38.984960, -3.926005],
-				[38.986128, -3.926220],
-				[38.987103, -3.926322],
-				[38.987182, -3.925946],
-				[38.987260, -3.925710],
-				[38.988012, -3.921885],
-				]		}
-				}
+						[38.987716, -3.929114], //pasaje merced
+						[38.987582, -3.929073], 
+						[38.988016, -3.928388],
+						[38.986630, -3.928504], //calle toledo
+						[38.986523, -3.928380],
+						[38.986071, -3.928836], //calle feria
+						
+						[38.985896, -3.929040], //mercado viejo
+						[38.985639, -3.928863], //plaza mayor
+						
+						[38.985076, -3.928313], //carlos vazquez
+						[38.984984, -3.928157],
+						[38.985107, -3.927191], //calle paloma
+						[38.986064, -3.927266],
+						[38.986001, -3.928441], //cruz
+						[38.986324, -3.928484], //maria cristina
+						[38.985890, -3.929042], //prado
+						[38.986927, -3.930704], //camarin
+						[38.987326, -3.930412], 
+						[38.987695, -3.929908], //caballeros
+						[38.987301, -3.929653], 
+						[38.987562, -3.929101], //pasaje merced					
+					
+					]}
+					}
 				});
 			},1000);
 			</script>
@@ -224,85 +212,85 @@
 			</div>			
 			
 		</div>
-		
+				
 		<div id="ov_place_1" class="punto_a_ruta">
-			Calle Quevedo
+			Plaza de la Merced
 		</div>
 		<script>
 			$("#ov_place_1").click(function(e){
-				show_geoloc("Calle Quevedo, Ciudad Real");
+				show_geoloc("Plaza de la Merced, Ciudad Real");
 			});
 		</script>
 		
 		<div id="ov_place_2" class="punto_a_ruta">
-			Calle Lirio
+			Calle Toledo
 		</div>
 		<script>
 			$("#ov_place_2").click(function(e){
-				show_geoloc("Calle Lirio, Ciudad Real");
+				show_geoloc("Calle Toledo, Ciudad Real");
 			});
 		</script>
 		
 		<div id="ov_place_3" class="punto_a_ruta">
-			Calle Norte
+			Calle Feria
 		</div>
 		<script>
 			$("#ov_place_3").click(function(e){
-				show_geoloc("Calle Norte, Ciudad Real");
+				show_geoloc("Calle Feria, Ciudad Real");
 			});
 		</script>
 		
 		<div id="ov_place_4" class="punto_a_ruta">
-			Calle Agustin Salido
+			Calle Mercado Viejo
 		</div>
 		<script>
 			$("#ov_place_4").click(function(e){
-				show_geoloc("Calle Agustin Salido, Ciudad Real");
+				show_geoloc("Calle Mercado Viejo, Ciudad Real");
 			});
 		</script>
 		
 		<div id="ov_place_5" class="punto_a_ruta">
-			Calle Jacinto
+			Plaza Mayor
 		</div>
 		<script>
 			$("#ov_place_5").click(function(e){
-				show_geoloc("Calle Jacinto, Ciudad Real");
+				show_geoloc("Plaza Mayor, Ciudad Real");
 			});
 		</script>
 		
 		<div id="ov_place_6" class="punto_a_ruta">
-			Calle Rosa
+			Calle Carlos Vázquez
 		</div>
 		<script>
 			$("#ov_place_6").click(function(e){
-				show_geoloc("Calle Rosa, Ciudad Real");
+				show_geoloc("Calle Carlos Vázquez, Ciudad Real");
 			});
 		</script>
 		
 		<div id="ov_place_7" class="punto_a_ruta">
-			Calle Caballeros
+			Calle Paloma
 		</div>
 		<script>
 			$("#ov_place_7").click(function(e){
-				show_geoloc("Calle Caballeros, Ciudad Real");
+				show_geoloc("Calle Paloma, Ciudad Real");
 			});
 		</script>
 		
 		<div id="ov_place_8" class="punto_a_ruta">
-			Pasaje De La Merced
+			Calle Cruz
 		</div>
 		<script>
 			$("#ov_place_8").click(function(e){
-				show_geoloc("Pasaje De La Merced, Ciudad Real");
+				show_geoloc("Calle Cruz, Ciudad Real");
 			});
 		</script>
 		
 		<div id="ov_place_9" class="punto_a_ruta">
-			Calle Toledo
+			Calle María Cristina
 		</div>
 		<script>
 			$("#ov_place_9").click(function(e){
-				show_geoloc("Calle Toledo, Ciudad Real");
+				show_geoloc("Calle María Cristina, Ciudad Real");
 			});
 		</script>
 		
@@ -316,59 +304,41 @@
 		</script>
 		
 		<div id="ov_place_11" class="punto_a_ruta">
-			Mercado Viejo
+			Calle Prado
 		</div>
 		<script>
 			$("#ov_place_11").click(function(e){
-				show_geoloc("Mercado Viejo, Ciudad Real");
+				show_geoloc("Calle Prado, Ciudad Real");
 			});
 		</script>
 		
 		<div id="ov_place_12" class="punto_a_ruta">
-			Plaza Mayor
+			Calle Camarín 
 		</div>
 		<script>
 			$("#ov_place_12").click(function(e){
-				show_geoloc("Plaza Mayor, Ciudad Real");
+				show_geoloc("Calle Camarín , Ciudad Real");
 			});
 		</script>
 		
 		<div id="ov_place_13" class="punto_a_ruta">
-			Calle Cuchilleria
+			Calle Caballeros
 		</div>
 		<script>
 			$("#ov_place_13").click(function(e){
-				show_geoloc("Calle Cuchilleria, Ciudad Real");
+				show_geoloc("Calle Caballeros, Ciudad Real");
 			});
 		</script>
 		
 		<div id="ov_place_14" class="punto_a_ruta">
-			Calle Lanza
+			Pasaje de la Merced
 		</div>
 		<script>
 			$("#ov_place_14").click(function(e){
-				show_geoloc("Calle Lanza, Ciudad Real");
+				show_geoloc("Pasaje de la Merced, Ciudad Real");
 			});
 		</script>
-		
-		<div id="ov_place_15" class="punto_a_ruta">
-			Calle Cardenal Monescillo
-		</div>
-		<script>
-			$("#ov_place_15").click(function(e){
-				show_geoloc("Calle Cardenal Monescillo, Ciudad Real");
-			});
-		</script>
-		
-		<div id="ov_place_16" class="punto_a_ruta">
-			Calle Huertos
-		</div>
-		<script>
-			$("#ov_place_16").click(function(e){
-				show_geoloc("Calle Huertos, Ciudad Real");
-			});
-		</script>
-					
+							
 		<div class="hollow_10px"> </div>
 		<div class="hollow_10px"> </div>
 		<div class="hollow_10px"> </div>						

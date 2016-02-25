@@ -55,10 +55,8 @@
 		<div class="texto_hermandad">
 			Fundada en la Iglesia de los Jesuitas, donde actualmente se encuentra el colegio Hermano Gárate, el 9 de Abril de 1944 por el patronato de la Congregación Juvenil Mariana de María Inmaculada, San Luís y San Estanislao. La hermandad asumió como escudo propio el de las congregaciones marianas y adoptaron los colores azul celeste y blanco para las túnicas de los cofrades, queriendo con ello rendir un tributo a la Madre Inmaculada, ya que el lema de la congregación era «A Cristo por María».
 			<br><br>
-			Túnica blanca con botonadura amarilla y capillo blanco ribeteado con un cordón amarillo, capa azul celeste con el anagrama de la congregación mariana en fondo blanco en el lado izquierdo; fajín también azul celeste con borlas de hilo de oro; guante blanco y calzado negro. Los hermanos portan palmas.
-			<br><br>
 			La imagen se porta a costal, por una cuadrilla de 40 costaleros.
-			<br><br>
+			<p><b>MÚSICA</b></p>
 			Agrupación Musical Nuestro Padre Jesús Redentor de Moral de Calatrava.
 		</div>
 		
@@ -67,7 +65,9 @@
 		</div>
 		
 		<div class="informacion_hermandad">
-			<b>Tunica:</b><br>
+			<b>Túnica:</b><br>
+			Túnica blanca con botonadura amarilla y capillo blanco ribeteado con un cordón amarillo, capa azul celeste con el anagrama de la congregación mariana en fondo blanco en el lado izquierdo; fajín también azul celeste con borlas de hilo de oro; guante blanco y calzado negro. Los hermanos portan palmas.
+			<br><br>
 			<img src="./resources/habitos/palmas.jpg" style="display:block">
 			<b>Ubicación del titular:</b><br>Iglesia de San Ignacio de Loyola (Salesianos).
 			<br><br>
@@ -89,11 +89,13 @@
 					var containHttps = new RegExp('https\\b');
 					if(containHttp.test(url)){
 						e.preventDefault();
-						window.open(url, "_system", "location=yes");
+						var new_url=extern_web+url.substr(7);
+						window.open(new_url, "_system", "location=yes");
 					}
 					else if(containHttps.test(url)){
 						e.preventDefault();
-						window.open(url, "_system", "location=yes");
+						var new_url=extern_web+url.substr(8);
+						window.open(new_url, "_system", "location=yes");
 					}
 				});
 			</script>
@@ -104,7 +106,7 @@
 		</div>
 		
 		<div id="ov_to_proce" class="enlace_a_procesion">
-			Las Palmas (29 de Marzo, Domingo de Ramos)
+			Las Palmas (Domingo de Ramos)
 		</div>
 		<script>
 			$("#ov_to_proce").click(function(e){
@@ -130,6 +132,8 @@
 			Fecha: S. XVII
 			<br><br>
 			Viste una túnica de terciopelo rojo bordada en oro.
+			<p><b>Estrenos 2016</b></p>
+			La Hermandad estrenará los cuatro faroles del paso del Stmo. Niño de la Paz, obra del taller Alberto Fernández. (Villarrubia de los Ojos. Ciudad Real).
 			<br><br>
 			<img src="./resources/pasos/ninopaz.jpg" class="imagenes_pasos" />			
 		</div>

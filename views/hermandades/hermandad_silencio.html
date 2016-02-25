@@ -42,7 +42,7 @@
 				
 				<div class="ov_box_large_menu_item_title">
 					
-					<div class="ov_text_large_menu_item_01" style="color:#FFF">Hermandad del Santísimo Cristo de la Buena Muerte y la Virgen del Mayor Dolor (silencio)</div>				
+					<div class="ov_text_large_menu_item_01" style="color:#FFF">Hermandad del Santísimo Cristo de la Buena Muerte y la Virgen del Mayor Dolor (Silencio)</div>				
 					
 				</div>
 				
@@ -55,11 +55,14 @@
 		<div class="texto_hermandad">
 			El 7 de marzo de 1943 queda constituida la hermandad realizando ese mismo año su primera salida penitencial el Jueves Santo a las 5 de la mañana con la imagen del Cristo de la Misericordia que actualmente se encuentra en el templo de San José  Obrero. Esta hermandad nace con el objetivo de ser una de la denominadas hermandades “serias”, “de silencio” y “penitenciales”. Durante su recorrido no solo los nazarenos guardan silencio y respeto ante el via crucis y las imágenes de sus titulares sino también el público que se acerca a ver la procesión permanece en rotundo silencio.
 			<br><br>
-			Túnica basada en el hábito franciscano, es negra con botonadura blanca, capillo bajo también negro con la Cruz de Jerusalén en blanco. Cíngulo de cuerda de cáñamo, guante blanco, sandalia negra y calcetín blanco. Los hermanos portan hachones de madera. 
-			<br><br>
 			Las imágenes son llevadas por portadores a varal 
+			<p><b>MÚSICA</b></p>
+			MAYOR DOLOR: <br>
+			Un solo tambor en cabeza de la procesión.
 			<br><br>
-			Un solo tambor en cabeza de la procesión, y otro a la altura del trono para marcar el paso de los portadores.
+			SILENCIO:<br>
+			· En la sección del Cristo, un solo tambor en cabeza de la procesión, y otro a la altura del trono para marcar el paso de los portadores.<br>
+			· En la sección de la Virgen, un solo tambor junto al paso de la Virgen para marcar el paso.
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -67,13 +70,19 @@
 		</div>
 		
 		<div class="informacion_hermandad">
-			<b>Tunica:</b><br>
-			<img src="./resources/habitos/silencio.jpg" style="display:block">
+			<b>Túnica:</b><br>
+			Túnica basada en el hábito franciscano, es negra con botonadura blanca, capillo bajo también negro con la Cruz de Jerusalén en blanco. Cíngulo de cuerda de cáñamo, guante blanco, sandalia negra y calcetín blanco. Los hermanos portan hachones de madera. <br>
+			<img src="./resources/habitos/silencio.jpg" style="display:block"><br>
 			<b>Ubicación del titular:</b><br>El Cristo de la Buena Muerte en la Parroquia de San Pedro.<br>La Virgen del Mayor Dolor en el domicilio del Hermano mayor con vistas a la calle
 			<br><br>
 			<b>Fundación:</b><br>1952.
 			<br><br>
-			<b>Insignia(s) destacadas:</b><br>Estandarte guión.<br>Estandarte pintado por Martín Casado y adornado con los bordados de un traje de luces del torero Víctor Mendes.<br>Estandarte pintado por Martín Casado.<br>Estandarte con una pintura de D. Alfonso de la Torre.<br>Estandarte de la doble condición humana y divina de Cristo, en el que van la corona y las potencias.
+			<b>Insignia(s) destacadas:</b><br>
+			· Estandarte guión.<br>
+			· Estandarte pintado por Martín Casado y adornado con los bordados de un traje de luces del torero Víctor Mendes.<br>
+			· Estandarte pintado por Martín Casado.<br>
+			· Estandarte con una pintura de D. Alfonso de la Torre.<br>
+			· Estandarte de la doble condición humana y divina de Cristo, en el que van la corona y las potencias.
 			<br><br>
 		</div>
 		
@@ -82,7 +91,7 @@
 		</div>
 		
 		<div class="informacion_hermandad">
-			C/ Luz nº 9, Ciudad Real<br>
+			C/ Luz nº 9, Ciudad Real<br><br>
 			<a id="web" href="http://www.silencio-cr.es/">Página web</a><br>
 			<a id="twitter" href="https://twitter.com/GJ_Silencio_CR">Twitter</a>
 			<script>
@@ -92,11 +101,13 @@
 					var containHttps = new RegExp('https\\b');
 					if(containHttp.test(url)){
 						e.preventDefault();
-						window.open(url, "_system", "location=yes");
+						var new_url=extern_web+url.substr(7);
+						window.open(new_url, "_system", "location=yes");
 					}
 					else if(containHttps.test(url)){
 						e.preventDefault();
-						window.open(url, "_system", "location=yes");
+						var new_url=extern_web+url.substr(8);
+						window.open(new_url, "_system", "location=yes");
 					}
 				});
 			</script>
@@ -107,7 +118,7 @@
 		</div>
 		
 		<div id="ov_to_proce" class="enlace_a_procesion">
-			Mayor dolor (31 de Marzo, Miercoles Santo)
+			Mayor dolor (Miércoles Santo)
 		</div>
 		<script>
 			$("#ov_to_proce").click(function(e){
@@ -118,7 +129,7 @@
 		</script>
 		
 		<div id="ov_to_proce1" class="enlace_a_procesion">
-			Silencio (2 de Abril, Jueves Santo)
+			Silencio (Jueves Santo)
 		</div>
 		<script>
 			$("#ov_to_proce1").click(function(e){

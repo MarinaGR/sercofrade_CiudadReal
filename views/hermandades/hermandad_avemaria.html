@@ -55,11 +55,9 @@
 		<div class="texto_hermandad">
 			Los hermanos que formaban esta cofradía tenían la obligación de saludarse al encontrarse con las palabras “Ave María”,  según sus constituciones.  La imagen que dio origen a la hermandad y que tuvo como titular hasta 1936 era de vestir y recibía culto en el Altar Mayor. Se destruyó en 1936. En 1940, la hermandad desfiló con una imagen provisional de Ramón de la Osa y en ese mismo año se encargó la actual titular al sevillano Antonio Castillo Lastrucci. Cuando llegó a Ciudad Real fue instalada en una habitación del Gran Hotel, desde donde se trasladó a la Catedral la Semana de Pasión de 1941 para ser bendecida.
 			<br><br>
-			Túnica de veludillo beige con botonadura y cíngulo dorado. Capa y capillo de terciopelo negro llevando este último bordado en oro el anagrama del “Ave María”. Guante, zapato y calcetín negro. Los hermanos alumbran con cirios.
-			<br><br>
 			El paso se porta a costal
-			<br><br>
-			Agrupación musical de Miguelturra
+			<p><b>MÚSICA</b></p>
+			Agrupación musical de Miguelturra 
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -67,7 +65,9 @@
 		</div>
 		
 		<div class="informacion_hermandad">
-			<b>Tunica:</b><br>
+			<b>Túnica:</b><br>
+			Túnica de veludillo beige con botonadura y cíngulo dorado. Capa y capillo de terciopelo negro llevando este último bordado en oro el anagrama del “Ave María”. Guante, zapato y calcetín negro. Los hermanos alumbran con cirios.
+			<br><br>
 			<img src="./resources/habitos/perchelera.jpg" style="display:block">
 			<b>Fundación:</b><br>1692.
 			<br><br>
@@ -83,22 +83,23 @@
 		<div class="informacion_hermandad">
 			Casa Hermandad en C/Montesa
 			<br><br>			
-			<a href="http://dolorosacatedral.es" class="enlace_externo">Página web</a>			
+			<!--<a href="http://dolorosacatedral.es" class="enlace_externo">Página web</a>			-->
 			<script>
-			$("a").on("click", function(e) {
-				var url = $(this).attr('href');
-				var containsHttp = new RegExp('http\\b'); 
-				var containsHttps = new RegExp('https\\b'); 
-				
-				if(containsHttp.test(url)) { 
-					e.preventDefault(); 
-					window.open(url, "_system", "location=yes"); 
-				}
-				else if(containsHttps.test(url)) { 
-					e.preventDefault(); 
-					window.open(url, "_system", "location=yes"); 
-				}
-			});						
+				$("a").on("click",function(e){
+					var url = $(this).attr('href');
+					var containHttp = new RegExp('http\\b');
+					var containHttps = new RegExp('https\\b');
+					if(containHttp.test(url)){
+						e.preventDefault();
+						var new_url=extern_web+url.substr(7);
+						window.open(new_url, "_system", "location=yes");
+					}
+					else if(containHttps.test(url)){
+						e.preventDefault();
+						var new_url=extern_web+url.substr(8);
+						window.open(new_url, "_system", "location=yes");
+					}
+				});				
 			</script>
 		</div>
 		
@@ -107,7 +108,7 @@
 		</div>
 		
 		<div id="ov_to_proce" class="enlace_a_procesion">
-			Ntra. Sra. de los Dolores (3 de Abril, Viernes Santo)
+			Ntra. Sra. de los Dolores (Viernes Santo)
 		</div>
 		<script>
 			$("#ov_to_proce").click(function(e){

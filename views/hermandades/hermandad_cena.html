@@ -55,11 +55,10 @@
 		<div class="texto_hermandad">
 			La Hermandad fue fundada en el año 1960 en la Parroquia de Santiago Apóstol para aglutinar a los estudiantes ciudarrealeños  de bachillerato y primeros cursos de la universidad. El paso de Misterio fue bendecido el 24 de Marzo de 1964, por el Obispo-Prior Juan Hervas Benet. Desde 1999 la Universidad de Castilla-La Mancha monta unas carpas en el Rectorado de la Plaza de España a donde se trasladan los pasos para su salida procesional. En mayo de 1995 la Hermandad acepto la donación de la imagen de María Santísima del Dulce Nombre, por parte de unos hermanos y fue nombrada Titular de la Hermandad. Esta imagen realizo su primera salida procesional en la Semana Santa de 1998.
 			<br><br>
-			La túnica es de lana blanca con capillo de raso del mismo color con el escudo de la hermandad, beca verde y cinturón de raso color eminencia y con trenzado de pita, sandalia negra y calceta blanca. Los hermanos portan cirios de color blanco.
-			<br><br>
 			La imagen del Misterio es empujada sobre ruedas desde el interior por 13 hermanos. El palio de la Virgen del Dulce Nombre es portada a costal por 35 hermanos. 
-			<br><br>
-			Asociación Banda de Música de Pozoblanco.
+			<p><b>MÚSICA</b></p>
+			· Música de capilla en el Paso de Misterio.<br>
+			· Banda Municipal de Pozoblanco (Córdoba) en Paso de Palio 
 		</div>
 		
 		<div class="titulos_hermandad">
@@ -67,14 +66,18 @@
 		</div>
 		
 		<div class="informacion_hermandad">
-			<b>Tunica:</b><br>
+			<b>Túnica:</b><br>
+			La túnica es de lana blanca con capillo de raso del mismo color con el escudo de la hermandad, beca verde y cinturón de raso color eminencia y con trenzado de pita, sandalia negra y calceta blanca. Los hermanos portan cirios de color blanco.
+			<br><br>
 			<img src="./resources/habitos/cena.jpg" style="display:block">
-			<b>Templo de residencia canónica:</b><br>Parroquia de San Pedro.
+			<b>Templo de residencia canónica:</b><br>Parroquia de San Pedro.<br><br>
 			<b>Ubicación de los titulares:</b><br>El misterio de la Santa Cena en el Museo Diocesano (Obispado de Ciudad Real)<br>María Santísima del Dulce Nombre - Capilla del Convento de las Hermanas de la Cruz de Ciudad Real.
 			<br><br>
 			<b>Fundación:</b><br>1960.
 			<br><br>
-			<b>Insignia(s) destacadas:</b><br>Cruz de Guía en madera, estrenada en la Semana Santa de 1998, con la palabra "Estudiantes", en el crucero.<br>Estandarte con el Santo Grial, bordado en oro por las Religiosas Adoratrices de Ciudad Real en 1964.
+			<b>Insignia(s) destacadas:</b><br>
+			· Cruz de Guía en madera, estrenada en la Semana Santa de 1998, con la palabra "Estudiantes", en el crucero.<br>
+			· Estandarte con el Santo Grial, bordado en oro por las Religiosas Adoratrices de Ciudad Real en 1964.
 			<br><br>
 			</div>
 		
@@ -92,11 +95,13 @@
 					var containHttps = new RegExp('https\\b');
 					if(containHttp.test(url)){
 						e.preventDefault();
-						window.open(url, "_system", "location=yes");
+						var new_url=extern_web+url.substr(7);
+						window.open(new_url, "_system", "location=yes");
 					}
 					else if(containHttps.test(url)){
 						e.preventDefault();
-						window.open(url, "_system", "location=yes");
+						var new_url=extern_web+url.substr(8);
+						window.open(new_url, "_system", "location=yes");
 					}
 				});
 			</script>
@@ -107,7 +112,7 @@
 		</div>
 		
 		<div id="ov_to_proce" class="enlace_a_procesion">
-			Santa Cena (2 de Abril, Jueves Santo)
+			Santa Cena (Jueves Santo)
 		</div>
 		<script>
 			$("#ov_to_proce").click(function(e){
