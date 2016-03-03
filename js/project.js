@@ -38,6 +38,7 @@ if(viewport_width>=758)
 
 var url_web='http://semanasantasercastillalamancha.com/';
 
+var extern_page='http://semanasantasercastillalamancha.com/ciudadreal/server/publicidad/load_webpage.php?web=';
 var extern_web='http://semanasantasercastillalamancha.com/ciudadreal/server/publicidad/load_adpage.php?anuncio=';
 
 var publi_url='http://semanasantasercastillalamancha.com/ciudadreal/server/publicidad/loader.php?day='+current_day_of_month+'&month='+current_month+'&imgsize='+imgsize;

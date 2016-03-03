@@ -96,12 +96,12 @@
 					var containHttps = new RegExp('https\\b');
 					if(containHttp.test(url)){
 						e.preventDefault();
-						var new_url=extern_web+url.substr(7);
+						var new_url=extern_page+url.substr(7);
 						window.open(new_url, "_system", "location=yes");
 					}
 					else if(containHttps.test(url)){
 						e.preventDefault();
-						var new_url=extern_web+url.substr(8);
+						var new_url=extern_page+url.substr(8);
 						window.open(new_url, "_system", "location=yes");
 					}
 				});					
